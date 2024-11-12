@@ -113,8 +113,8 @@ const me = {
 		{
 			icon: HiLink,
 			label: 'Website',
-			href: 'https',
-			content: 'https',
+			href: 'https://chuazz.github.io/portfolio/',
+			content: 'https://chuazz.github.io/portfolio/',
 		},
 		{
 			icon: HiPhone,

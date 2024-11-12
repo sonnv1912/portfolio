@@ -6,7 +6,7 @@ const Skills = () => {
 	return (
 		<div
 			id='skills'
-			className='min-h-screen lg:px-40 lg:pt-20'
+			className='min-h-screen lg:px-40 lg:py-20'
 		>
 			<p className='text-center font-eb-raleway text-4xl'>Skills</p>
 

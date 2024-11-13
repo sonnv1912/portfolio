@@ -3,7 +3,13 @@ import clsx from 'clsx';
 
 const Contact = () => {
 	return (
-		<div className={clsx('flex min-h-screen flex-col gap-8 p-8', 'md:p-12', 'lg:p-20')}>
+		<div
+			className={clsx(
+				'flex min-h-screen flex-col gap-8 bg-black p-8 text-white',
+				'md:p-12',
+				'lg:p-20',
+			)}
+		>
 			<p className='text-center font-eb-raleway text-4xl'>Contact</p>
 
 			<div className={clsx('grid grid-cols-1 gap-12', 'sm:grid-cols-2')}>
@@ -39,11 +45,11 @@ const Contact = () => {
 							target='_blank'
 							href={item.href}
 							key={item.label}
-							className='flex items-center gap-4'
+							className='flex items-center gap-3'
 						>
 							<img
 								src={item.icon}
-								className='size-10'
+								className='size-12'
 							/>
 
 							<div className='flex flex-1 flex-col gap-1'>

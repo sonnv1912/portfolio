@@ -6,6 +6,7 @@ import FigmaImage from '@assets/images/img_figma.png';
 import FirebaseImage from '@assets/images/img_firebase.png';
 import GitImage from '@assets/images/img_git.png';
 import GithubImage from '@assets/images/img_github.png';
+import HUITImage from '@assets/images/img_huit.png';
 import JiraImage from '@assets/images/img_jira.png';
 import KoChanImage from '@assets/images/img_kochan.png';
 import MeImage from '@assets/images/img_me.jpg';
@@ -182,6 +183,15 @@ const me = {
 			label: 'Facebook',
 			href: 'https://www.facebook.com/profile.php?id=100040068023039',
 			content: 'Ngô Văn Sơn',
+		},
+	],
+	education: [
+		{
+			label: 'Ho Chi Minh City University of Industry and Trade',
+			time: 'Step 2020 - May 2024',
+			location: 'Viet Nam',
+			content: 'Bachelor of Science in Information Technology',
+			image: HUITImage,
 		},
 	],
 };

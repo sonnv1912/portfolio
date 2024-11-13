@@ -3,13 +3,14 @@ import { useState } from 'react';
 import { BiSolidUser } from 'react-icons/bi';
 import { FaAddressCard } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
+import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdWork } from 'react-icons/md';
 import { SidebarItem } from './sidebar-item';
 
 type Props = {
-	value: 1 | 2 | 3 | 4;
-	onChange: (value: 1 | 2 | 3 | 4) => void;
+	value: 1 | 2 | 3 | 4 | 5;
+	onChange: (value: 1 | 2 | 3 | 4 | 5) => void;
 };
 
 const tabs = [
@@ -30,6 +31,11 @@ const tabs = [
 	},
 	{
 		id: 4,
+		label: 'Degree',
+		icon: HiBookOpen,
+	},
+	{
+		id: 5,
 		label: 'Contact',
 		icon: FaAddressCard,
 	},
@@ -60,7 +66,7 @@ const Sidebar = ({ value, onChange }: Props) => {
 						key={tab.id}
 						active={value === tab.id}
 						data={tab}
-						onPress={() => onChange(tab.id as 1 | 2 | 3 | 4)}
+						onPress={() => onChange(tab.id as 1 | 2 | 3 | 4 | 5)}
 					/>
 				))}
 			</div>

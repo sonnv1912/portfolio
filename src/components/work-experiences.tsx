@@ -19,7 +19,7 @@ const WorkExperience = () => {
 						key={item.appName}
 						className={clsx('relative ml-3 flex flex-wrap gap-8', 'md:gap-12')}
 					>
-						<div className='absolute -left-7 bottom-0 top-0 w-[1px] bg-woodsmoke-900' />
+						<div className='absolute bottom-0 left-[-29px] top-0 w-[1px] bg-woodsmoke-900' />
 
 						<div className='absolute -left-8 size-2 rounded-full bg-white' />
 

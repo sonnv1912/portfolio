@@ -11,13 +11,13 @@ const WorkExperience = () => {
 				'lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl text-white'>Work Experiences</p>
+			<p className='text-center font-eb-raleway text-4xl'>Work Experiences</p>
 
-			<div className='text-white'>
+			<div>
 				{me.experiences.map((item) => (
 					<div
 						key={item.appName}
-						className={clsx('relative ml-3 flex flex-wrap gap-8', 'md:gap-12', 'lg:gap-20')}
+						className={clsx('relative ml-3 flex flex-wrap gap-8', 'md:gap-12')}
 					>
 						<div className='absolute -left-7 bottom-0 top-0 w-[1px] bg-woodsmoke-900' />
 
@@ -48,15 +48,15 @@ const WorkExperience = () => {
 							</div>
 						</div>
 
-						<div className={clsx('flex w-full flex-col gap-4', 'lg:w-auto lg:flex-1')}>
+						<div className={clsx('flex w-full flex-col gap-4')}>
 							<div className='flex flex-wrap'>
-								<p className='w-40 font-semibold text-woodsmoke-400'>Team Size: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>Team Size: </p>
 
 								<p className='flex-1'>{item.teamSize}</p>
 							</div>
 
 							<div className='flex flex-wrap'>
-								<p className='w-40 font-semibold text-woodsmoke-400'>Description: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>Description: </p>
 
 								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
 									{item.appDescription}
@@ -64,7 +64,26 @@ const WorkExperience = () => {
 							</div>
 
 							<div className='flex flex-wrap'>
-								<p className='w-40 font-semibold text-woodsmoke-400'>Achievement: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>Responsibilities: </p>
+
+								<div className='flex-1'>
+									{item.responsibilities.map((item) => (
+										<p
+											className={clsx(
+												'w-full break-all leading-8',
+												'lg:w-auto lg:flex-1',
+											)}
+											key={item.label}
+										>
+											<span className='text-blue-400 underline'>{item.label}</span>:{' '}
+											{item.content}
+										</p>
+									))}
+								</div>
+							</div>
+
+							<div className='flex flex-wrap'>
+								<p className='w-56 font-semibold text-woodsmoke-400'>Achievement: </p>
 
 								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
 									{item.accomplishments}
@@ -72,7 +91,7 @@ const WorkExperience = () => {
 							</div>
 
 							<div className='flex flex-wrap'>
-								<p className='w-40 font-semibold text-woodsmoke-400'>Technologies: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>Technologies: </p>
 
 								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
 									{item.technologies}

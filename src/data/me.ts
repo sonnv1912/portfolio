@@ -98,9 +98,55 @@ const me = {
 			appDescription:
 				'Kochan is a unique e-commerce platform tailored for the Aerobic community, combining online shopping and community engagement. Key features include affiliate marketing opportunities, and community connections, allowing users to share interests and attend events.',
 			teamSize: 20,
+			responsibilities: [
+				{
+					label: 'Configured Notifications with Firebase Cloud Messaging',
+					content:
+						'Set up and managed both the sending and receiving of notifications, ensuring that users are informed about key updates or events in the app',
+				},
+				{
+					label: 'Configured Notifications with Firebase Cloud Messaging',
+					content:
+						'Set up and managed both the sending and receiving of notifications, ensuring that users are informed about key updates or events in the app.',
+				},
+				{
+					label: 'Collaborated with Product Owner',
+					content:
+						'Engaged in discussions with the Product Owner to address project limitations and challenges, identifying solutions to enhance product functionality and user experience.',
+				},
+				{
+					label: 'Configured Multi-Environment Source Setup',
+					content:
+						'Established configurations for multiple environments (e.g., development, staging, production) to streamline testing and deployment processes.',
+				},
+				{
+					label: 'Managed Music Playback and Events',
+					content:
+						'Oversaw the playlist management and handled various audio controls, including play, pause, and repeat functions, ensuring a seamless listening experience.',
+				},
+				{
+					label: 'Debugging and Issue Resolution',
+					content: 'Identified and fixed bugs, enhancing app stability and functionality.',
+				},
+				{
+					label: 'Design Collaboration',
+					content:
+						'Worked closely with the designer to review and discuss design elements, providing input on feasible and optimal design choices for the project’s goals and constraints.',
+				},
+				{
+					label: 'Implemented OTP Confirmation Using Native Code',
+					content:
+						'Developed a native function to send OTP confirmation messages to users, enhancing security and user verification within the app.',
+				},
+				{
+					label: 'Scripted Automated Test Releases with Fastlane',
+					content:
+						'Developed a Fastlane script to automate the release of test versions, ensuring an efficient and reliable delivery of updates to testers, reducing manual workload and improving the consistency of test releases.',
+				},
+			],
 			accomplishments:
 				'Learned Expo, NextJS framework, Firebase Cloud Message, automation deploy ios & android with fastlane, send SMS directly from android device by native code. Improved teamwork skill.',
-			technologies: 'Expo, Redux, React Query, Legend State.',
+			technologies: 'React Native, Expo, Redux, React Query, Fastlane.',
 		},
 	],
 	contact: [

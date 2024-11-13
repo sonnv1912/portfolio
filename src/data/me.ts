@@ -102,11 +102,6 @@ const me = {
 				{
 					label: 'Configured Notifications with Firebase Cloud Messaging',
 					content:
-						'Set up and managed both the sending and receiving of notifications, ensuring that users are informed about key updates or events in the app',
-				},
-				{
-					label: 'Configured Notifications with Firebase Cloud Messaging',
-					content:
 						'Set up and managed both the sending and receiving of notifications, ensuring that users are informed about key updates or events in the app.',
 				},
 				{

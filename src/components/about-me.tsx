@@ -6,10 +6,19 @@ import { BlinkBrand } from './blink-brand';
 const AboutMe = () => {
 	return (
 		<div
-			id='about-me'
-			className='flex min-h-screen flex-col bg-black text-white lg:px-40 lg:pb-12'
+			className={clsx(
+				'flex min-h-screen flex-col gap-8 bg-black p-8 text-white',
+				'md:p-12',
+				'lg:p-20',
+			)}
 		>
-			<div className='flex flex-1 items-center lg:gap-16'>
+			<div
+				className={clsx(
+					'flex flex-col items-start gap-12',
+					'md:flex-1 md:flex-row',
+					'lg:items-center',
+				)}
+			>
 				<div className='flex flex-1 flex-col gap-6'>
 					<p className='flex-1 font-eb-raleway text-5xl'>{me.name}</p>
 
@@ -33,8 +42,11 @@ const AboutMe = () => {
 
 				<img
 					src={me.image}
-					className='size-80 rounded-full object-cover'
-					alt='me'
+					className={clsx(
+						'order-first mx-auto size-80 rounded-full object-cover',
+						'md:order-last md:size-60',
+						'lg:size-80',
+					)}
 				/>
 			</div>
 

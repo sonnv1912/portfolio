@@ -5,12 +5,15 @@ import { LuCode2 } from 'react-icons/lu';
 const Skills = () => {
 	return (
 		<div
-			id='skills'
-			className='min-h-screen lg:px-40 lg:py-20'
+			className={clsx(
+				'flex min-h-screen flex-col gap-16 p-8',
+				'md:p-12',
+				'lg:items-center lg:justify-center lg:p-20',
+			)}
 		>
 			<p className='text-center font-eb-raleway text-4xl'>Skills</p>
 
-			<div className='mt-20 grid grid-cols-2 gap-12'>
+			<div className={clsx('grid grid-cols-1 gap-8', 'md:grid-cols-2', 'lg:gap-12')}>
 				{me.skills.map((skill) => (
 					<div key={skill.label}>
 						<div className='flex items-center gap-2'>
@@ -23,7 +26,9 @@ const Skills = () => {
 								<LuCode2 />
 							</div>
 
-							<p className='text-lg font-semibold'>{skill.label}</p>
+							<p className={clsx('text-md flex-1 font-semibold', 'md:text-lg')}>
+								{skill.label}
+							</p>
 						</div>
 
 						<div className='mt-5 flex flex-wrap items-center gap-3'>

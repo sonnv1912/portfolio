@@ -20,7 +20,7 @@ const BlinkBrand = () => {
 	}, [active]);
 
 	return (
-		<div className='flex items-center gap-4'>
+		<div className={clsx('flex flex-wrap items-center gap-4')}>
 			{me.workedWith.map((brand) => (
 				<a
 					key={brand.id}

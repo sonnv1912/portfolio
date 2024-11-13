@@ -3,13 +3,10 @@ import clsx from 'clsx';
 
 const Contact = () => {
 	return (
-		<div
-			id='contact'
-			className='min-h-screen lg:px-40 lg:py-20'
-		>
+		<div className={clsx('flex min-h-screen flex-col gap-8 p-8', 'md:p-12', 'lg:p-20')}>
 			<p className='text-center font-eb-raleway text-4xl'>Contact</p>
 
-			<div className='mt-20 grid grid-cols-2 gap-12'>
+			<div className={clsx('grid grid-cols-1 gap-12', 'sm:grid-cols-2')}>
 				<div className='flex flex-col gap-7'>
 					{me.contact.map((item) => (
 						<a
@@ -26,9 +23,11 @@ const Contact = () => {
 								<item.icon className='size-6 text-slate-500' />
 							</div>
 
-							<div className='flex flex-col gap-1'>
+							<div className='flex flex-1 flex-col gap-1'>
 								<p className='text-slate-500'>{item.label}</p>
-								<p className='font-semibold hover:underline'>{item.content}</p>
+								<p className='flex-1 break-all font-semibold hover:underline'>
+									{item.content}
+								</p>
 							</div>
 						</a>
 					))}
@@ -47,9 +46,9 @@ const Contact = () => {
 								className='size-10'
 							/>
 
-							<div className='flex flex-col gap-1'>
+							<div className='flex flex-1 flex-col gap-1'>
 								<p className='text-slate-500'>{item.label}</p>
-								<p className='font-semibold hover:underline'>{item.content}</p>
+								<p className='break-all font-semibold hover:underline'>{item.content}</p>
 							</div>
 						</a>
 					))}

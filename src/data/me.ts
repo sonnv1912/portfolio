@@ -99,7 +99,7 @@ const me = {
 				'Kochan is a unique e-commerce platform tailored for the Aerobic community, combining online shopping and community engagement. Users can shop a diverse range of products, from nutrition to fashion, with a user-friendly interface for seamless transactions. Key features include efficient order management, affiliate marketing opportunities, and community connections, allowing users to share interests and attend events. Kochan offers intelligent product filtering, regular promotions, reliable customer support, and secure transactions, creating a comprehensive and enjoyable shopping experience.',
 			teamSize: 20,
 			accomplishments:
-				'Learned Expo, NextJS framework, Firebase Cloud Message, automation deploy ios, android with fastlane, send SMS directly from android device by native code. Improved teamwork skill.',
+				'Learned Expo, NextJS framework, Firebase Cloud Message, automation deploy ios & android with fastlane, send SMS directly from android device by native code. Improved teamwork skill.',
 			technologies: 'Expo, Redux, React Query, Legend State.',
 		},
 	],

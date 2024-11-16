@@ -48,7 +48,7 @@ const WorkExperience = () => {
 							</div>
 						</div>
 
-						<div className={clsx('flex w-full flex-col gap-4')}>
+						<div className={clsx('flex w-full flex-col gap-8')}>
 							<div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>Team Size: </p>
 
@@ -58,7 +58,13 @@ const WorkExperience = () => {
 							<div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>Description: </p>
 
-								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
+								<p
+									className={clsx(
+										'w-full break-all pt-2 leading-8',
+										'sm:w-full sm:pt-2',
+										'lg:w-auto lg:flex-1 lg:pt-0',
+									)}
+								>
 									{item.appDescription}
 								</p>
 							</div>
@@ -66,20 +72,23 @@ const WorkExperience = () => {
 							<div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>Responsibilities: </p>
 
-								<div className='flex-1'>
+								<ul
+									className={clsx(
+										'w-full list-disc break-all pl-4 pt-2 leading-8',
+										'sm:w-full sm:pt-2',
+										'lg:w-auto lg:flex-1 lg:pt-0',
+									)}
+								>
 									{item.responsibilities.map((item) => (
-										<p
-											className={clsx(
-												'w-full break-all leading-8',
-												'lg:w-auto lg:flex-1',
-											)}
+										<li
+											className={clsx('break-all leading-8')}
 											key={item.label}
 										>
 											<span className='text-blue-400 underline'>{item.label}</span>:{' '}
 											{item.content}
-										</p>
+										</li>
 									))}
-								</div>
+								</ul>
 							</div>
 
 							<div className='flex flex-wrap'>

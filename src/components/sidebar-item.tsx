@@ -15,10 +15,10 @@ const SidebarItem = ({ data, active, onPress }: Props) => {
 	return (
 		<div
 			className={clsx(
-				'flex flex-col items-center justify-center py-3 hover:bg-woodsmoke-400',
+				'flex flex-col items-center justify-center py-3 hover:bg-woodsmoke-700',
 				'cursor-pointer gap-1 rounded-2xl px-2 transition-all duration-500',
 				{
-					'bg-woodsmoke-400': active,
+					'bg-woodsmoke-700': active,
 				},
 			)}
 			onClick={() => {

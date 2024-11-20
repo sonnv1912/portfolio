@@ -17,7 +17,7 @@ import { MdLocationPin } from 'react-icons/md';
 const me = {
 	name: 'Ngo Van Son',
 	shortDesc: `
-		HI. I am a <span class="px-2 py-1 font-semibold bg-blue-500 rounded-md">Front End Developer</span>
+		HI. I am a <span class="px-2 py-1 font-semibold bg-blue-500 rounded-md">Front-End Developer</span>
 	 	with over one year of experience in building web and mobile applications. I have a strong understanding of HTML, CSS, and JavaScript, 
 		along with hands-on experience using ReactJS, NextJS and React Native. I am passionate about creating efficient, 
 		responsive user interfaces and am always eager to learn and grow in the ever-evolving field of front-end development. 
@@ -91,7 +91,7 @@ const me = {
 	],
 	experiences: [
 		{
-			position: 'Front End Developer',
+			position: 'Front-End Developer',
 			appLogo: KoChanImage,
 			appName: 'Kochan',
 			time: 'May 2023 - Current',

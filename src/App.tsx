@@ -17,38 +17,30 @@ function App() {
 	const onScroll = (e: UIEvent<HTMLDivElement, globalThis.UIEvent>) => {
 		const target = e.target as HTMLDivElement;
 
-		if (
-			target.scrollTop - (aboutMeRef.current?.offsetTop || 0) >= 0 &&
-			target.scrollTop - (aboutMeRef.current?.offsetTop || 0) < 100
-		) {
+		const check = (itemOffsetTop: number = 0) => {
+			return (
+				Math.abs(target.scrollTop - itemOffsetTop) >= 0 &&
+				Math.abs(target.scrollTop - itemOffsetTop) <= 100
+			);
+		};
+
+		if (check(aboutMeRef.current?.offsetTop)) {
 			setActive(1);
 		}
 
-		if (
-			target.scrollTop - (skillRef.current?.offsetTop || 0) >= 0 &&
-			target.scrollTop - (skillRef.current?.offsetTop || 0) < 100
-		) {
+		if (check(skillRef.current?.offsetTop)) {
 			setActive(2);
 		}
 
-		if (
-			target.scrollTop - (workExperienceRef.current?.offsetTop || 0) >= 0 &&
-			target.scrollTop - (workExperienceRef.current?.offsetTop || 0) < 100
-		) {
+		if (check(workExperienceRef.current?.offsetTop)) {
 			setActive(3);
 		}
 
-		if (
-			target.scrollTop - (educationRef.current?.offsetTop || 0) >= 0 &&
-			target.scrollTop - (educationRef.current?.offsetTop || 0) < 100
-		) {
+		if (check(educationRef.current?.offsetTop)) {
 			setActive(4);
 		}
 
-		if (
-			target.scrollTop - (contactRef.current?.offsetTop || 0) >= 0 &&
-			target.scrollTop - (contactRef.current?.offsetTop || 0) < 100
-		) {
+		if (check(contactRef.current?.offsetTop)) {
 			setActive(5);
 		}
 	};

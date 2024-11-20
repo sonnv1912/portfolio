@@ -1,11 +1,15 @@
-import { me } from '@data/me';
+import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 import { MdLocationPin } from 'react-icons/md';
 
 const Education = () => {
+	const me = useMyProfile();
+	const { t } = useTranslation();
+
 	return (
 		<div className={clsx('flex min-h-screen flex-col gap-8 p-8', 'md:p-12', 'lg:p-20')}>
-			<p className='text-center font-eb-raleway text-4xl'>Education</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:degree')}</p>
 
 			<div>
 				{me.education.map((item) => (

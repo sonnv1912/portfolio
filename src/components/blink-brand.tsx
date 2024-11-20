@@ -1,9 +1,10 @@
-import { me } from '@data/me';
+import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 
 const BlinkBrand = () => {
 	const [active, setActive] = useState(0);
+	const me = useMyProfile();
 
 	useEffect(() => {
 		const id = setInterval(() => {
@@ -17,7 +18,7 @@ const BlinkBrand = () => {
 		}, 1500);
 
 		return () => clearInterval(id);
-	}, [active]);
+	}, [active, me.workedWith.length]);
 
 	return (
 		<div className={clsx('flex flex-wrap items-center gap-4')}>

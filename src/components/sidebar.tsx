@@ -6,6 +6,7 @@ import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdWork } from 'react-icons/md';
+import { LanguageSwitcher } from './language-switcher';
 import { SidebarItem } from './sidebar-item';
 
 type Props = {
@@ -16,27 +17,27 @@ type Props = {
 const tabs = [
 	{
 		id: 1,
-		label: 'Me',
+		label: 'SON',
 		icon: BiSolidUser,
 	},
 	{
 		id: 2,
-		label: 'Skills',
+		label: 'skill',
 		icon: GiSkills,
 	},
 	{
 		id: 3,
-		label: 'Work',
+		label: 'project',
 		icon: MdWork,
 	},
 	{
 		id: 4,
-		label: 'Degree',
+		label: 'degree',
 		icon: HiBookOpen,
 	},
 	{
 		id: 5,
-		label: 'Contact',
+		label: 'contact',
 		icon: FaAddressCard,
 	},
 ];
@@ -57,7 +58,7 @@ const Sidebar = ({ value, onChange }: Props) => {
 		>
 			<div
 				className={clsx(
-					'flex h-screen w-20 flex-col gap-2 overflow-y-auto',
+					'flex h-screen flex-col gap-2 overflow-y-auto',
 					'bg-woodsmoke-950 p-2 text-woodsmoke-200',
 				)}
 			>
@@ -69,6 +70,8 @@ const Sidebar = ({ value, onChange }: Props) => {
 						onPress={() => onChange(tab.id as 1 | 2 | 3 | 4 | 5)}
 					/>
 				))}
+
+				<LanguageSwitcher />
 			</div>
 
 			<div

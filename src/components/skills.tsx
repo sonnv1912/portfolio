@@ -1,8 +1,12 @@
-import { me } from '@data/me';
+import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 import { LuCode2 } from 'react-icons/lu';
 
 const Skills = () => {
+	const me = useMyProfile();
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className={clsx(
@@ -11,7 +15,7 @@ const Skills = () => {
 				'lg:items-center lg:justify-center lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>Skills</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:skill')}</p>
 
 			<div className={clsx('grid grid-cols-1 gap-8', 'md:grid-cols-2', 'lg:gap-12')}>
 				{me.skills.map((skill) => (

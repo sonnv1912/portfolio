@@ -1,9 +1,13 @@
-import { me } from '@data/me';
+import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { BlinkBrand } from './blink-brand';
 
 const AboutMe = () => {
+	const me = useMyProfile();
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className={clsx(
@@ -36,7 +40,7 @@ const AboutMe = () => {
 					>
 						<HiOutlineDownload className='size-5' />
 
-						<p>My CV</p>
+						<p>CV</p>
 					</a>
 				</div>
 
@@ -51,7 +55,7 @@ const AboutMe = () => {
 			</div>
 
 			<div>
-				<p className='mb-5'>Worked with</p>
+				<p className='mb-5'>{t('common:worked_with')}:</p>
 
 				<BlinkBrand />
 			</div>

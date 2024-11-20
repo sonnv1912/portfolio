@@ -1,8 +1,12 @@
-import { me } from '@data/me';
+import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 import { MdLocationPin } from 'react-icons/md';
 
 const WorkExperience = () => {
+	const me = useMyProfile();
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className={clsx(
@@ -11,7 +15,7 @@ const WorkExperience = () => {
 				'lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>Work Experiences</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:project')}</p>
 
 			<div>
 				{me.experiences.map((item) => (
@@ -50,13 +54,17 @@ const WorkExperience = () => {
 
 						<div className={clsx('flex w-full flex-col gap-8')}>
 							<div className='flex flex-wrap'>
-								<p className='w-56 font-semibold text-woodsmoke-400'>Team Size: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>
+									{t('common:team_size')}:
+								</p>
 
 								<p className='flex-1'>{item.teamSize}</p>
 							</div>
 
 							<div className='flex flex-wrap'>
-								<p className='w-56 font-semibold text-woodsmoke-400'>Description: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>
+									{t('common:description')}:
+								</p>
 
 								<p
 									className={clsx(
@@ -70,29 +78,33 @@ const WorkExperience = () => {
 							</div>
 
 							<div className='flex flex-wrap'>
-								<p className='w-56 font-semibold text-woodsmoke-400'>Responsibilities: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>
+									{t('common:responsibility')}:
+								</p>
 
-								<ul
+								<div
 									className={clsx(
-										'w-full list-disc break-all pl-4 pt-2 leading-8',
+										'flex w-full flex-col gap-3 break-all pt-2 leading-8',
 										'sm:w-full sm:pt-2',
 										'lg:w-auto lg:flex-1 lg:pt-0',
 									)}
 								>
 									{item.responsibilities.map((item) => (
-										<li
+										<p
 											className={clsx('break-all leading-8')}
 											key={item.label}
 										>
 											<span className='text-blue-400 underline'>{item.label}</span>:{' '}
 											{item.content}
-										</li>
+										</p>
 									))}
-								</ul>
+								</div>
 							</div>
 
 							<div className='flex flex-wrap'>
-								<p className='w-56 font-semibold text-woodsmoke-400'>Achievement: </p>
+								<p className='w-56 font-semibold text-woodsmoke-400'>
+									{t('common:achievement')}:
+								</p>
 
 								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
 									{item.accomplishments}

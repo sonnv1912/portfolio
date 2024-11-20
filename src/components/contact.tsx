@@ -1,7 +1,11 @@
-import { me } from '@data/me';
+import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+	const me = useMyProfile();
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className={clsx(
@@ -10,7 +14,7 @@ const Contact = () => {
 				'lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>Contact</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:contact')}</p>
 
 			<div className={clsx('grid grid-cols-1 gap-12', 'sm:grid-cols-2')}>
 				<div className='flex flex-col gap-7'>

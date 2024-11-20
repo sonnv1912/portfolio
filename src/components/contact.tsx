@@ -14,7 +14,7 @@ const Contact = () => {
 				'lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>{t('common:contact')}</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:contact').toUpperCase()}</p>
 
 			<div className={clsx('grid grid-cols-1 gap-12', 'sm:grid-cols-2')}>
 				<div className='flex flex-col gap-7'>

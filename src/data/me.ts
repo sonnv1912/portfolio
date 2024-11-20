@@ -10,7 +10,8 @@ import HUITImage from '@assets/images/img-huit.png';
 import JiraImage from '@assets/images/img-jira.png';
 import KoChanImage from '@assets/images/img-kochan.png';
 import MeImage from '@assets/images/img-me.jpg';
-import CvPDF from '@assets/pdf/pdf-cv.pdf';
+import CvPDFUS from '@assets/pdf/pdf-cv-us.pdf';
+import CvPDFVN from '@assets/pdf/pdf-cv-vn.pdf';
 import { useTranslation } from 'react-i18next';
 import { HiLink, HiOutlineMail, HiPhone } from 'react-icons/hi';
 
@@ -21,7 +22,10 @@ const useMyProfile = () => {
 		name: t('me:name'),
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
-		cv: CvPDF,
+		cv: {
+			us: CvPDFUS,
+			vn: CvPDFVN,
+		},
 		workedWith: [
 			{
 				id: 1,
@@ -68,7 +72,7 @@ const useMyProfile = () => {
 			{
 				label: 'Frameworks',
 				textColor: 'bg-slate-100 text-blue-700 hover:bg-blue-700 hover:text-white',
-				items: ['ReactJS', 'NextJS', 'React Native', 'Tailwind CSS'],
+				items: ['ReactJS', 'NextJS', 'React Native', 'Tailwind CSS', 'Expo'],
 			},
 			{
 				label: 'Version Control',

@@ -15,7 +15,7 @@ const WorkExperience = () => {
 				'lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>{t('common:project')}</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:project').toUpperCase()}</p>
 
 			<div>
 				{me.experiences.map((item) => (

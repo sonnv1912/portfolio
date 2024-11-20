@@ -15,7 +15,7 @@ const Skills = () => {
 				'lg:items-center lg:justify-center lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>{t('common:skill')}</p>
+			<p className='text-center font-eb-raleway text-4xl'>{t('common:skill').toUpperCase()}</p>
 
 			<div className={clsx('grid grid-cols-1 gap-8', 'md:grid-cols-2', 'lg:gap-12')}>
 				{me.skills.map((skill) => (

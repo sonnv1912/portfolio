@@ -6,7 +6,7 @@ import { BlinkBrand } from './blink-brand';
 
 const AboutMe = () => {
 	const me = useMyProfile();
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	return (
 		<div
@@ -31,17 +31,35 @@ const AboutMe = () => {
 						dangerouslySetInnerHTML={{ __html: me.shortDesc }}
 					/>
 
-					<a
-						href={me.cv}
-						className={clsx(
-							'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
-							'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
-						)}
-					>
-						<HiOutlineDownload className='size-5' />
+					<div className='flex items-center gap-4'>
+						{i18n.language === 'us' && (
+							<a
+								href={me.cv.us}
+								className={clsx(
+									'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
+									'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
+								)}
+							>
+								<HiOutlineDownload className='size-5' />
 
-						<p>CV</p>
-					</a>
+								<p>CV (US)</p>
+							</a>
+						)}
+
+						{i18n.language === 'vn' && (
+							<a
+								href={me.cv.vn}
+								className={clsx(
+									'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
+									'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
+								)}
+							>
+								<HiOutlineDownload className='size-5' />
+
+								<p>CV (VN)</p>
+							</a>
+						)}
+					</div>
 				</div>
 
 				<img

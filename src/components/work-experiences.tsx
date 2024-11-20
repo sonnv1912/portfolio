@@ -99,13 +99,13 @@ const WorkExperience = () => {
 								</p>
 							</div>
 
-							<div className='flex flex-wrap'>
+							{/* <div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>Technologies: </p>
 
 								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
 									{item.technologies}
 								</p>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				))}

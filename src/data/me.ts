@@ -141,8 +141,8 @@ const me = {
 				},
 			],
 			accomplishments:
-				'Learned Expo, NextJS framework, Firebase Cloud Message, automation deploy ios & android with fastlane, send SMS directly from android device by native code. Improved teamwork skill.',
-			technologies: 'React Native, Expo, Redux, React Query, Fastlane.',
+				'Learned Expo, NextJS, Firebase Cloud Message, automation deploy ios & android with fastlane, send SMS directly from android device by native code, improved teamwork skill.',
+			technologies: 'ReactJS, React Native, NextJS, Expo, Redux, React Query, Fastlane.',
 		},
 	],
 	contact: [

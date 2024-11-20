@@ -19,7 +19,7 @@ const me = {
 	shortDesc: `
 		HI. I am a <span class="px-2 py-1 font-semibold bg-blue-500 rounded-md">Front End Developer</span>
 	 	with over one year of experience in building web and mobile applications. I have a strong understanding of HTML, CSS, and JavaScript, 
-		along with hands-on experience using React, and React Native. I am passionate about creating efficient, 
+		along with hands-on experience using ReactJS, NextJS and React Native. I am passionate about creating efficient, 
 		responsive user interfaces and am always eager to learn and grow in the ever-evolving field of front-end development. 
 		With a keen eye for detail and a commitment to quality, I strive to deliver code that not only meets project requirements but also provides a seamless user experience.
 	`,
@@ -142,7 +142,7 @@ const me = {
 			],
 			accomplishments:
 				'Learned Expo, NextJS, Firebase Cloud Message, automation deploy ios & android with fastlane, send SMS directly from android device by native code, improved teamwork skill.',
-			technologies: 'ReactJS, React Native, NextJS, Expo, Redux, React Query, Fastlane.',
+			technologies: 'ReactJS, NextJS, React Native, Expo, Redux, React Query, Fastlane.',
 		},
 	],
 	contact: [

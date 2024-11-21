@@ -8,7 +8,7 @@ import { BlinkBrand } from './blink-brand';
 const AboutMe = () => {
 	const me = useMyProfile();
 	const { t, i18n } = useTranslation();
-	const isVN = useMemo(() => i18n.language === 'us', [i18n.language]);
+	const isVN = useMemo(() => i18n.language === 'vn', [i18n.language]);
 
 	return (
 		<div

@@ -1,5 +1,6 @@
 import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HiOutlineDownload } from 'react-icons/hi';
 import { BlinkBrand } from './blink-brand';
@@ -7,6 +8,7 @@ import { BlinkBrand } from './blink-brand';
 const AboutMe = () => {
 	const me = useMyProfile();
 	const { t, i18n } = useTranslation();
+	const isVN = useMemo(() => i18n.language === 'us', [i18n.language]);
 
 	return (
 		<div
@@ -32,33 +34,18 @@ const AboutMe = () => {
 					/>
 
 					<div className='flex items-center gap-4'>
-						{i18n.language === 'us' && (
-							<a
-								href={me.cv.us}
-								className={clsx(
-									'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
-									'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
-								)}
-							>
-								<HiOutlineDownload className='size-5' />
+						<a
+							href={isVN ? me.cv.vn : me.cv.us}
+							download='Ngo Van Son - Front End Developer.pdf'
+							className={clsx(
+								'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
+								'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
+							)}
+						>
+							<HiOutlineDownload className='size-5' />
 
-								<p>CV (US)</p>
-							</a>
-						)}
-
-						{i18n.language === 'vn' && (
-							<a
-								href={me.cv.vn}
-								className={clsx(
-									'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
-									'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
-								)}
-							>
-								<HiOutlineDownload className='size-5' />
-
-								<p>CV (VN)</p>
-							</a>
-						)}
+							<p>{isVN ? 'CV (VN)' : 'CV (US)'}</p>
+						</a>
 					</div>
 				</div>
 

@@ -55,6 +55,14 @@ const WorkExperience = () => {
 						<div className={clsx('flex w-full flex-col gap-8')}>
 							<div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>
+									{t('common:company')}:
+								</p>
+
+								<p className='flex-1'>{item.company}</p>
+							</div>
+
+							<div className='flex flex-wrap'>
+								<p className='w-56 font-semibold text-woodsmoke-400'>
 									{t('common:team_size')}:
 								</p>
 

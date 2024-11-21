@@ -92,6 +92,7 @@ const useMyProfile = () => {
 		],
 		experiences: [
 			{
+				company: 'GOSOFT TECHNOLOGY COMPANY LIMITED',
 				position: 'Front-End Developer',
 				appLogo: KoChanImage,
 				appName: 'Kochan',

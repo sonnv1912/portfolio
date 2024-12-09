@@ -10,7 +10,7 @@
 		"lint": "eslint .",
 		"preview": "vite preview",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
+		"deploy": "cp -r ./.well-known ./dist && gh-pages -d dist",
 		"prepare": "husky"
 	},
 	"dependencies": {

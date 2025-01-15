@@ -60,7 +60,7 @@ const Sidebar = ({ value, onChange }: Props) => {
 				<div
 					className={clsx(
 						'flex h-screen flex-col gap-2 overflow-y-auto',
-						'bg-woodsmoke-950 p-2 text-woodsmoke-200',
+						'bg-woodsmoke-700 p-2 text-woodsmoke-200',
 					)}
 				>
 					{tabs.map((tab) => (

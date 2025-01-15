@@ -27,7 +27,7 @@ const BlinkBrand = () => {
 					key={brand.id}
 					href={brand.href}
 					className={clsx(
-						'rounded-md border border-woodsmoke-950 px-10 py-4',
+						'rounded-md border border-woodsmoke-900 px-10 py-4',
 						'duration-400 cursor-pointer grayscale transition-all hover:grayscale-0',
 						{
 							'grayscale-0': active === brand.id,

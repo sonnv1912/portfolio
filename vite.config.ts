@@ -12,6 +12,5 @@ export default defineConfig({
 			'@config': path.resolve(__dirname, './src/config'),
 		},
 	},
-	base: '/portfolio/',
 	plugins: [react()],
 });

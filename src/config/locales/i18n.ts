@@ -1,7 +1,6 @@
 import UnitedStateImage from '@assets/images/img-united-states.png';
 import VietNamImage from '@assets/images/img_viet-nam.png';
 import i18n from 'i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
 
 import usCommon from './us/common.json';
@@ -45,26 +44,23 @@ const getLanguage = () => {
 	return languages.vn.code;
 };
 
-i18n
-	.use(LanguageDetector)
-	.use(initReactI18next)
-	.init({
-		fallbackLng: languages.vn.code,
-		lng: getLanguage(),
-		interpolation: {
-			escapeValue: false,
+i18n.use(initReactI18next).init({
+	fallbackLng: languages.vn.code,
+	lng: getLanguage(),
+	interpolation: {
+		escapeValue: false,
+	},
+	resources: {
+		us: {
+			me: usMe,
+			common: usCommon,
 		},
-		resources: {
-			us: {
-				me: usMe,
-				common: usCommon,
-			},
-			vn: {
-				me: vnMe,
-				common: vnCommon,
-			},
+		vn: {
+			me: vnMe,
+			common: vnCommon,
 		},
-	});
+	},
+});
 
 export default i18n;
 export { languages };

@@ -163,7 +163,7 @@ const useMyProfile = () => {
 				icon: GithubImage,
 				label: 'Github',
 				href: 'https://github.com/Chuazz',
-				content: 'chuazz',
+				content: 'sonnv1912',
 			},
 			{
 				icon: FacebookImage,

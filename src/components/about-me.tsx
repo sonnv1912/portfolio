@@ -44,7 +44,7 @@ const AboutMe = () => {
 						>
 							<HiOutlineDownload className='size-5' />
 
-							<p>{isVN ? 'CV (VN)' : 'CV (US)'}</p>
+							<p>CV</p>
 						</a>
 					</div>
 				</div>

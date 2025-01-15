@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -27,6 +27,7 @@ module.exports = {
 					900: '#3d3d3d',
 					950: '#1b1b1b',
 				},
+				black: '#181818',
 			},
 		},
 	},

@@ -10,8 +10,6 @@ import HUITImage from '@assets/images/img-huit.png';
 import JiraImage from '@assets/images/img-jira.png';
 import KoChanImage from '@assets/images/img-kochan.png';
 import MeImage from '@assets/images/img-me.jpg';
-import CvPDFUS from '@assets/pdf/pdf-cv-us.pdf';
-import CvPDFVN from '@assets/pdf/pdf-cv-vn.pdf';
 import { useTranslation } from 'react-i18next';
 import { HiLink, HiOutlineMail, HiPhone } from 'react-icons/hi';
 
@@ -23,8 +21,7 @@ const useMyProfile = () => {
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
 		cv: {
-			us: CvPDFUS,
-			vn: CvPDFVN,
+			us: 'https://drive.usercontent.google.com/download?id=1HtXq-Sixj0exLFSJNSWcjPaUOTmF3wGI&export=download',
 		},
 		workedWith: [
 			{
@@ -96,7 +93,7 @@ const useMyProfile = () => {
 				position: 'Front-End Developer',
 				appLogo: KoChanImage,
 				appName: 'Kochan',
-				time: `${t('common:month.may')}, 2023 - ${t('common:month.nov')}, 2024`,
+				time: `${t('common:month.may')}, 2023 - ${t('common:current')}`,
 				location: 'Viet Nam',
 				appDescription: t('me:experiences.kochan.app_description'),
 				teamSize: 20,
@@ -148,8 +145,8 @@ const useMyProfile = () => {
 			{
 				icon: HiLink,
 				label: 'Website',
-				href: 'https://chuazz.github.io/portfolio/',
-				content: 'https://chuazz.github.io/portfolio/',
+				href: 'https://sonnv1912.github.io/portfolio/',
+				content: 'Ngo Van Son - Front End Developer',
 			},
 			{
 				icon: HiPhone,
@@ -162,7 +159,7 @@ const useMyProfile = () => {
 			{
 				icon: GithubImage,
 				label: 'Github',
-				href: 'https://github.com/Chuazz',
+				href: 'https://github.com/sonnv1912',
 				content: 'sonnv1912',
 			},
 			{

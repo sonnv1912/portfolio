@@ -1,6 +1,6 @@
 {
 	"name": "Ngo Van Son",
-	"shortDesc": "A <span class='px-2 py-1 font-semibold rounded-md' style='background: #3b82f6'>Front-End Developer</span> with over one year of experience in building web and mobile applications. Have understanding of HTML, CSS, and JavaScript, along with hands-on experience using ReactJS, NextJS, React Native and Expo. Passionate about creating efficient, responsive user interfaces and always eager to learn and grow in the ever-evolving field of front-end development.",
+	"shortDesc": "A <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Front-End Developer</span> with over one year of experience in building web and mobile applications. Have understanding of HTML, CSS, and JavaScript, along with hands-on experience using ReactJS, NextJS, React Native and Expo. Passionate about creating efficient, responsive user interfaces and always eager to learn and grow in the ever-evolving field of front-end development.",
 	"experiences": {
 		"kochan": {
 			"position": "Front-End Developer",
@@ -19,7 +19,7 @@
 				},
 				"env": {
 					"label": "Configured Multi-Environment Source Setup",
-					"content": "Established configurations for multiple environments (e.g., development, staging, production) to streamline testing and deployment processes."
+					"content": "Established configurations for multiple environments to streamline testing and deployment processes."
 				},
 				"music": {
 					"label": "Managed Music Playback and Events",

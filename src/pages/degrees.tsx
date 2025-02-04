@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { MdLocationPin } from 'react-icons/md';
 
-const Education = () => {
+const Degrees = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
 
@@ -52,4 +52,4 @@ const Education = () => {
 	);
 };
 
-export { Education };
+export { Degrees };

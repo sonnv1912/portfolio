@@ -9,41 +9,41 @@ import { MdWork } from 'react-icons/md';
 import { LanguageSwitcher } from './language-switcher';
 import { SidebarItem } from './sidebar-item';
 
-type Props = {
-	value: 1 | 2 | 3 | 4 | 5;
-	onChange: (value: 1 | 2 | 3 | 4 | 5) => void;
-};
-
-const tabs = [
-	{
-		id: 1,
-		label: 'SON',
-		icon: BiSolidUser,
-	},
-	{
-		id: 2,
-		label: 'skill',
-		icon: GiSkills,
-	},
-	{
-		id: 3,
-		label: 'project',
-		icon: MdWork,
-	},
-	{
-		id: 4,
-		label: 'degree',
-		icon: HiBookOpen,
-	},
-	{
-		id: 5,
-		label: 'contact',
-		icon: FaAddressCard,
-	},
-];
-
-const Sidebar = ({ value, onChange }: Props) => {
+const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
+
+	const tabs = [
+		{
+			id: 1,
+			label: 'SON',
+			icon: BiSolidUser,
+			to: '/portfolio/me',
+		},
+		{
+			id: 2,
+			label: 'skill',
+			icon: GiSkills,
+			to: '/portfolio/skills',
+		},
+		{
+			id: 3,
+			label: 'project',
+			icon: MdWork,
+			to: '/portfolio/projects',
+		},
+		{
+			id: 4,
+			label: 'degree',
+			icon: HiBookOpen,
+			to: '/portfolio/degrees',
+		},
+		{
+			id: 5,
+			label: 'contact',
+			icon: FaAddressCard,
+			to: '/portfolio/contact',
+		},
+	];
 
 	return (
 		<div>
@@ -66,11 +66,8 @@ const Sidebar = ({ value, onChange }: Props) => {
 					{tabs.map((tab) => (
 						<SidebarItem
 							key={tab.id}
-							active={value === tab.id}
 							data={tab}
 							onPress={() => {
-								onChange(tab.id as 1 | 2 | 3 | 4 | 5);
-
 								setShowMenuBtnClicked(true);
 							}}
 						/>

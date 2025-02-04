@@ -1,14 +1,13 @@
+import { BlinkBrand } from '@components/blink-brand';
 import { useMyProfile } from '@data/me';
 import clsx from 'clsx';
-import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HiOutlineDownload } from 'react-icons/hi';
-import { BlinkBrand } from './blink-brand';
 
-const AboutMe = () => {
+const Me = () => {
 	const me = useMyProfile();
-	const { t, i18n } = useTranslation();
-	const isVN = useMemo(() => i18n.language === 'vn', [i18n.language]);
+	const { t } = useTranslation();
+	// const isVN = useMemo(() => i18n.language === 'vn', [i18n.language]);
 
 	return (
 		<div
@@ -25,28 +24,31 @@ const AboutMe = () => {
 					'lg:items-center',
 				)}
 			>
-				<div className='flex flex-1 flex-col gap-6'>
-					<p className='flex-1 font-eb-raleway text-5xl'>{me.name}</p>
+				<div className='flex flex-1 flex-col gap-10'>
+					<div className='flex flex-1 items-center gap-6'>
+						<p className='flex font-eb-raleway text-5xl'>{me.name}</p>
+
+						<div className='flex items-center gap-4'>
+							<a
+								// href={isVN ? me.cv.vn : me.cv.us}
+								href={me.cv.us}
+								download='Ngo Van Son - Front End Developer.pdf'
+								className={clsx(
+									'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
+									'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
+								)}
+							>
+								<HiOutlineDownload className='size-5' />
+
+								<p>CV</p>
+							</a>
+						</div>
+					</div>
 
 					<p
 						className='text-justify leading-8'
 						dangerouslySetInnerHTML={{ __html: me.shortDesc }}
 					/>
-
-					<div className='flex items-center gap-4'>
-						<a
-							href={isVN ? me.cv.vn : me.cv.us}
-							download='Ngo Van Son - Front End Developer.pdf'
-							className={clsx(
-								'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
-								'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
-							)}
-						>
-							<HiOutlineDownload className='size-5' />
-
-							<p>CV</p>
-						</a>
-					</div>
 				</div>
 
 				<img
@@ -68,4 +70,4 @@ const AboutMe = () => {
 	);
 };
 
-export { AboutMe };
+export { Me };

@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { MdLocationPin } from 'react-icons/md';
 
-const WorkExperience = () => {
+const Projects = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
 
@@ -109,7 +109,7 @@ const WorkExperience = () => {
 								</div>
 							</div>
 
-							<div className='flex flex-wrap'>
+							{/* <div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>
 									{t('common:achievement')}:
 								</p>
@@ -117,7 +117,7 @@ const WorkExperience = () => {
 								<p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
 									{item.accomplishments}
 								</p>
-							</div>
+							</div> */}
 
 							{/* <div className='flex flex-wrap'>
 								<p className='w-56 font-semibold text-woodsmoke-400'>Technologies: </p>
@@ -134,4 +134,4 @@ const WorkExperience = () => {
 	);
 };
 
-export { WorkExperience };
+export { Projects };

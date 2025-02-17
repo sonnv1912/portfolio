@@ -1,4 +1,3 @@
-import { DefaultLayout } from '@components/layout/default';
 import { Navigate, Route, Routes } from 'react-router';
 import { Contact } from './pages/contact';
 import { Degrees } from './pages/degrees';
@@ -11,38 +10,33 @@ export const App = () => {
 		<Routes>
 			<Route
 				path='/portfolio'
-				element={<DefaultLayout />}
-			>
-				<Route
-					path=''
-					element={<Navigate to='me' />}
-				/>
+				element={<Navigate to='/portfolio/me' />}
+			/>
 
-				<Route
-					path='me'
-					element={<Me />}
-				/>
+			<Route
+				path='/portfolio/me'
+				element={<Me />}
+			/>
 
-				<Route
-					path='skills'
-					element={<Skills />}
-				/>
+			<Route
+				path='/portfolio/skills'
+				element={<Skills />}
+			/>
 
-				<Route
-					path='projects'
-					element={<Projects />}
-				/>
+			<Route
+				path='/portfolio/projects'
+				element={<Projects />}
+			/>
 
-				<Route
-					path='degrees'
-					element={<Degrees />}
-				/>
+			<Route
+				path='/portfolio/degrees'
+				element={<Degrees />}
+			/>
 
-				<Route
-					path='contact'
-					element={<Contact />}
-				/>
-			</Route>
+			<Route
+				path='/portfolio/contact'
+				element={<Contact />}
+			/>
 		</Routes>
 	);
 };

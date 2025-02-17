@@ -1,5 +1,5 @@
 import UnitedStateImage from '@assets/images/img-united-states.png';
-import VietNamImage from '@assets/images/img_viet-nam.png';
+import VietNamImage from '@assets/images/img-viet-nam.png';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 

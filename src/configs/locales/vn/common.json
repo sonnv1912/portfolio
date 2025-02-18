@@ -1,8 +1,8 @@
 {
 	"change": "Đổi",
-	"skill": "Kỹ năng",
-	"project": "Dự án",
-	"degree": "Bằng cấp",
+	"skills": "Kỹ năng",
+	"projects": "Dự án",
+	"degrees": "Bằng cấp",
 	"contact": "Liên lạc",
 	"worked_with": "Đã từng làm việc với",
 	"programming_languages": "Ngôn ngữ lập trình",

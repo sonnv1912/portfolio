@@ -63,27 +63,30 @@ const useMyProfile = () => {
 		skills: [
 			{
 				label: t('common:programming_languages'),
-				textColor: 'bg-slate-100 text-blue-700 hover:bg-blue-700 hover:text-white',
-				items: ['Javascript', 'Typescript', 'HTML', 'CSS'],
+				items: ['JavaScript', 'TypeScript'],
 			},
 			{
-				label: 'Frameworks',
-				textColor: 'bg-slate-100 text-blue-700 hover:bg-blue-700 hover:text-white',
-				items: ['ReactJS', 'NextJS', 'React Native', 'Tailwind CSS', 'Expo'],
+				label: 'Web Technologies',
+				items: ['HTML', 'CSS', 'Tailwind CSS'],
 			},
 			{
-				label: 'Version Control',
-				textColor: 'bg-slate-100 text-blue-700 hover:bg-blue-700 hover:text-white',
-				items: ['Git (Git Shell & Github)', 'Bitbucket'],
+				label: 'Frontend Frameworks',
+				items: ['React.js', 'Next.js'],
 			},
 			{
-				label: t('common:tool'),
-				textColor: 'bg-slate-100 text-blue-700 hover:bg-blue-700 hover:text-white',
-				items: ['Visual Studio Code', 'Android Studio', 'XCode', 'Figma'],
+				label: 'Mobile Development',
+				items: ['React Native', 'Expo'],
+			},
+			{
+				label: 'Source Control',
+				items: ['Git (Git Shell & GitHub)', 'Bitbucket'],
+			},
+			{
+				label: 'Tools',
+				items: ['Visual Studio Code', 'Android Studio', 'Xcode', 'Figma'],
 			},
 			{
 				label: t('common:language'),
-				textColor: 'bg-slate-100 text-blue-700 hover:bg-blue-700 hover:text-white',
 				items: ['English (TOEIC 620/990)'],
 			},
 		],

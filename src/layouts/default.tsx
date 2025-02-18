@@ -6,7 +6,9 @@ export const DefaultLayout = ({ children }: PropsWithChildren) => {
 		<div className='relative flex'>
 			<Sidebar />
 
-			<div className='h-screen flex-1 overflow-auto scroll-smooth'>{children}</div>
+			<div className='h-screen flex-1 overflow-auto scroll-smooth bg-black text-white'>
+				{children}
+			</div>
 		</div>
 	);
 };

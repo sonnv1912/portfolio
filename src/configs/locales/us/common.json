@@ -1,8 +1,8 @@
 {
 	"change": "Change",
-	"skill": "Skill",
-	"project": "Project",
-	"degree": "Degree",
+	"skills": "Skills",
+	"projects": "Projects",
+	"degrees": "Degrees",
 	"contact": "Contact",
 	"worked_with": "Worked with",
 	"programming_languages": "Programming language",

@@ -4,38 +4,49 @@ import { Degrees } from './pages/degrees';
 import { Me } from './pages/me';
 import { Projects } from './pages/projects';
 import { Skills } from './pages/skills';
+import { Experiences } from './pages/experiences';
 
 export const App = () => {
+	const routes = [
+		{
+			path: '/portfolio/me',
+			component: <Me />,
+		},
+		{
+			path: '/portfolio/skills',
+			component: <Skills />,
+		},
+		{
+			path: '/portfolio/projects',
+			component: <Projects />,
+		},
+		{
+			path: '/portfolio/degrees',
+			component: <Degrees />,
+		},
+		{
+			path: '/portfolio/contact',
+			component: <Contact />,
+		},
+		{
+			path: '/portfolio/experiences',
+			component: <Experiences />,
+		},
+	];
+
 	return (
 		<Routes>
+			{routes.map((route) => (
+				<Route
+					key={route.path}
+					path={route.path}
+					element={route.component}
+				/>
+			))}
+
 			<Route
 				path='/portfolio'
 				element={<Navigate to='/portfolio/me' />}
-			/>
-
-			<Route
-				path='/portfolio/me'
-				element={<Me />}
-			/>
-
-			<Route
-				path='/portfolio/skills'
-				element={<Skills />}
-			/>
-
-			<Route
-				path='/portfolio/projects'
-				element={<Projects />}
-			/>
-
-			<Route
-				path='/portfolio/degrees'
-				element={<Degrees />}
-			/>
-
-			<Route
-				path='/portfolio/contact'
-				element={<Contact />}
 			/>
 		</Routes>
 	);

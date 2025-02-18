@@ -5,9 +5,10 @@ import { FaAddressCard } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
-import { MdWork } from 'react-icons/md';
 import { LanguageSwitcher } from './language-switcher';
 import { SidebarItem } from './sidebar-item';
+import { MdFolder } from 'react-icons/md';
+import { MdWorkspacePremium } from 'react-icons/md';
 
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
@@ -21,24 +22,30 @@ const Sidebar = () => {
 		},
 		{
 			id: 2,
-			label: 'skill',
+			label: 'skills',
 			icon: GiSkills,
 			to: '/portfolio/skills',
 		},
 		{
 			id: 3,
-			label: 'project',
-			icon: MdWork,
+			label: 'projects',
+			icon: MdFolder,
 			to: '/portfolio/projects',
 		},
 		{
-			id: 4,
-			label: 'degree',
+			id: 5,
+			label: 'experience',
+			icon: MdWorkspacePremium,
+			to: '/portfolio/experiences',
+		},
+		{
+			id: 6,
+			label: 'degrees',
 			icon: HiBookOpen,
 			to: '/portfolio/degrees',
 		},
 		{
-			id: 5,
+			id: 7,
 			label: 'contact',
 			icon: FaAddressCard,
 			to: '/portfolio/contact',

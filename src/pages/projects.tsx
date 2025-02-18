@@ -18,7 +18,7 @@ const Projects = () => {
 				)}
 			>
 				<p className='text-center font-eb-raleway text-4xl'>
-					{t('common:project').toUpperCase()}
+					{t('common:projects').toUpperCase()}
 				</p>
 
 				<div>

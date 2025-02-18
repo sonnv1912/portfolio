@@ -12,7 +12,7 @@ const Degrees = () => {
 		<DefaultLayout>
 			<div className={clsx('flex min-h-screen flex-col gap-8 p-8', 'md:p-12', 'lg:p-20')}>
 				<p className='text-center font-eb-raleway text-4xl'>
-					{t('common:degree').toUpperCase()}
+					{t('common:degrees').toUpperCase()}
 				</p>
 
 				<div>

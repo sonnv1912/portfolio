@@ -23,7 +23,7 @@ const useMyProfile = () => {
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
 		cv: {
-			us: 'https://drive.usercontent.google.com/download?id=1HtXq-Sixj0exLFSJNSWcjPaUOTmF3wGI&export=download',
+			us: 'https://drive.usercontent.google.com/download?id=1kTV1VkNaWAExLC9corXL1uzGkiarmkHn&export=download',
 		},
 		workedWith: [
 			{
@@ -77,7 +77,7 @@ const useMyProfile = () => {
 				items: ['HTML', 'CSS', 'Tailwind CSS'],
 			},
 			{
-				label: 'Frontend Frameworks',
+				label: 'Web Development',
 				items: ['React.js', 'Next.js'],
 			},
 			{
@@ -169,6 +169,10 @@ const useMyProfile = () => {
 					{
 						label: t('me:experiences.kolel.responsibilities.design.label'),
 						content: t('me:experiences.kolel.responsibilities.design.content'),
+					},
+					{
+						label: t('me:experiences.kolel.responsibilities.release-test.label'),
+						content: t('me:experiences.kolel.responsibilities.release-test.content'),
 					},
 				],
 				platforms: [

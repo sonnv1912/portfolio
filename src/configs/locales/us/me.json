@@ -45,16 +45,20 @@
 			"app_description": "The Kolel App offers the largest video library of Torah lessons, Halacha, ethics, and perspectives from top rabbis, lecturers, and organizations in Israel and worldwide. The app allows you to: Stay updated with the newest videos; Follow your favorite rabbis and organizations Enjoy a fast, convenient, and user-friendly viewing experience; Search for videos by popular topics (Faith and Trust, Success and Business, Kabbalah and Mysticism, and more...); Comment on and share videos; Quickly access previously watched videos for continued viewing; The sole purpose of the app is to spread Torah knowledge and benefit the public.",
 			"responsibilities": {
 				"collaborated": {
-					"label": "Collaborated with Product Owner",
+					"label": "Collaborated with Product Wwner",
 					"content": "Engaged in discussions with the Product Owner to address project limitations and challenges, identifying solutions to enhance product functionality and user experience."
 				},
 				"debug": {
-					"label": "Debugging and Issue Resolution",
+					"label": "Debugging and issue resolution",
 					"content": "Identified and fixed bugs, enhancing app stability and functionality."
 				},
 				"design": {
-					"label": "Design Collaboration",
+					"label": "Designer collaboration",
 					"content": "Worked closely with the designer to review and discuss design elements, providing input on feasible and optimal design choices for the project’s goals and constraints."
+				},
+				"release-test": {
+					"label": "Release app test version",
+					"content": "Release app test version using test flight, google play console to tester"
 				}
 			}
 		}

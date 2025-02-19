@@ -50,16 +50,20 @@
 			"app_description": "Ứng dụng Kolel cung cấp thư viện video lớn nhất về các bài học Torah, Halacha, đạo đức và quan điểm từ các giáo sĩ, giảng viên và tổ chức hàng đầu tại Israel và trên toàn thế giới. Ứng dụng cho phép bạn: Cập nhật những video mới nhất; Theo dõi các giáo sĩ và tổ chức yêu thích Trải nghiệm xem video nhanh chóng, tiện lợi và thân thiện; Tìm kiếm video theo các chủ đề phổ biến (Đức tin và Niềm tin, Thành công và Kinh doanh, Kabbalah và Huyền bí, v.v.); Bình luận và chia sẻ video; Truy cập nhanh các video đã xem để tiếp tục theo dõi; Mục đích duy nhất của ứng dụng là truyền bá kiến thức Torah và mang lại lợi ích cho cộng đồng.",
 			"responsibilities": {
 				"collaborated": {
-					"label": "Collaborated with Product Owner",
-					"content": "Engaged in discussions with the Product Owner to address project limitations and challenges, identifying solutions to enhance product functionality and user experience."
+					"label": "Cùng làm việc với Product Owner",
+					"content": "Tham gia thảo luận với Product Owner để giải quyết các hạn chế và thách thức trong dự án, xác định các giải pháp nhằm cải thiện tính năng sản phẩm và tối ưu hóa trải nghiệm người dùng."
 				},
 				"debug": {
-					"label": "Debugging and Issue Resolution",
-					"content": "Identified and fixed bugs, enhancing app stability and functionality."
+					"label": "Gỡ lỗi và giải quyết sự cố",
+					"content": "Xác định và sửa lỗi, cải thiện sự ổn định và tính năng của ứng dụng."
 				},
 				"design": {
-					"label": "Design Collaboration",
-					"content": "Worked closely with the designer to review and discuss design elements, providing input on feasible and optimal design choices for the project’s goals and constraints."
+					"label": "Làm việc với Designer",
+					"content": "Làm việc chặt chẽ với Designer để xem xét và thảo luận các yếu tố thiết kế, đưa ra ý kiến về các lựa chọn thiết kế khả thi và tối ưu nhằm đáp ứng mục tiêu và giới hạn của dự án."
+				},
+				"release-test": {
+					"label": "Phát hành phiên bản test",
+					"content": "Phát hành phiên bản test sử dụng test flight, google play console cho tester"
 				}
 			}
 		}

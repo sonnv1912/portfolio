@@ -15,9 +15,11 @@
 	"achievement": "Đạt được",
 	"month": {
 		"may": "Tháng 5",
-		"nov": "Tháng 11"
+		"nov": "Tháng 11",
+		"feb": "Tháng 2"
 	},
 	"phone": "Số điện thoại",
 	"company": "Công ty",
-	"current": "Hiện tại"
+	"current": "Hiện tại",
+	"platform": "Nền tảng"
 }

@@ -15,10 +15,12 @@
 	"achievement": "Achievement",
 	"month": {
 		"may": "May",
-		"nov": "Nov"
+		"nov": "Nov",
+		"feb": "Feb"
 	},
 	"phone": "Phone",
 	"company": "Company",
 	"mine": "Mine",
-	"current": "Current"
+	"current": "Current",
+	"platform": "Platform"
 }

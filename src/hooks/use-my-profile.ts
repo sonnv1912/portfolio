@@ -8,10 +8,12 @@ import GitImage from '@assets/images/img-git.png';
 import GithubImage from '@assets/images/img-github.png';
 import HUITImage from '@assets/images/img-huit.png';
 import JiraImage from '@assets/images/img-jira.png';
-import KoChanImage from '@assets/images/img-kochan.png';
+import KoChanImage from '@assets/images/img-kochan.webp';
+import KolelImage from '@assets/images/img-kolel.webp';
 import MeImage from '@assets/images/img-me.jpg';
+import PlayConsoleImage from '@assets/images/img-play-console.png';
 import { useTranslation } from 'react-i18next';
-import { HiLink, HiOutlineMail, HiPhone } from 'react-icons/hi';
+import { HiLink } from 'react-icons/hi';
 
 const useMyProfile = () => {
 	const { t } = useTranslation();
@@ -59,6 +61,11 @@ const useMyProfile = () => {
 				href: 'https://appstoreconnect.apple.com/login',
 				image: AppleImage,
 			},
+			{
+				id: 7,
+				href: 'https://appstoreconnect.apple.com/login',
+				image: PlayConsoleImage,
+			},
 		],
 		skills: [
 			{
@@ -89,7 +96,7 @@ const useMyProfile = () => {
 		experiences: [
 			{
 				company: 'GOSOFT TECHNOLOGY COMPANY LIMITED',
-				position: 'Front-End Developer',
+				position: 'Front End Developer',
 				appLogo: KoChanImage,
 				appName: 'Kochan',
 				time: `${t('common:month.may')}, 2023 - ${t('common:current')}`,
@@ -130,28 +137,58 @@ const useMyProfile = () => {
 						content: t('me:experiences.kochan.responsibilities.automated.content'),
 					},
 				],
-				accomplishments: t('me:experiences.kochan.accomplishments'),
-				technologies: 'ReactJS, NextJS, React Native, Expo, Redux, React Query, Fastlane.',
+				platforms: [
+					{
+						label: 'ios',
+						link: 'https://apps.apple.com/us/app/kochan/id6475354598',
+					},
+					{
+						label: 'android',
+						link: 'https://play.google.com/store/apps/details?id=com.amf.kochan&hl=en',
+					},
+				],
+			},
+			{
+				company: 'Mesilot Foundation, Inc.',
+				position: 'React Native Developer (Freelancer)',
+				appLogo: KolelImage,
+				appName: 'Kolel - Judaism, Torah Videos',
+				time: `${t('common:month.feb')}, 2025 - ${t('common:current')}`,
+				location: 'Viet Nam (Remote)',
+				appDescription: t('me:experiences.kolel.app_description'),
+				teamSize: 3,
+				responsibilities: [
+					{
+						label: t('me:experiences.kolel.responsibilities.collaborated.label'),
+						content: t('me:experiences.kolel.responsibilities.collaborated.content'),
+					},
+					{
+						label: t('me:experiences.kolel.responsibilities.debug.label'),
+						content: t('me:experiences.kolel.responsibilities.debug.content'),
+					},
+					{
+						label: t('me:experiences.kolel.responsibilities.design.label'),
+						content: t('me:experiences.kolel.responsibilities.design.content'),
+					},
+				],
+				platforms: [
+					{
+						label: 'ios',
+						link: 'https://apps.apple.com/us/app/kolel-judaism-torah-videos/id1497982129',
+					},
+					{
+						label: 'android',
+						link: 'https://play.google.com/store/apps/details?id=org.kolel&hl=en',
+					},
+				],
 			},
 		],
 		contact: [
-			{
-				icon: HiOutlineMail,
-				label: 'Email',
-				href: 'mailto:sonnv1912@gmail.com',
-				content: 'sonnv1912@gmail.com',
-			},
 			{
 				icon: HiLink,
 				label: 'Website',
 				href: 'https://sonnv1912.github.io/portfolio/',
 				content: 'Ngo Van Son - Front End Developer',
-			},
-			{
-				icon: HiPhone,
-				label: t('common:phone'),
-				href: 'tel:0357370009',
-				content: '035.737.0009',
 			},
 		],
 		links: [

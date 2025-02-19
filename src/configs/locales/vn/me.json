@@ -1,9 +1,9 @@
 {
 	"name": "Ngô Văn Sơn",
-	"shortDesc": "Là một <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Front-End Developer</span> với hơn một năm kinh nghiệm trong việc xây dựng các ứng dụng web và di động. Có kiến thức về HTML, CSS, và JavaScript, cùng kinh nghiệm thực tiễn trong việc sử dụng ReactJS, NextJS, React Native và Expo. Đam mê tạo ra các giao diện người dùng hiệu quả, phản hồi nhanh và luôn sẵn sàng học hỏi, phát triển trong lĩnh vực front-end đầy biến đổi.",
+	"shortDesc": "Là một <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Front End Developer</span> với hơn một năm kinh nghiệm trong việc xây dựng các ứng dụng web và di động. Có kiến thức về HTML, CSS, JavaScript, Typescript, cùng kinh nghiệm thực tiễn trong việc sử dụng ReactJS, NextJS, React Native và Expo. Đam mê tạo ra các giao diện người dùng hiệu quả, phản hồi nhanh và luôn sẵn sàng học hỏi, phát triển trong lĩnh vực front-end đầy biến đổi.",
 	"experiences": {
 		"kochan": {
-			"position": "Front-End Developer",
+			"position": "Front End Developer",
 			"appName": "Kochan",
 			"time": "May 2023 - Nov 2024",
 			"location": "Viet Nam",
@@ -44,6 +44,24 @@
 			},
 			"accomplishments": "Học được Expo và NextJS Framework, Firebase Cloud Messaging để xử lý thông báo, tự động hóa triển khai ứng dụng iOS và Android với Fastlane, gửi tin nhắn SMS trực tiếp từ thiết bị Android bằng Native Code, cải thiện kỹ năng làm việc nhóm.",
 			"technologies": "ReactJS, NextJS, React Native, Expo, Redux, React Query, Fastlane."
+		},
+		"kolel": {
+			"position": "React Native Developer",
+			"app_description": "Ứng dụng Kolel cung cấp thư viện video lớn nhất về các bài học Torah, Halacha, đạo đức và quan điểm từ các giáo sĩ, giảng viên và tổ chức hàng đầu tại Israel và trên toàn thế giới. Ứng dụng cho phép bạn: Cập nhật những video mới nhất; Theo dõi các giáo sĩ và tổ chức yêu thích Trải nghiệm xem video nhanh chóng, tiện lợi và thân thiện; Tìm kiếm video theo các chủ đề phổ biến (Đức tin và Niềm tin, Thành công và Kinh doanh, Kabbalah và Huyền bí, v.v.); Bình luận và chia sẻ video; Truy cập nhanh các video đã xem để tiếp tục theo dõi; Mục đích duy nhất của ứng dụng là truyền bá kiến thức Torah và mang lại lợi ích cho cộng đồng.",
+			"responsibilities": {
+				"collaborated": {
+					"label": "Collaborated with Product Owner",
+					"content": "Engaged in discussions with the Product Owner to address project limitations and challenges, identifying solutions to enhance product functionality and user experience."
+				},
+				"debug": {
+					"label": "Debugging and Issue Resolution",
+					"content": "Identified and fixed bugs, enhancing app stability and functionality."
+				},
+				"design": {
+					"label": "Design Collaboration",
+					"content": "Worked closely with the designer to review and discuss design elements, providing input on feasible and optimal design choices for the project’s goals and constraints."
+				}
+			}
 		}
 	},
 	"education": {

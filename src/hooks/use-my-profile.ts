@@ -85,10 +85,6 @@ const useMyProfile = () => {
 				label: 'Tools',
 				items: ['Visual Studio Code', 'Android Studio', 'Xcode', 'Figma'],
 			},
-			{
-				label: t('common:language'),
-				items: ['English (TOEIC 620/990)'],
-			},
 		],
 		experiences: [
 			{

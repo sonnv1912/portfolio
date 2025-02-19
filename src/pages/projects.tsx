@@ -1,4 +1,4 @@
-import { useMyProfile } from '@data/me';
+import { useMyProfile } from '@hooks/use-my-profile';
 import { DefaultLayout } from '@layouts/default';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const Projects = () => {
 					{me.experiences.map((item) => (
 						<div
 							key={item.appName}
-							className={clsx('relative ml-3 flex flex-wrap gap-8', 'md:gap-12')}
+							className={clsx('relative ml-3 flex flex-wrap gap-8')}
 						>
 							<div className='absolute bottom-0 left-[-29px] top-0 w-[1px] bg-woodsmoke-900' />
 

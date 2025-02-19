@@ -1,4 +1,4 @@
-import { useMyProfile } from '@data/me';
+import { useMyProfile } from '@hooks/use-my-profile';
 import { DefaultLayout } from '@layouts/default';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +11,7 @@ const Contact = () => {
 		<DefaultLayout>
 			<div
 				className={clsx(
-					'flex min-h-screen flex-col gap-8 bg-black p-8 text-white',
+					'flex min-h-screen flex-col gap-16 bg-black p-8 text-white',
 					'md:p-12',
 					'lg:p-20',
 				)}

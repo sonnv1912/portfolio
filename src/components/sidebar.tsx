@@ -9,6 +9,8 @@ import { LanguageSwitcher } from './language-switcher';
 import { SidebarItem } from './sidebar-item';
 import { MdFolder } from 'react-icons/md';
 import { MdWorkspacePremium } from 'react-icons/md';
+import { Tooltip } from 'react-tooltip';
+import i18n from '@/configs/locales/i18n';
 
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
@@ -22,31 +24,31 @@ const Sidebar = () => {
 		},
 		{
 			id: 2,
-			label: 'skills',
+			label: i18n.t('common:skills'),
 			icon: GiSkills,
 			to: '/portfolio/skills',
 		},
 		{
 			id: 3,
-			label: 'projects',
+			label: i18n.t('common:projects'),
 			icon: MdFolder,
 			to: '/portfolio/projects',
 		},
 		{
 			id: 5,
-			label: 'experience',
+			label: i18n.t('common:experiences'),
 			icon: MdWorkspacePremium,
 			to: '/portfolio/experiences',
 		},
 		{
 			id: 6,
-			label: 'degrees',
+			label: i18n.t('common:degrees'),
 			icon: HiBookOpen,
 			to: '/portfolio/degrees',
 		},
 		{
 			id: 7,
-			label: 'contact',
+			label: i18n.t('common:contact'),
 			icon: FaAddressCard,
 			to: '/portfolio/contact',
 		},
@@ -110,6 +112,16 @@ const Sidebar = () => {
 				onClick={() => {
 					setShowMenuBtnClicked(true);
 				}}
+			/>
+
+			<Tooltip
+				id='my-tooltip'
+				style={{
+					backgroundColor: '#454545',
+					color: 'white',
+					zIndex: 9999,
+				}}
+				place='right'
 			/>
 		</div>
 	);

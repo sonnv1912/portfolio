@@ -1,4 +1,4 @@
-import { useMyProfile } from '@data/me';
+import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useEffect, useState } from 'react';
 

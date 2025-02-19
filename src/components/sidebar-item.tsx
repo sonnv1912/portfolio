@@ -23,6 +23,8 @@ const SidebarItem = ({ data, onPress }: Props) => {
 			onClick={() => {
 				onPress();
 			}}
+			data-tooltip-id='my-tooltip'
+			data-tooltip-content={data.label}
 		>
 			<data.icon className='size-5' />
 		</NavLink>

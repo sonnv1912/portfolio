@@ -1,5 +1,5 @@
 import { BlinkBrand } from '@components/blink-brand';
-import { useMyProfile } from '@data/me';
+import { useMyProfile } from '@hooks/use-my-profile';
 import { DefaultLayout } from '@layouts/default';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -27,7 +27,7 @@ const Me = () => {
 					)}
 				>
 					<div className='flex flex-1 flex-col gap-10'>
-						<div className='flex flex-1 items-center gap-6'>
+						<div className='flex flex-1 flex-wrap items-center gap-6'>
 							<p className='flex font-eb-raleway text-5xl'>{me.name}</p>
 
 							<div className='flex items-center gap-4'>
@@ -56,8 +56,8 @@ const Me = () => {
 					<img
 						src={me.image}
 						className={clsx(
-							'order-first mx-auto size-80 rounded-full object-cover',
-							'md:order-last md:size-60',
+							'order-first mx-auto size-60 rounded-full object-cover',
+							'md:order-last',
 							'lg:size-80',
 						)}
 					/>

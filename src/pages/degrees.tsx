@@ -1,4 +1,4 @@
-import { useMyProfile } from '@data/me';
+import { useMyProfile } from '@hooks/use-my-profile';
 import { DefaultLayout } from '@layouts/default';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -10,7 +10,7 @@ const Degrees = () => {
 
 	return (
 		<DefaultLayout>
-			<div className={clsx('flex min-h-screen flex-col gap-8 p-8', 'md:p-12', 'lg:p-20')}>
+			<div className={clsx('flex min-h-screen flex-col gap-16 p-8', 'md:p-12', 'lg:p-20')}>
 				<p className='text-center font-eb-raleway text-4xl'>
 					{t('common:degrees').toUpperCase()}
 				</p>
@@ -23,7 +23,7 @@ const Degrees = () => {
 						>
 							<div className='absolute bottom-0 left-[-29px] top-0 w-[1px] bg-woodsmoke-900' />
 
-							<div className='absolute -left-8 size-2 rounded-full bg-black' />
+							<div className='absolute -left-8 size-2 rounded-full bg-white' />
 
 							<div className='flex flex-col gap-5'>
 								<div className='flex items-center gap-4'>

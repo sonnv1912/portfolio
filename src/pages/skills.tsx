@@ -1,4 +1,4 @@
-import { useMyProfile } from '@data/me';
+import { useMyProfile } from '@hooks/use-my-profile';
 import { DefaultLayout } from '@layouts/default';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
@@ -14,7 +14,7 @@ const Skills = () => {
 				className={clsx(
 					'flex min-h-screen flex-col gap-16',
 					'md:p-12',
-					'lg:items-center lg:justify-center lg:p-20',
+					'lg:items-center lg:p-20',
 				)}
 			>
 				<p className='text-center font-eb-raleway text-4xl'>

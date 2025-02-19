@@ -26,7 +26,7 @@
 			"@components/*": ["./src/components/*"],
 			"@assets/*": ["./src/assets/*"],
 			"@layouts/*": ["./src/layouts/*"],
-			"@data/*": ["./src/data/*"],
+			"@hooks/*": ["./src/hooks/*"],
 			"@configs/*": ["./src/config/*"],
 			"@/*": ["./src/*"]
 		}

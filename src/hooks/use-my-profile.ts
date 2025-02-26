@@ -23,7 +23,7 @@ const useMyProfile = () => {
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
 		cv: {
-			us: 'https://drive.usercontent.google.com/download?id=1kTV1VkNaWAExLC9corXL1uzGkiarmkHn&export=download',
+			us: 'https://drive.usercontent.google.com/download?id=13dmXI2kakKKdMzGi4tH17GYnQGWcdqqo&export=download',
 		},
 		workedWith: [
 			{

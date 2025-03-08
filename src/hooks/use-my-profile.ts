@@ -21,7 +21,7 @@ const useMyProfile = () => {
 		name: t('me:name'),
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
-		cv: 'https://drive.google.com/file/d/1Tx46_KeDJMDa0xrIyydJYsEnqnkLAxwV/view?usp=drive_link',
+		cv: 'https://drive.google.com/file/d/1L5LwkxMuSDzMxi-bpTr2VGnLs7jjphF3/view?usp=drive_link',
 		workedWith: [
 			{
 				id: 1,
@@ -69,14 +69,14 @@ const useMyProfile = () => {
 				label: t('common:programming_languages'),
 				items: ['JavaScript', 'TypeScript'],
 			},
-			{
-				label: 'Web Technologies',
-				items: ['HTML', 'CSS', 'Tailwind CSS'],
-			},
-			{
-				label: 'Web Development',
-				items: ['React.js', 'Next.js'],
-			},
+			// {
+			// 	label: 'Web Technologies',
+			// 	items: ['HTML', 'CSS', 'Tailwind CSS'],
+			// },
+			// {
+			// 	label: 'Web Development',
+			// 	items: ['React.js', 'Next.js'],
+			// },
 			{
 				label: 'Mobile Development',
 				items: ['React Native', 'Expo'],

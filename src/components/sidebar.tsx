@@ -1,3 +1,4 @@
+import i18n from '@/configs/locales/i18n';
 import clsx from 'clsx';
 import { useState } from 'react';
 import { BiSolidUser } from 'react-icons/bi';
@@ -5,12 +6,10 @@ import { FaAddressCard } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
+import { MdFolder } from 'react-icons/md';
+import { Tooltip } from 'react-tooltip';
 import { LanguageSwitcher } from './language-switcher';
 import { SidebarItem } from './sidebar-item';
-import { MdFolder } from 'react-icons/md';
-import { MdWorkspacePremium } from 'react-icons/md';
-import { Tooltip } from 'react-tooltip';
-import i18n from '@/configs/locales/i18n';
 
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
@@ -34,12 +33,12 @@ const Sidebar = () => {
 			icon: MdFolder,
 			to: '/portfolio/projects',
 		},
-		{
-			id: 5,
-			label: i18n.t('common:experiences'),
-			icon: MdWorkspacePremium,
-			to: '/portfolio/experiences',
-		},
+		// {
+		// 	id: 5,
+		// 	label: i18n.t('common:experiences'),
+		// 	icon: MdWorkspacePremium,
+		// 	to: '/portfolio/experiences',
+		// },
 		{
 			id: 6,
 			label: i18n.t('common:degrees'),

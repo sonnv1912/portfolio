@@ -4,7 +4,6 @@ import { Degrees } from './pages/degrees';
 import { Me } from './pages/me';
 import { Projects } from './pages/projects';
 import { Skills } from './pages/skills';
-import { Experiences } from './pages/experiences';
 
 export const App = () => {
 	const routes = [
@@ -27,10 +26,6 @@ export const App = () => {
 		{
 			path: '/portfolio/contact',
 			component: <Contact />,
-		},
-		{
-			path: '/portfolio/experiences',
-			component: <Experiences />,
 		},
 	];
 

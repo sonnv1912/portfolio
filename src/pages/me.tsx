@@ -56,7 +56,7 @@ const Me = () => {
 						src={me.image}
 						alt=''
 						className={clsx(
-							'order-first mx-auto size-60 rounded-full object-cover',
+							'order-first mx-auto size-60 rounded-full object-cover shadow-xl shadow-woodsmoke-500',
 							'md:order-last',
 							'lg:size-80',
 						)}

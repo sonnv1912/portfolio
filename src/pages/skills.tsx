@@ -28,7 +28,7 @@ const Skills = () => {
 								<div
 									className={clsx(
 										'flex size-7 items-center justify-center rounded-full',
-										'bg-woodsmoke-800 text-white hover:bg-woodsmoke-600 hover:text-white',
+										'bg-woodsmoke-800 text-white hover:bg-woodsmoke-600',
 									)}
 								>
 									<LuCode2 />
@@ -44,7 +44,7 @@ const Skills = () => {
 									<div
 										key={item}
 										className={clsx(
-											'bg-woodsmoke-800 text-white hover:bg-woodsmoke-600 hover:text-white',
+											'bg-woodsmoke-800 text-white hover:bg-woodsmoke-600',
 											'cursor-pointer rounded-lg px-5 py-3 transition-all duration-300',
 										)}
 									>

@@ -9,7 +9,6 @@ import GithubImage from '@assets/images/img-github.png';
 import HUITImage from '@assets/images/img-huit.png';
 import JiraImage from '@assets/images/img-jira.png';
 import KoChanImage from '@assets/images/img-kochan.webp';
-import KolelImage from '@assets/images/img-kolel.webp';
 import MeImage from '@assets/images/img-me.jpg';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
 import { useTranslation } from 'react-i18next';
@@ -147,40 +146,52 @@ const useMyProfile = () => {
 				],
 			},
 			{
-				company: 'Mesilot Foundation, Inc.',
-				position: 'React Native Developer (Freelancer)',
-				appLogo: KolelImage,
-				appName: 'Kolel - Judaism, Torah Videos',
-				time: `${t('common:month.feb')}, 2025 - ${t('common:current')}`,
-				location: 'Viet Nam (Remote)',
-				appDescription: t('me:experiences.kolel.app_description'),
-				teamSize: 3,
+				company: 'GOSOFT TECHNOLOGY COMPANY LIMITED',
+				position: 'Mobile Developer',
+				appLogo: KoChanImage,
+				appName: 'Kochan Staff',
+				time: `${t('common:month.feb')}, 2024 - ${t('common:current')}`,
+				location: 'Viet Nam',
+				appDescription: t('me:experiences.kochan_staff.app_description'),
+				teamSize: 20,
 				responsibilities: [
 					{
-						label: t('me:experiences.kolel.responsibilities.collaborated.label'),
-						content: t('me:experiences.kolel.responsibilities.collaborated.content'),
+						label: t('me:experiences.kochan_staff.responsibilities.fcm.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.fcm.content'),
 					},
 					{
-						label: t('me:experiences.kolel.responsibilities.debug.label'),
-						content: t('me:experiences.kolel.responsibilities.debug.content'),
+						label: t('me:experiences.kochan_staff.responsibilities.collaborated.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.collaborated.content'),
 					},
 					{
-						label: t('me:experiences.kolel.responsibilities.design.label'),
-						content: t('me:experiences.kolel.responsibilities.design.content'),
+						label: t('me:experiences.kochan_staff.responsibilities.env.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.env.content'),
 					},
 					{
-						label: t('me:experiences.kolel.responsibilities.release-test.label'),
-						content: t('me:experiences.kolel.responsibilities.release-test.content'),
+						label: t('me:experiences.kochan_staff.responsibilities.music.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.music.content'),
+					},
+					{
+						label: t('me:experiences.kochan_staff.responsibilities.debug.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.debug.content'),
+					},
+					{
+						label: t('me:experiences.kochan_staff.responsibilities.design.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.design.content'),
+					},
+					{
+						label: t('me:experiences.kochan_staff.responsibilities.automated.label'),
+						content: t('me:experiences.kochan_staff.responsibilities.automated.content'),
 					},
 				],
 				platforms: [
 					{
 						label: 'ios',
-						link: 'https://apps.apple.com/us/app/kolel-judaism-torah-videos/id1497982129',
+						link: 'https://apps.apple.com/us/app/kochan/id6475354598',
 					},
 					{
 						label: 'android',
-						link: 'https://play.google.com/store/apps/details?id=org.kolel&hl=en',
+						link: 'https://play.google.com/store/apps/details?id=com.amf.kochan&hl=en',
 					},
 				],
 			},
@@ -190,7 +201,7 @@ const useMyProfile = () => {
 				icon: HiLink,
 				label: 'Website',
 				href: 'https://sonnv1912.github.io/portfolio/',
-				content: 'Ngo Van Son - Front End Developer',
+				content: 'Ngo Van Son - Mobile Developer',
 			},
 		],
 		links: [

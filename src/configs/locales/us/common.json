@@ -22,5 +22,7 @@
 	"company": "Company",
 	"mine": "Mine",
 	"current": "Current",
-	"platform": "Platform"
+	"platform": "Platform",
+	"view_less": "View less",
+	"View_more": "View more"
 }

@@ -1,12 +1,8 @@
 {
 	"name": "Ngô Văn Sơn",
-	"shortDesc": "Là một <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Front End Developer</span> với hơn một năm kinh nghiệm trong việc xây dựng các ứng dụng web và di động. Có kiến thức về HTML, CSS, JavaScript, Typescript, cùng kinh nghiệm thực tiễn trong việc sử dụng ReactJS, NextJS, React Native và Expo. Đam mê tạo ra các giao diện người dùng hiệu quả, phản hồi nhanh và luôn sẵn sàng học hỏi, phát triển trong lĩnh vực front-end đầy biến đổi.",
+	"shortDesc": "Là một <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Front End Developer</span> với hai năm kinh nghiệm trong việc xây dựng các ứng dụng web và di động. Có kiến thức về HTML, CSS, JavaScript, Typescript, cùng kinh nghiệm thực tiễn trong việc sử dụng ReactJS, NextJS, React Native và Expo. Đam mê tạo ra các giao diện người dùng hiệu quả, phản hồi nhanh và luôn sẵn sàng học hỏi, phát triển trong lĩnh vực front-end đầy biến đổi.",
 	"experiences": {
 		"kochan": {
-			"position": "Front End Developer",
-			"appName": "Kochan",
-			"time": "May 2023 - Nov 2024",
-			"location": "Viet Nam",
 			"app_description": "Kochan là một nền tảng thương mại điện tử độc đáo được thiết kế riêng cho cộng đồng Aerobic, kết hợp mua sắm trực tuyến và gắn kết cộng đồng. Các tính năng chính bao gồm tiếp thị liên kết và kết nối cộng đồng, cho phép người dùng chia sẻ sở thích và tham gia các sự kiện.",
 			"responsibilities": {
 				"fcm": {
@@ -41,17 +37,22 @@
 					"label": "Viết script để phát hành các phiên bản test 1 cách tự động với Fastlane",
 					"content": "Phát triển một đoạn script bằng Fastlane để tự động hóa quy trình phát hành các phiên bản kiểm thử, đảm bảo việc cập nhật phiên bản cho người kiểm thử diễn ra hiệu quả và tin cậy, giảm thiểu công việc thủ công và nâng cao tính nhất quán của các bản phát hành kiểm thử."
 				}
-			},
-			"accomplishments": "Học được Expo và NextJS Framework, Firebase Cloud Messaging để xử lý thông báo, tự động hóa triển khai ứng dụng iOS và Android với Fastlane, gửi tin nhắn SMS trực tiếp từ thiết bị Android bằng Native Code, cải thiện kỹ năng làm việc nhóm.",
-			"technologies": "ReactJS, NextJS, React Native, Expo, Redux, React Query, Fastlane."
+			}
 		},
-		"kolel": {
-			"position": "React Native Developer",
-			"app_description": "Ứng dụng Kolel cung cấp thư viện video lớn nhất về các bài học Torah, Halacha, đạo đức và quan điểm từ các giáo sĩ, giảng viên và tổ chức hàng đầu tại Israel và trên toàn thế giới. Ứng dụng cho phép bạn: Cập nhật những video mới nhất; Theo dõi các giáo sĩ và tổ chức yêu thích Trải nghiệm xem video nhanh chóng, tiện lợi và thân thiện; Tìm kiếm video theo các chủ đề phổ biến (Đức tin và Niềm tin, Thành công và Kinh doanh, Kabbalah và Huyền bí, v.v.); Bình luận và chia sẻ video; Truy cập nhanh các video đã xem để tiếp tục theo dõi; Mục đích duy nhất của ứng dụng là truyền bá kiến thức Torah và mang lại lợi ích cho cộng đồng.",
+		"kochan_staff": {
+			"app_description": "Ứng dụng nội bộ dành cho các huấn luyện viên quản lý các vé dịch vụ, buổi tập của khách hành tại các phòng tập",
 			"responsibilities": {
+				"fcm": {
+					"label": "Cấu hình thông báo với Firebase Cloud Messaging",
+					"content": "Thiết lập và quản lý cả việc gửi và nhận thông báo, đảm bảo người dùng được thông báo về các cập nhật hoặc sự kiện quan trọng trong ứng dụng."
+				},
 				"collaborated": {
 					"label": "Cùng làm việc với Product Owner",
 					"content": "Tham gia thảo luận với Product Owner để giải quyết các hạn chế và thách thức trong dự án, xác định các giải pháp nhằm cải thiện tính năng sản phẩm và tối ưu hóa trải nghiệm người dùng."
+				},
+				"env": {
+					"label": "Cấu hình đa môi trường",
+					"content": "Thiết lập cấu hình cho nhiều môi trường để tối ưu hóa quy trình kiểm thử và triển khai."
 				},
 				"debug": {
 					"label": "Gỡ lỗi và giải quyết sự cố",
@@ -61,9 +62,9 @@
 					"label": "Làm việc với Designer",
 					"content": "Làm việc chặt chẽ với Designer để xem xét và thảo luận các yếu tố thiết kế, đưa ra ý kiến về các lựa chọn thiết kế khả thi và tối ưu nhằm đáp ứng mục tiêu và giới hạn của dự án."
 				},
-				"release-test": {
-					"label": "Phát hành phiên bản test",
-					"content": "Phát hành phiên bản test sử dụng test flight, google play console cho tester"
+				"automated": {
+					"label": "Viết script để phát hành các phiên bản test 1 cách tự động với Fastlane",
+					"content": "Phát triển một đoạn script bằng Fastlane để tự động hóa quy trình phát hành các phiên bản kiểm thử, đảm bảo việc cập nhật phiên bản cho người kiểm thử diễn ra hiệu quả và tin cậy, giảm thiểu công việc thủ công và nâng cao tính nhất quán của các bản phát hành kiểm thử."
 				}
 			}
 		}

@@ -54,6 +54,7 @@ const ProjectItem = ({ data }: Props) => {
 				<div className='flex items-center gap-4'>
 					<img
 						src={data.appLogo}
+						alt=''
 						className='size-14 rounded-xl object-cover'
 					/>
 
@@ -80,6 +81,7 @@ const ProjectItem = ({ data }: Props) => {
 								key={platform.label}
 								href={platform.link}
 								target='_blank'
+								rel='noreferrer'
 								className='text-blue-400 hover:underline'
 							>
 								{platform.label}
@@ -162,6 +164,9 @@ const ProjectItem = ({ data }: Props) => {
 							ref.current?.scrollIntoView();
 						}, 200);
 					}}
+					onKeyUp={() => {
+						//
+					}}
 				>
 					<div
 						className={clsx(
@@ -171,28 +176,13 @@ const ProjectItem = ({ data }: Props) => {
 						onClick={() => {
 							setShowMore((prev) => !prev);
 						}}
+						onKeyUp={() => {
+							//
+						}}
 					>
-						{showMore ? 'View less' : 'View more'}
+						{showMore ? i18n.t('common:view_less') : i18n.t('common:view_more')}
 					</div>
 				</div>
-
-				{/* <div className='flex flex-wrap'>
-        <p className='w-56 font-semibold text-woodsmoke-400'>
-            {i18n.t('common:achievement')}:
-        </p>
-
-        <p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
-            {data.accomplishments}
-        </p>
-    </div> */}
-
-				{/* <div className='flex flex-wrap'>
-        <p className='w-56 font-semibold text-woodsmoke-400'>Technologies: </p>
-
-        <p className={clsx('w-full break-all leading-8', 'lg:w-auto lg:flex-1')}>
-            {data.technologies}
-        </p>
-    </div> */}
 			</div>
 		</div>
 	);

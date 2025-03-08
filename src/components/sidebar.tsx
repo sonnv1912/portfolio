@@ -8,7 +8,6 @@ import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
 import { Tooltip } from 'react-tooltip';
-import { LanguageSwitcher } from './language-switcher';
 import { SidebarItem } from './sidebar-item';
 
 const Sidebar = () => {
@@ -81,7 +80,7 @@ const Sidebar = () => {
 						/>
 					))}
 
-					<LanguageSwitcher />
+					{/* <LanguageSwitcher /> */}
 				</div>
 
 				<div
@@ -94,6 +93,9 @@ const Sidebar = () => {
 						},
 					)}
 					onClick={() => setShowMenuBtnClicked((prev) => !prev)}
+					onKeyUp={() => {
+						//
+					}}
 				>
 					<IoMenu className='size-6 text-white' />
 				</div>
@@ -110,6 +112,9 @@ const Sidebar = () => {
 				)}
 				onClick={() => {
 					setShowMenuBtnClicked(true);
+				}}
+				onKeyUp={() => {
+					//
 				}}
 			/>
 

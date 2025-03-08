@@ -8,7 +8,6 @@ import { HiOutlineDownload } from 'react-icons/hi';
 const Me = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
-	// const isVN = useMemo(() => i18n.language === 'vn', [i18n.language]);
 
 	return (
 		<DefaultLayout>
@@ -32,8 +31,7 @@ const Me = () => {
 
 							<div className='flex items-center gap-4'>
 								<a
-									// href={isVN ? me.cv.vn : me.cv.us}
-									href={me.cv.us}
+									href={me.cv}
 									download='Ngo Van Son - Front End Developer.pdf'
 									className={clsx(
 										'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
@@ -49,12 +47,14 @@ const Me = () => {
 
 						<p
 							className='text-justify leading-8'
+							// biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
 							dangerouslySetInnerHTML={{ __html: me.shortDesc }}
 						/>
 					</div>
 
 					<img
 						src={me.image}
+						alt=''
 						className={clsx(
 							'order-first mx-auto size-60 rounded-full object-cover',
 							'md:order-last',

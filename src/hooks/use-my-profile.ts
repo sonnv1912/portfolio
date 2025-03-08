@@ -20,9 +20,7 @@ const useMyProfile = () => {
 		name: t('me:name'),
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
-		cv: {
-			us: 'https://drive.usercontent.google.com/download?id=1HtXq-Sixj0exLFSJNSWcjPaUOTmF3wGI&export=download',
-		},
+		cv: 'https://drive.google.com/file/d/1Tx46_KeDJMDa0xrIyydJYsEnqnkLAxwV/view?usp=drive_link',
 		workedWith: [
 			{
 				id: 1,

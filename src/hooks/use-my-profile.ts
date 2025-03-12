@@ -78,7 +78,7 @@ const useMyProfile = () => {
 			// 	items: ['React.js', 'Next.js'],
 			// },
 			{
-				label: 'Mobile Development',
+				label: 'React Native Development',
 				items: ['React Native', 'Expo'],
 			},
 			{
@@ -147,7 +147,7 @@ const useMyProfile = () => {
 			},
 			{
 				company: 'GOSOFT TECHNOLOGY COMPANY LIMITED',
-				position: 'Mobile Developer',
+				position: 'React Native Developer',
 				appLogo: KoChanImage,
 				appName: 'Kochan Staff',
 				time: `${t('common:month.feb')}, 2024 - ${t('common:current')}`,
@@ -201,7 +201,7 @@ const useMyProfile = () => {
 				icon: HiLink,
 				label: 'Website',
 				href: 'https://sonnv1912.github.io/portfolio/',
-				content: 'Ngo Van Son - Mobile Developer',
+				content: 'Ngo Van Son - React Native Developer',
 			},
 		],
 		links: [

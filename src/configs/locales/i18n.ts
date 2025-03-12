@@ -41,11 +41,11 @@ const getLanguage = () => {
 		return language;
 	}
 
-	return languages.vn.code;
+	return languages.us.code;
 };
 
 i18n.use(initReactI18next).init({
-	fallbackLng: languages.vn.code,
+	fallbackLng: languages.us.code,
 	lng: getLanguage(),
 	interpolation: {
 		escapeValue: false,

@@ -38,6 +38,7 @@ const Degrees = () => {
 
 								<div className='flex items-center gap-4'>
 									<img
+										alt=''
 										src={item.image}
 										className='size-14 rounded-xl object-cover'
 									/>
@@ -46,6 +47,8 @@ const Degrees = () => {
 										<p className='text-woodsmoke-400'>{item.label}</p>
 
 										<p>{item.content}</p>
+
+										<p>Graduation level: {item.level}</p>
 									</div>
 								</div>
 							</div>

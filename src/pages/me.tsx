@@ -32,7 +32,7 @@ const Me = () => {
 							<div className='flex items-center gap-4'>
 								<a
 									href={me.cv}
-									download='Ngo Van Son - Front End Developer.pdf'
+									download='Ngo Van Son - React Native Developer.pdf'
 									className={clsx(
 										'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
 										'flex items-center gap-2 shadow-green-400 hover:bg-green-600',

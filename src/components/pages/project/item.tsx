@@ -18,10 +18,7 @@ type Props = {
 			label: string;
 			content: string;
 		}[];
-		platforms: {
-			label: string;
-			link: string;
-		}[];
+		technologies: string;
 	};
 };
 
@@ -72,23 +69,6 @@ const ProjectItem = ({ data }: Props) => {
 
 					<p className='flex-1'>{data.company}</p>
 				</div>
-				<div className='flex flex-wrap'>
-					<p className='w-56 font-semibold text-woodsmoke-400'>{i18n.t('common:platform')}:</p>
-
-					<div className='flex items-center gap-4'>
-						{data.platforms.map((platform) => (
-							<a
-								key={platform.label}
-								href={platform.link}
-								target='_blank'
-								rel='noreferrer'
-								className='text-blue-400 hover:underline'
-							>
-								{platform.label}
-							</a>
-						))}
-					</div>
-				</div>
 
 				<div className='flex flex-wrap'>
 					<p className='w-56 font-semibold text-woodsmoke-400'>
@@ -116,7 +96,7 @@ const ProjectItem = ({ data }: Props) => {
 
 				<motion.div
 					ref={ref}
-					className='overflow-hidden'
+					className='flex flex-col gap-8 overflow-hidden'
 					transition={{
 						duration: 0.8,
 					}}
@@ -146,10 +126,26 @@ const ProjectItem = ({ data }: Props) => {
 									className={clsx('break-all leading-8')}
 									key={responsibility.label}
 								>
-									<span className='text-blue-400 underline'>{responsibility.label}</span>:{' '}
-									{responsibility.content}
+									{/* <span className='text-blue-400 underline'>{responsibility.label}</span>:{' '} */}
+									- {responsibility.content}
 								</p>
 							))}
+						</div>
+					</div>
+
+					<div className='flex flex-wrap'>
+						<p className='w-56 font-semibold text-woodsmoke-400'>
+							{i18n.t('common:technologies')}:
+						</p>
+
+						<div
+							className={clsx(
+								'flex w-full flex-col gap-3 break-all pt-2 leading-8',
+								'sm:w-full sm:pt-2',
+								'lg:w-auto lg:flex-1 lg:pt-0',
+							)}
+						>
+							{data.technologies}
 						</div>
 					</div>
 				</motion.div>

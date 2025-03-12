@@ -1,9 +1,9 @@
 {
 	"name": "Ngo Van Son",
-	"shortDesc": "A <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Front End Developer</span> with over one year of experience in building web and React Native applications. Have understanding of HTML, CSS, JavaScript and TypeScript, along with hands-on experience using ReactJS, NextJS, React Native and Expo. Passionate about creating efficient, responsive user interfaces and always eager to learn and grow in the ever-evolving field of front-end development.",
+	"shortDesc": "A <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>React Native Developer</span> with 2 years of experience specializing in React Native, and Expo. Passionate about building responsive, high-performance web and mobile applications. Skilled in JavaScript, TypeScript, and modern front-end tools. Dedicated to delivering clean, maintainable, and scalable code.",
 	"experiences": {
 		"kochan": {
-			"position": "Front End Developer",
+			"position": "React Native Developer",
 			"app_description": "Kochan is a unique e-commerce platform tailored for the Aerobic community, combining online shopping and community engagement. Key features include affiliate marketing opportunities, and community connections, allowing users to share interests and attend events.",
 			"responsibilities": {
 				"fcm": {
@@ -44,21 +44,17 @@
 			"position": "React Native Developer",
 			"app_description": "The Kolel App offers the largest video library of Torah lessons, Halacha, ethics, and perspectives from top rabbis, lecturers, and organizations in Israel and worldwide. The app allows you to: Stay updated with the newest videos; Follow your favorite rabbis and organizations Enjoy a fast, convenient, and user-friendly viewing experience; Search for videos by popular topics (Faith and Trust, Success and Business, Kabbalah and Mysticism, and more...); Comment on and share videos; Quickly access previously watched videos for continued viewing; The sole purpose of the app is to spread Torah knowledge and benefit the public.",
 			"responsibilities": {
-				"collaborated": {
+				"maintain": {
 					"label": "Collaborated with Product Wwner",
-					"content": "Engaged in discussions with the Product Owner to address project limitations and challenges, identifying solutions to enhance product functionality and user experience."
+					"content": "Maintained and supported mobile applications using React Native to enhance user experience."
 				},
-				"debug": {
+				"release": {
 					"label": "Debugging and issue resolution",
-					"content": "Identified and fixed bugs, enhancing app stability and functionality."
+					"content": "Release app with Google Play Console, Apple Store Connect."
 				},
-				"design": {
+				"sentry": {
 					"label": "Designer collaboration",
-					"content": "Worked closely with the designer to review and discuss design elements, providing input on feasible and optimal design choices for the project’s goals and constraints."
-				},
-				"release-test": {
-					"label": "Release app test version",
-					"content": "Release app test version using test flight, google play console to tester"
+					"content": "Monitored Sentry for error tracking and fixed bugs to improve application stability."
 				}
 			}
 		}

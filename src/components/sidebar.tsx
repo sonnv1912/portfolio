@@ -27,6 +27,12 @@ const Sidebar = () => {
 			to: '/portfolio/skills',
 		},
 		{
+			id: 6,
+			label: i18n.t('common:degrees'),
+			icon: HiBookOpen,
+			to: '/portfolio/degrees',
+		},
+		{
 			id: 3,
 			label: i18n.t('common:projects'),
 			icon: MdFolder,
@@ -38,12 +44,6 @@ const Sidebar = () => {
 		// 	icon: MdWorkspacePremium,
 		// 	to: '/portfolio/experiences',
 		// },
-		{
-			id: 6,
-			label: i18n.t('common:degrees'),
-			icon: HiBookOpen,
-			to: '/portfolio/degrees',
-		},
 		{
 			id: 7,
 			label: i18n.t('common:contact'),

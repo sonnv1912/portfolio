@@ -12,6 +12,8 @@ import KoChanImage from '@assets/images/img-kochan.webp';
 import KolelImage from '@assets/images/img-kolel.webp';
 import LinkedinImage from '@assets/images/img-linkedin.png';
 import MeImage from '@assets/images/img-me.jpg';
+import DegreeImage from '@assets/images/img-degree.jpg';
+import ToeicImage from '@assets/images/img-toeic.jpg';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
 import { useTranslation } from 'react-i18next';
 import { HiLink } from 'react-icons/hi';
@@ -71,25 +73,34 @@ const useMyProfile = () => {
 				label: t('common:programming_languages'),
 				items: ['JavaScript', 'TypeScript'],
 			},
-			// {
-			// 	label: 'Web Technologies',
-			// 	items: ['HTML', 'CSS', 'Tailwind CSS'],
-			// },
-			// {
-			// 	label: 'Web Development',
-			// 	items: ['React.js', 'Next.js'],
-			// },
 			{
-				label: 'React Native Development',
-				items: ['React Native', 'Expo'],
+				label: 'API Integration',
+				items: ['RESTful APIs', 'Axios', 'React Query'],
+			},
+			{
+				label: 'Frontend Frameworks & Libraries',
+				items: ['React Native', 'Expo', 'ReactJs', 'NextJs', 'Tailwind CSS'],
+			},
+			{
+				label: 'State Management',
+				items: ['Redux', 'Context API', 'Zustand', 'Legend State'],
 			},
 			{
 				label: 'Source Control',
 				items: ['Git (Git Shell & GitHub)', 'Bitbucket'],
 			},
 			{
-				label: 'Tools',
-				items: ['Visual Studio Code', 'Android Studio', 'Xcode', 'Figma'],
+				label: 'Tools & Platforms',
+				items: [
+					'Figma',
+					'Git',
+					'Xcode',
+					'Figma',
+					'Jira',
+					'Firebase',
+					'Google Play Console',
+					'Apple Store Connect',
+				],
 			},
 		],
 		experiences: [
@@ -202,6 +213,7 @@ const useMyProfile = () => {
 				content: t('me:education.huit.content'),
 				image: HUITImage,
 				level: 'Good',
+				images: [DegreeImage, ToeicImage],
 			},
 		],
 	};

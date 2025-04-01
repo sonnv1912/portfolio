@@ -32,7 +32,8 @@ const Me = () => {
 							<div className='flex items-center gap-4'>
 								<a
 									href={me.cv}
-									download='Ngo Van Son - React Native Developer.pdf'
+									rel='noreferrer'
+									target='_blank'
 									className={clsx(
 										'w-fit rounded-lg border border-green-400 bg-green-500 px-4 py-2 shadow-lg',
 										'flex items-center gap-2 shadow-green-400 hover:bg-green-600',
@@ -40,7 +41,7 @@ const Me = () => {
 								>
 									<HiOutlineDownload className='size-5' />
 
-									<p>CV</p>
+									<p>My CV</p>
 								</a>
 							</div>
 						</div>

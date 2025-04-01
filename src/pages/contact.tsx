@@ -20,56 +20,27 @@ const Contact = () => {
 					{t('common:contact').toUpperCase()}
 				</p>
 
-				<div className={clsx('grid grid-cols-1 gap-12', 'sm:grid-cols-2')}>
-					<div className='flex flex-col gap-7'>
-						{me.links.map((item) => (
-							<a
-								target='_blank'
-								rel='noreferrer'
-								href={item.href}
-								key={item.label}
-								className='flex items-center gap-3'
-							>
-								<img
-									alt=''
-									src={item.icon}
-									className='size-12'
-								/>
+				<div className={clsx('grid gap-12', 'md:grid-cols-1', 'lg:grid-cols-2')}>
+					{me.contact.map((item) => (
+						<a
+							target='_blank'
+							rel='noreferrer'
+							href={item.href}
+							key={item.label}
+							className='flex items-center gap-3'
+						>
+							<img
+								alt=''
+								src={item.icon}
+								className='size-12 rounded-full'
+							/>
 
-								<div className='flex flex-1 flex-col gap-1'>
-									<p className='text-slate-500'>{item.label}</p>
-									<p className='break-all font-semibold hover:underline'>{item.content}</p>
-								</div>
-							</a>
-						))}
-					</div>
-
-					<div className='flex flex-col gap-7'>
-						{me.contact.map((item) => (
-							<a
-								target='_blank'
-								rel='noreferrer'
-								href={item.href}
-								key={item.label}
-								className='flex items-center gap-4'
-							>
-								<div
-									className={clsx(
-										'flex size-12 items-center justify-center rounded-full bg-slate-200',
-									)}
-								>
-									<item.icon className='size-6 text-slate-500' />
-								</div>
-
-								<div className='flex flex-1 flex-col gap-1'>
-									<p className='text-slate-500'>{item.label}</p>
-									<p className='flex-1 break-all font-semibold hover:underline'>
-										{item.content}
-									</p>
-								</div>
-							</a>
-						))}
-					</div>
+							<div className='flex flex-1 flex-col gap-1'>
+								<p className='text-slate-500'>{item.label}</p>
+								<p className='break-all font-semibold hover:underline'>{item.content}</p>
+							</div>
+						</a>
+					))}
 				</div>
 			</div>
 		</DefaultLayout>

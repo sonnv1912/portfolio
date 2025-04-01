@@ -84,15 +84,26 @@ const Degrees = () => {
 			{active && (
 				<div
 					className={clsx(
-						'fixed bottom-0 left-0 right-0 top-0 z-50 flex items-center justify-center bg-white/40 p-12',
+						'fixed bottom-0 left-0 right-0 top-0 z-50',
+						'flex cursor-pointer items-center justify-center bg-white/40 p-12',
 						'md:p-12',
 						'lg:p-20',
 					)}
+					onKeyUp={() => {
+						//
+					}}
+					onClick={() => {}}
 				>
 					<img
 						alt=''
 						src={active}
 						className='h-full w-full object-contain'
+						onKeyUp={() => {
+							//
+						}}
+						onClick={() => {
+							setActive('');
+						}}
 					/>
 
 					<div className='absolute right-4 top-4 flex items-center'>

@@ -16,7 +16,6 @@ import DegreeImage from '@assets/images/img-degree.jpg';
 import ToeicImage from '@assets/images/img-toeic.jpg';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
 import { useTranslation } from 'react-i18next';
-import { HiLink } from 'react-icons/hi';
 
 const useMyProfile = () => {
 	const { t } = useTranslation();
@@ -179,13 +178,11 @@ const useMyProfile = () => {
 		],
 		contact: [
 			{
-				icon: HiLink,
+				icon: MeImage,
 				label: 'Website',
 				href: 'https://sonnv1912.github.io/portfolio/',
-				content: 'Ngo Van Son - React Native Developer',
+				content: 'Portfolio - Ngo Van Son',
 			},
-		],
-		links: [
 			{
 				icon: GithubImage,
 				label: 'Github',

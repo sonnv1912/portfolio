@@ -1,5 +1,6 @@
 import AppleImage from '@assets/images/img-apple.png';
 import BitbucketImage from '@assets/images/img-bitbucket.png';
+import DegreeImage from '@assets/images/img-degree.jpg';
 import FacebookImage from '@assets/images/img-facebook.png';
 import FastlaneImage from '@assets/images/img-fastlane.png';
 import FigmaImage from '@assets/images/img-figma.png';
@@ -12,9 +13,8 @@ import KoChanImage from '@assets/images/img-kochan.webp';
 import KolelImage from '@assets/images/img-kolel.webp';
 import LinkedinImage from '@assets/images/img-linkedin.png';
 import MeImage from '@assets/images/img-me.jpg';
-import DegreeImage from '@assets/images/img-degree.jpg';
-import ToeicImage from '@assets/images/img-toeic.jpg';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
+import ToeicImage from '@assets/images/img-toeic.jpg';
 import { useTranslation } from 'react-i18next';
 
 const useMyProfile = () => {
@@ -70,35 +70,143 @@ const useMyProfile = () => {
 		skills: [
 			{
 				label: t('common:programming_languages'),
-				items: ['JavaScript', 'TypeScript'],
+				items: [
+					{
+						label: 'JavaScript',
+						link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+						desc: 'JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions',
+					},
+					{
+						label: 'TypeScript',
+						link: 'https://www.typescriptlang.org/',
+						desc: 'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale',
+					},
+				],
 			},
 			{
 				label: 'API Integration',
-				items: ['RESTful APIs', 'Axios', 'React Query'],
+				items: [
+					{
+						label: 'RESTful APIs',
+						link: 'https://www.geeksforgeeks.org/what-is-restful-api/',
+						desc: 'A RESTful API (Representational State Transfer) is a type of web service that follows the principles of REST',
+					},
+					{
+						label: 'Axios',
+						link: 'https://axios-http.com/docs/intro',
+						desc: 'Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase)',
+					},
+					{
+						label: 'React Query',
+						link: 'https://tanstack.com/query/latest/docs/framework/react/overview',
+						desc: 'TanStack Query (formerly known as React Query) is often described as the missing data-fetching library for web applications',
+					},
+				],
 			},
 			{
 				label: 'Frontend Frameworks & Libraries',
-				items: ['React Native', 'Expo', 'ReactJs', 'NextJs', 'Tailwind CSS'],
+				items: [
+					{
+						label: 'React Native',
+						link: 'https://reactnative.dev',
+						desc: 'React Native allows developers who know React to create native apps',
+					},
+					{
+						label: 'Expo',
+						link: 'https://docs.expo.dev',
+						desc: 'Expo is a framework that makes developing Android and iOS apps easier',
+					},
+					{
+						label: 'ReactJs',
+						link: 'https://react.dev',
+						desc: 'The library for web and native user interfaces',
+					},
+					{
+						label: 'NextJs',
+						link: 'https://nextjs.org',
+						desc: 'Next.js is a React framework for building full-stack web applications',
+					},
+					{
+						label: 'Tailwind CSS',
+						link: 'https://tailwindcss.com',
+						desc: 'A utility-first CSS framework packed with classes',
+					},
+				],
 			},
 			{
 				label: 'State Management',
-				items: ['Redux', 'Context API', 'Zustand', 'Legend State'],
+				items: [
+					{
+						label: 'Redux',
+						link: 'https://redux.js.org',
+						desc: 'A JS library for predictable and maintainable global state management',
+					},
+					{
+						label: 'Context API',
+						link: 'https://react.dev/reference/react/useContext',
+						desc: 'useContext is a React Hook that lets you read and subscribe to context from your component',
+					},
+					{
+						label: 'Zustand',
+						link: 'https://zustand.docs.pmnd.rs/getting-started/introduction',
+						desc: 'A small, fast, and scalable bearbones state management solution',
+					},
+					{
+						label: 'Legend State',
+						link: 'https://legendapp.com/open-source/state/v3/intro/introduction',
+						desc: 'Legend-State is a super fast all-in-one local and remote state library that helps you write less code to make faster apps',
+					},
+				],
 			},
+
 			{
 				label: 'Source Control',
-				items: ['Git (Git Shell & GitHub)', 'Bitbucket'],
+				items: [
+					{
+						label: 'Git',
+						link: 'https://git-scm.com',
+						desc: 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency',
+					},
+					{
+						label: 'Bitbucket',
+						link: 'https://bitbucket.org/product/guides/getting-started/overview#a-brief-overview-of-bitbucket',
+						desc: 'Bitbucket Cloud is a Git based code hosting and collaboration tool, built for teams',
+					},
+				],
 			},
 			{
 				label: 'Tools & Platforms',
 				items: [
-					'Figma',
-					'Git',
-					'Xcode',
-					'Figma',
-					'Jira',
-					'Firebase',
-					'Google Play Console',
-					'Apple Store Connect',
+					{
+						label: 'Figma',
+						link: 'https://www.figma.com',
+						desc: 'Figma helps design and development teams build great products, together',
+					},
+					{
+						label: 'Xcode',
+						link: 'https://developer.apple.com/xcode',
+						desc: 'Xcode enables you to develop, test, and distribute apps for all Apple platforms',
+					},
+					{
+						label: 'Jira',
+						link: 'https://www.atlassian.com/software/jira',
+						desc: 'The only project management tool you need to plan and track work across every team',
+					},
+					{
+						label: 'Firebase',
+						link: 'https://firebase.google.com',
+						desc: 'Build & run modern, AI-powered experiences users love with Firebase, a platform designed to support you throughout your app development journey',
+					},
+					{
+						label: 'Google Play Console',
+						link: 'https://developer.android.com/distribute/console',
+						desc: 'Publish your apps and games with Google Play Console and grow your business on Google Play',
+					},
+					{
+						label: 'Apple Store Connect',
+						link: 'https://developer.apple.com/app-store-connect/',
+						desc: 'As an Apple Developer Program member, you can easily upload, submit, and manage your apps on the App Store with App Store Connect on the web, iPhone, and iPad',
+					},
 				],
 			},
 		],

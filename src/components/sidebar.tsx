@@ -7,7 +7,6 @@ import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
-import { Tooltip } from 'react-tooltip';
 import { SidebarItem } from './sidebar-item';
 
 const Sidebar = () => {
@@ -116,16 +115,6 @@ const Sidebar = () => {
 				onKeyUp={() => {
 					//
 				}}
-			/>
-
-			<Tooltip
-				id='my-tooltip'
-				style={{
-					backgroundColor: '#454545',
-					color: 'white',
-					zIndex: 9999,
-				}}
-				place='right'
 			/>
 		</div>
 	);

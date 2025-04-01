@@ -41,15 +41,21 @@ const Skills = () => {
 
 							<div className='mt-5 flex flex-wrap items-center gap-3'>
 								{skills.items.map((item) => (
-									<div
-										key={item}
+									<a
+										key={item.label}
+										href={item.link}
+										target='_blank'
+										rel='noreferrer'
+										data-tooltip-id='tooltip'
+										data-tooltip-content={item.desc}
+										data-tooltip-place='bottom-start'
 										className={clsx(
-											'bg-woodsmoke-800 text-white hover:bg-woodsmoke-600',
+											'bg-woodsmoke-800 text-white hover:bg-blue-600',
 											'cursor-pointer rounded-lg px-5 py-3 transition-all duration-300',
 										)}
 									>
-										{item}
-									</div>
+										{item.label}
+									</a>
 								))}
 							</div>
 						</div>

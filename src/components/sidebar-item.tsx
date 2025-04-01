@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { IconType } from 'react-icons';
+import type { IconType } from 'react-icons';
 import { NavLink } from 'react-router';
 
 type Props = {
@@ -23,8 +23,9 @@ const SidebarItem = ({ data, onPress }: Props) => {
 			onClick={() => {
 				onPress();
 			}}
-			data-tooltip-id='my-tooltip'
+			data-tooltip-id='tooltip'
 			data-tooltip-content={data.label}
+			data-tooltip-place='right'
 		>
 			<data.icon className='size-5' />
 		</NavLink>

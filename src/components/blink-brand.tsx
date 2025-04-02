@@ -8,10 +8,10 @@ const BlinkBrand = () => {
 
 	useEffect(() => {
 		const id = setInterval(() => {
-			let result = Math.floor(Math.random() * me.workedWith.length) + 1;
+			let result = Math.floor(Math.random() * me.workedWith.length);
 
 			while (active === me.workedWith[result].href) {
-				result = Math.floor(Math.random() * me.workedWith.length) + 1;
+				result = Math.floor(Math.random() * me.workedWith.length);
 			}
 
 			setActive(me.workedWith[result].href);

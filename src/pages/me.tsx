@@ -34,7 +34,7 @@ const Me = () => {
 								target='_blank'
 								className={clsx(
 									'w-fit rounded-lg border border-green-400 bg-green-500 px-3 py-2 shadow-lg',
-									'flex items-center gap-4 shadow-green-400 hover:bg-green-600',
+									'flex items-center gap-4 shadow-green-400 transition-all duration-500 hover:bg-green-400',
 								)}
 							>
 								<p>My CV</p>

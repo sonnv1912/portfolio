@@ -8,6 +8,7 @@ import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
 import { SidebarItem } from './sidebar-item';
+import { LanguageSwitcher } from './language-switcher';
 
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
@@ -79,7 +80,7 @@ const Sidebar = () => {
 						/>
 					))}
 
-					{/* <LanguageSwitcher /> */}
+					<LanguageSwitcher />
 				</div>
 
 				<div

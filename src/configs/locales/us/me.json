@@ -45,7 +45,7 @@
 			"app_description": "The Kolel App offers the largest video library of Torah lessons, Halacha, ethics, and perspectives from top rabbis, lecturers, and organizations in Israel and worldwide. The app allows you to: Stay updated with the newest videos; Follow your favorite rabbis and organizations Enjoy a fast, convenient, and user-friendly viewing experience; Search for videos by popular topics (Faith and Trust, Success and Business, Kabbalah and Mysticism, and more...); Comment on and share videos; Quickly access previously watched videos for continued viewing; The sole purpose of the app is to spread Torah knowledge and benefit the public.",
 			"responsibilities": {
 				"maintain": {
-					"label": "Collaborated with Product Wwner",
+					"label": "Collaborated with Product Owner",
 					"content": "Maintained and supported mobile applications using React Native to enhance user experience."
 				},
 				"release": {
@@ -61,7 +61,7 @@
 	},
 	"education": {
 		"huit": {
-			"label": "Ho Chi Minh City University of Industry and Trade",
+			"label": "Ho Chi Minh City University Of Industry and Trade",
 			"time": "Step 2020 - May 2024",
 			"location": "Viet Nam",
 			"content": "Bachelor's degree in Information Technology."

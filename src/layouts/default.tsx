@@ -1,5 +1,5 @@
 import { Sidebar } from '@components/sidebar';
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
 export const DefaultLayout = ({ children }: PropsWithChildren) => {
 	return (

@@ -9,46 +9,37 @@ import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
 import { SidebarItem } from './sidebar-item';
 import { LanguageSwitcher } from './language-switcher';
+import { useQueryState } from 'nuqs';
 
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
+	const [, setTab] = useQueryState('tab');
 
 	const tabs = [
 		{
-			id: 1,
 			label: 'SON',
 			icon: BiSolidUser,
-			to: '/portfolio/me',
+			tab: 'me',
 		},
 		{
-			id: 2,
 			label: i18n.t('common:skills'),
 			icon: GiSkills,
-			to: '/portfolio/skills',
+			tab: 'skills',
 		},
 		{
-			id: 6,
 			label: i18n.t('common:degrees'),
 			icon: HiBookOpen,
-			to: '/portfolio/degrees',
+			tab: 'degrees',
 		},
 		{
-			id: 3,
 			label: i18n.t('common:projects'),
 			icon: MdFolder,
-			to: '/portfolio/projects',
+			tab: 'projects',
 		},
-		// {
-		// 	id: 5,
-		// 	label: i18n.t('common:experiences'),
-		// 	icon: MdWorkspacePremium,
-		// 	to: '/portfolio/experiences',
-		// },
 		{
-			id: 7,
 			label: i18n.t('common:contact'),
 			icon: FaAddressCard,
-			to: '/portfolio/contact',
+			tab: 'contact',
 		},
 	];
 
@@ -72,10 +63,11 @@ const Sidebar = () => {
 				>
 					{tabs.map((tab) => (
 						<SidebarItem
-							key={tab.id}
+							key={tab.label}
 							data={tab}
 							onPress={() => {
 								setShowMenuBtnClicked(true);
+								setTab(tab.tab);
 							}}
 						/>
 					))}

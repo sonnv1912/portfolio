@@ -32,7 +32,7 @@ const languages: Record<
 };
 
 const getLanguage = () => {
-	const language = localStorage.getItem('i18nextLng');
+	const language = localStorage.getItem('i18n');
 
 	if (
 		language &&

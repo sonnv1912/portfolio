@@ -11,6 +11,9 @@ const LanguageSwitcher = () => {
 				'flex size-12 flex-col items-center justify-center hover:bg-woodsmoke-700',
 				'cursor-pointer select-none gap-2 rounded-md transition-all duration-500',
 			)}
+			onKeyUp={() => {
+				//
+			}}
 			onClick={() => {
 				if (i18n.language === languages.vn.code) {
 					i18n.changeLanguage(languages.us.code);
@@ -26,6 +29,7 @@ const LanguageSwitcher = () => {
 			}}
 		>
 			<img
+				alt=''
 				src={languages[i18n.language].image}
 				className='w-6'
 			/>

@@ -24,46 +24,41 @@ const useMyProfile = () => {
 		name: t('me:name'),
 		shortDesc: t('me:shortDesc'),
 		image: MeImage,
-		cv: 'https://drive.google.com/file/d/1L5LwkxMuSDzMxi-bpTr2VGnLs7jjphF3/view?usp=drive_link',
+		cv: {
+			us: 'https://drive.google.com/file/d/1L5LwkxMuSDzMxi-bpTr2VGnLs7jjphF3/view?usp=drive_link',
+			vn: 'https://drive.google.com/file/d/1bYb7b1_E4RGPCRdy_lmyv8prjhFngiNQ/view?usp=drive_link',
+		} as Record<string, string>,
 		workedWith: [
 			{
-				id: 1,
 				href: 'https://bitbucket.org/',
 				image: BitbucketImage,
 			},
 			{
-				id: 2,
 				href: 'https://www.atlassian.com/software/jira',
 				image: JiraImage,
 			},
 			{
-				id: 3,
 				href: 'https://www.figma.com/',
 				image: FigmaImage,
 			},
 			{
-				id: 4,
 				href: 'https://firebase.google.com/',
 				image: FirebaseImage,
 			},
 			{
-				id: 5,
 				href: 'https://git-scm.com/',
 				image: GitImage,
 			},
 			{
-				id: 6,
 				href: 'https://fastlane.tools/',
 				image: FastlaneImage,
 			},
 			{
-				id: 7,
-				href: 'https://appstoreconnect.apple.com/login',
+				href: 'https://developer.apple.com/app-store-connect',
 				image: AppleImage,
 			},
 			{
-				id: 7,
-				href: 'https://appstoreconnect.apple.com/login',
+				href: 'https://developer.android.com/distribute/console',
 				image: PlayConsoleImage,
 			},
 		],
@@ -204,7 +199,7 @@ const useMyProfile = () => {
 					},
 					{
 						label: 'Apple Store Connect',
-						link: 'https://developer.apple.com/app-store-connect/',
+						link: 'https://developer.apple.com/app-store-connect',
 						desc: 'As an Apple Developer Program member, you can easily upload, submit, and manage your apps on the App Store with App Store Connect on the web, iPhone, and iPad',
 					},
 				],

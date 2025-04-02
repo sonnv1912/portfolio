@@ -7,7 +7,7 @@ import { HiOutlineDownload } from 'react-icons/hi';
 
 const Me = () => {
 	const me = useMyProfile();
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	return (
 		<DefaultLayout>
@@ -31,7 +31,7 @@ const Me = () => {
 
 							<div className='flex items-center gap-4'>
 								<a
-									href={me.cv}
+									href={me.cv[i18n.language]}
 									rel='noreferrer'
 									target='_blank'
 									className={clsx(

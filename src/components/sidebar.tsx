@@ -1,15 +1,15 @@
 import i18n from '@/configs/locales/i18n';
+import MeImage from '@assets/images/img-me-1.png';
 import clsx from 'clsx';
+import { useQueryState } from 'nuqs';
 import { useState } from 'react';
-import { BiSolidUser } from 'react-icons/bi';
 import { FaAddressCard } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
-import { SidebarItem } from './sidebar-item';
 import { LanguageSwitcher } from './language-switcher';
-import { useQueryState } from 'nuqs';
+import { SidebarItem } from './sidebar-item';
 
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
@@ -18,7 +18,15 @@ const Sidebar = () => {
 	const tabs = [
 		{
 			label: 'SON',
-			icon: BiSolidUser,
+			icon: () => {
+				return (
+					<img
+						src={MeImage}
+						alt=''
+						className='size-8'
+					/>
+				);
+			},
 			tab: 'me',
 		},
 		{
@@ -61,10 +69,11 @@ const Sidebar = () => {
 						'bg-woodsmoke-700 p-2 text-woodsmoke-200',
 					)}
 				>
-					{tabs.map((tab) => (
+					{tabs.map((tab, index) => (
 						<SidebarItem
 							key={tab.label}
 							data={tab}
+							index={index}
 							onPress={() => {
 								setShowMenuBtnClicked(true);
 								setTab(tab.tab);

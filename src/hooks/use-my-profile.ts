@@ -12,7 +12,7 @@ import JiraImage from '@assets/images/img-jira.png';
 import KoChanImage from '@assets/images/img-kochan.webp';
 import KolelImage from '@assets/images/img-kolel.webp';
 import LinkedinImage from '@assets/images/img-linkedin.png';
-import MeImage from '@assets/images/img-me.png';
+import MeImage from '@assets/images/img-me-1.png';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
 import ToeicImage from '@assets/images/img-toeic.jpg';
 import { useTranslation } from 'react-i18next';

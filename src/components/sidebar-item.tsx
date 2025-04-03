@@ -8,10 +8,11 @@ type Props = {
 		icon: IconType;
 		tab: string;
 	};
+	index: number;
 	onPress: () => void;
 };
 
-const SidebarItem = ({ data, onPress }: Props) => {
+const SidebarItem = ({ data, index, onPress }: Props) => {
 	const [tab] = useQueryState('tab');
 
 	return (
@@ -20,7 +21,7 @@ const SidebarItem = ({ data, onPress }: Props) => {
 				'flex size-12 flex-col items-center justify-center hover:bg-woodsmoke-950',
 				'sidebar-item cursor-pointer select-none gap-1 rounded-md transition-all duration-500',
 				{
-					'bg-woodsmoke-950': tab === data.tab,
+					'bg-woodsmoke-950': tab === data.tab || (!tab && index === 0),
 				},
 			)}
 			data-tooltip-id='tooltip'

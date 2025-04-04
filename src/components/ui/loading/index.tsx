@@ -1,6 +1,5 @@
-import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
-import { type PropsWithChildren, useEffect, useState } from 'react';
+import type { PropsWithChildren } from 'react';
 import styles from './loading.module.css';
 
 type Props = {
@@ -8,33 +7,12 @@ type Props = {
 	size?: number;
 };
 
-export const Loading = ({ loading, size = 60, children }: PropsWithChildren<Props>) => {
-	const me = useMyProfile();
-	const [loadingStyle, setLoadingStyle] = useState(true);
+export const Loading = ({ loading, size = 60 }: PropsWithChildren<Props>) => {
 	const lineSize = size / 12;
-
-	useEffect(() => {
-		const link = document.querySelector('link[rel="stylesheet"]') as HTMLLinkElement;
-		const educationImages = me.education.flatMap((item) => item.images);
-
-		const preloadImages = (images: string[]) => {
-			for (const image of images) {
-				const img = new Image();
-				img.src = image;
-			}
-		};
-
-		preloadImages(educationImages);
-		preloadImages([me.image]);
-
-		if (link?.sheet?.cssRules) {
-			setLoadingStyle(!(link?.sheet?.cssRules.length > 0));
-		}
-	}, [me.education, me.image]);
 
 	return (
 		<>
-			{(loading || loadingStyle) && (
+			{loading && (
 				<div
 					style={{
 						position: 'fixed',
@@ -65,8 +43,6 @@ export const Loading = ({ loading, size = 60, children }: PropsWithChildren<Prop
 					</div>
 				</div>
 			)}
-
-			{children}
 		</>
 	);
 };

@@ -45,7 +45,3 @@
 	background: #2457a8;
 	cursor: pointer;
 }
-
-.sidebar-item.active {
-	@apply bg-woodsmoke-950;
-}

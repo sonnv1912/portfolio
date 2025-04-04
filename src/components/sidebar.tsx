@@ -1,5 +1,5 @@
 import i18n from '@/configs/locales/i18n';
-import MeImage from '@assets/images/img-me-1.png';
+import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useQueryState } from 'nuqs';
 import { useState } from 'react';
@@ -15,6 +15,7 @@ import { SidebarItem } from './sidebar-item';
 const Sidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
 	const [, setTab] = useQueryState('tab');
+	const me = useMyProfile();
 
 	const tabs = [
 		{
@@ -22,9 +23,10 @@ const Sidebar = () => {
 			icon: () => {
 				return (
 					<img
-						src={MeImage}
+						src={me.image}
 						alt=''
 						className='size-8'
+						rel='preload'
 					/>
 				);
 			},

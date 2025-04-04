@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { type PropsWithChildren, useEffect, useState } from 'react';
 import styles from './loading.module.css';
 import { AnimatePresence, motion } from 'motion/react';
+import { useMyProfile } from '@hooks/use-my-profile';
 
 type Props = {
 	loading?: boolean;
@@ -9,16 +10,28 @@ type Props = {
 };
 
 export const Loading = ({ loading, size = 60, children }: PropsWithChildren<Props>) => {
+	const me = useMyProfile();
 	const [loadingStyle, setLoadingStyle] = useState(true);
 	const lineSize = size / 12;
 
 	useEffect(() => {
 		const link = document.querySelector('link[rel="stylesheet"]') as HTMLLinkElement;
+		const educationImages = me.education.flatMap((item) => item.images);
+
+		const preloadImages = (images: string[]) => {
+			for (const image of images) {
+				const img = new Image();
+				img.src = image;
+			}
+		};
+
+		preloadImages(educationImages);
+		preloadImages([me.image]);
 
 		if (link?.sheet?.cssRules) {
 			setLoadingStyle(!(link?.sheet?.cssRules.length > 0));
 		}
-	}, []);
+	}, [me.education, me.image]);
 
 	return (
 		<div>

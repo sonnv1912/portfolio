@@ -13,7 +13,7 @@ export const Loading = ({ loading, size = 60, children }: PropsWithChildren<Prop
 	const lineSize = size / 12;
 
 	useEffect(() => {
-		const link = document.getElementById('theme-stylesheet') as HTMLLinkElement;
+		const link = document.querySelector('link[rel="stylesheet"]') as HTMLLinkElement;
 
 		if (link?.sheet?.cssRules) {
 			setLoadingStyle(!(link?.sheet?.cssRules.length > 0));

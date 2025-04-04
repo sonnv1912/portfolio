@@ -3,6 +3,7 @@ import MeImage from '@assets/images/img-me-1.png';
 import clsx from 'clsx';
 import { useQueryState } from 'nuqs';
 import { useState } from 'react';
+import { AiFillProduct } from 'react-icons/ai';
 import { FaAddressCard } from 'react-icons/fa';
 import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
@@ -43,6 +44,11 @@ const Sidebar = () => {
 			label: i18n.t('common:projects'),
 			icon: MdFolder,
 			tab: 'projects',
+		},
+		{
+			label: i18n.t('common:products'),
+			icon: AiFillProduct,
+			tab: 'products',
 		},
 		{
 			label: i18n.t('common:contact'),

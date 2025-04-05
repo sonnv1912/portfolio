@@ -1,9 +1,9 @@
-import { ProjectItem } from '@components/pages/project/item';
+import { ProjectItem } from '@components/pages/project-page/item';
 import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
-const Projects = () => {
+export const ProjectsPage = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
 
@@ -30,5 +30,3 @@ const Projects = () => {
 		</div>
 	);
 };
-
-export { Projects };

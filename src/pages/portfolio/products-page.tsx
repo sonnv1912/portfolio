@@ -1,9 +1,15 @@
 import i18n from '@/configs/locales/i18n';
 import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
+import { parseAsString, useQueryStates } from 'nuqs';
 
-export const Products = () => {
+export const ProductsPage = () => {
 	const me = useMyProfile();
+
+	const [, setQuery] = useQueryStates({
+		name: parseAsString.withDefault(''),
+		tabPage: parseAsString.withDefault(''),
+	});
 
 	return (
 		<div className={clsx('flex min-h-screen flex-col gap-16 p-8', 'md:p-12', 'lg:p-20')}>
@@ -20,6 +26,12 @@ export const Products = () => {
 							'cursor-pointer transition-all duration-500',
 							'hover:bg-woodsmoke-800 hover:shadow-lg hover:shadow-sky-500',
 						)}
+						onKeyUp={() => {
+							//
+						}}
+						onClick={() => {
+							setQuery(product.params);
+						}}
 					>
 						<div className='flex size-14 items-center justify-center rounded-xl bg-white'>
 							<img

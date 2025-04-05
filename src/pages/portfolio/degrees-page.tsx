@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { HiXMark } from 'react-icons/hi2';
 import { MdLocationPin } from 'react-icons/md';
 
-const Degrees = () => {
+export const DegreesPage = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
 	const [active, setActive] = useState('');
@@ -122,5 +122,3 @@ const Degrees = () => {
 		</div>
 	);
 };
-
-export { Degrees };

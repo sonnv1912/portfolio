@@ -9,10 +9,10 @@ import { GiSkills } from 'react-icons/gi';
 import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
-import { LanguageSwitcher } from './language-switcher';
-import { SidebarItem } from './sidebar-item';
+import { DefaultLayoutSidebarItem } from './sidebar-item';
+import { LanguageSwitcher } from '@components/ui/language-switcher';
 
-const Sidebar = () => {
+const DefaultLayoutSidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
 	const [, setTab] = useQueryState('tab');
 	const me = useMyProfile();
@@ -78,7 +78,7 @@ const Sidebar = () => {
 					)}
 				>
 					{tabs.map((tab, index) => (
-						<SidebarItem
+						<DefaultLayoutSidebarItem
 							key={tab.label}
 							data={tab}
 							index={index}
@@ -130,4 +130,4 @@ const Sidebar = () => {
 	);
 };
 
-export { Sidebar };
+export { DefaultLayoutSidebar };

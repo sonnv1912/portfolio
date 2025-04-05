@@ -1,21 +1,16 @@
-import { BlinkBrand } from '@components/blink-brand';
+import { Page } from '@components/layouts/page';
+import { BlinkBrand } from '@components/pages/me-page/blink-brand';
 import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { FiExternalLink } from 'react-icons/fi';
 
-const Me = () => {
+export const MePage = () => {
 	const me = useMyProfile();
 	const { t, i18n } = useTranslation();
 
 	return (
-		<div
-			className={clsx(
-				'flex min-h-screen flex-col gap-8 bg-black p-8 text-white',
-				'md:p-12',
-				'lg:p-20',
-			)}
-		>
+		<Page>
 			<div
 				className={clsx(
 					'flex flex-col items-start gap-12',
@@ -68,8 +63,6 @@ const Me = () => {
 
 				<BlinkBrand />
 			</div>
-		</div>
+		</Page>
 	);
 };
-
-export { Me };

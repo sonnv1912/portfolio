@@ -29,7 +29,8 @@
 			"@hooks/*": ["./src/hooks/*"],
 			"@configs/*": ["./src/config/*"],
 			"@/*": ["./src/*"]
-		}
+		},
+		"types": ["./node_modules/user-agent-data-types"]
 	},
 	"include": ["src", "html-tag.d.ts"]
 }

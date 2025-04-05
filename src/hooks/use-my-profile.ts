@@ -16,7 +16,7 @@ import MeImage from '@assets/images/img-me-1.png';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
 import ToeicImage from '@assets/images/img-toeic.jpg';
 import { useTranslation } from 'react-i18next';
-import ClipboardIcon from '@assets/icons/ic-clipboard.png';
+import StickyClipIcon from '@assets/icons/ic-clipboard.png';
 
 const useMyProfile = () => {
 	const { t } = useTranslation();
@@ -321,9 +321,10 @@ const useMyProfile = () => {
 			{
 				label: 'Sticky Clip',
 				desc: 'Your clipboard manager',
-				image: ClipboardIcon,
+				image: StickyClipIcon,
 				params: {
-					q: 'sticky-clip',
+					name: 'sticky-clip',
+					tabPage: 'home',
 				},
 			},
 		],

@@ -1,10 +1,9 @@
 import { Navigator } from '@components/layouts/navigator';
-import { DefaultLayout } from '@layouts/default';
 import { Tooltip } from 'react-tooltip';
 
 export const App = () => {
 	return (
-		<DefaultLayout>
+		<>
 			<Navigator />
 
 			<Tooltip
@@ -19,6 +18,6 @@ export const App = () => {
 					boxShadow: '1px 1px 10px rgba(255,255,255,0.2)',
 				}}
 			/>
-		</DefaultLayout>
+		</>
 	);
 };

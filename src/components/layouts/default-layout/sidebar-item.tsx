@@ -12,7 +12,7 @@ type Props = {
 	onPress: () => void;
 };
 
-const SidebarItem = ({ data, index, onPress }: Props) => {
+export const DefaultLayoutSidebarItem = ({ data, index, onPress }: Props) => {
 	const [tab] = useQueryState('tab');
 
 	return (
@@ -38,5 +38,3 @@ const SidebarItem = ({ data, index, onPress }: Props) => {
 		</div>
 	);
 };
-
-export { SidebarItem };

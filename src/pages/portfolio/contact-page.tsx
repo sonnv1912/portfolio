@@ -2,7 +2,7 @@ import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
-const Contact = () => {
+export const ContactPage = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
 
@@ -41,5 +41,3 @@ const Contact = () => {
 		</div>
 	);
 };
-
-export { Contact };

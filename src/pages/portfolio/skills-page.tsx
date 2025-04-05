@@ -1,20 +1,15 @@
+import { Page } from '@components/layouts/page';
 import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { LuCode2 } from 'react-icons/lu';
 
-const Skills = () => {
+export const SkillsPage = () => {
 	const me = useMyProfile();
 	const { t } = useTranslation();
 
 	return (
-		<div
-			className={clsx(
-				'flex min-h-screen flex-col gap-16 p-8',
-				'md:p-12',
-				'lg:items-center lg:p-20',
-			)}
-		>
+		<Page className='lg:items-center'>
 			<p className='text-center font-eb-raleway text-4xl'>{t('common:skills').toUpperCase()}</p>
 
 			<div className={clsx('grid grid-cols-1 gap-8', 'md:grid-cols-2', 'lg:gap-12')}>
@@ -57,8 +52,6 @@ const Skills = () => {
 					</div>
 				))}
 			</div>
-		</div>
+		</Page>
 	);
 };
-
-export { Skills };

@@ -31,8 +31,8 @@ export const StickyClipHomePage = () => {
 			gyroControls: false,
 			minHeight: 200.0,
 			minWidth: 200.0,
-			scale: 1.0,
-			scaleMobile: 1.0,
+			scale: 1,
+			scaleMobile: 1,
 			color: '#27b5e9',
 			backgroundColor: '#171717',
 		});

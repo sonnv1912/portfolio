@@ -1,4 +1,5 @@
 import { Navigator } from '@components/layouts/navigator';
+import clsx from 'clsx';
 import { Tooltip } from 'react-tooltip';
 
 export const App = () => {
@@ -9,6 +10,7 @@ export const App = () => {
 			<Tooltip
 				id='tooltip'
 				opacity={1}
+				className={clsx('hidden', 'lg:block')}
 				style={{
 					backgroundColor: '#454545',
 					color: 'white',

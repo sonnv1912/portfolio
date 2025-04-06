@@ -33,27 +33,27 @@ const DefaultLayoutSidebar = () => {
 			tab: 'me',
 		},
 		{
-			label: i18n.t('common:skills'),
+			label: i18n.t('page:portfolio.skills.title'),
 			icon: GiSkills,
 			tab: 'skills',
 		},
 		{
-			label: i18n.t('common:degrees'),
+			label: i18n.t('page:portfolio.degrees.title'),
 			icon: HiBookOpen,
 			tab: 'degrees',
 		},
 		{
-			label: i18n.t('common:projects'),
+			label: i18n.t('page:portfolio.projects.title'),
 			icon: MdFolder,
 			tab: 'projects',
 		},
 		{
-			label: i18n.t('common:products'),
+			label: i18n.t('page:portfolio.products.title'),
 			icon: AiFillProduct,
 			tab: 'products',
 		},
 		{
-			label: i18n.t('common:contact'),
+			label: i18n.t('page:portfolio.contact.title'),
 			icon: FaAddressCard,
 			tab: 'contact',
 		},

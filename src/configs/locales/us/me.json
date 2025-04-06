@@ -3,7 +3,6 @@
 	"shortDesc": "A <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>React Native Developer</span> with 2 years of experience specializing in React Native, and Expo. Passionate about building responsive, high-performance web and mobile applications. Skilled in JavaScript, TypeScript, and modern front-end tools. Dedicated to delivering clean, maintainable, and scalable code.",
 	"experiences": {
 		"kochan": {
-			"position": "React Native Developer",
 			"app_description": "Kochan is a unique e-commerce platform tailored for the Aerobic community, combining online shopping and community engagement. Key features include affiliate marketing opportunities, and community connections, allowing users to share interests and attend events.",
 			"responsibilities": {
 				"fcm": {
@@ -41,7 +40,6 @@
 			}
 		},
 		"kolel": {
-			"position": "React Native Developer",
 			"app_description": "The Kolel App offers the largest video library of Torah lessons, Halacha, ethics, and perspectives from top rabbis, lecturers, and organizations in Israel and worldwide. The app allows you to: Stay updated with the newest videos; Follow your favorite rabbis and organizations Enjoy a fast, convenient, and user-friendly viewing experience; Search for videos by popular topics (Faith and Trust, Success and Business, Kabbalah and Mysticism, and more...); Comment on and share videos; Quickly access previously watched videos for continued viewing; The sole purpose of the app is to spread Torah knowledge and benefit the public.",
 			"responsibilities": {
 				"maintain": {
@@ -63,8 +61,8 @@
 		"huit": {
 			"label": "Ho Chi Minh City University Of Industry and Trade",
 			"time": "Step 2020 - May 2024",
-			"location": "Viet Nam",
-			"content": "Bachelor's degree in Information Technology."
+			"content": "Bachelor's degree in Information Technology",
+			"level": "Good"
 		}
 	}
 }

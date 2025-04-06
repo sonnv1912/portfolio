@@ -3,7 +3,6 @@
 	"shortDesc": "Một <span class='font-semibold rounded-md' style='background: #3b82f6; padding: 4px 8px'>Lập trình viên React Native</span> với 2 năm kinh nghiệm chuyên về React Native và Expo. Đam mê xây dựng các ứng dụng web và di động có hiệu suất cao, thân thiện với người dùng. Thành thạo JavaScript, TypeScript và các công cụ front-end hiện đại. Cam kết viết mã sạch, dễ bảo trì và có khả năng mở rộng.",
 	"experiences": {
 		"kochan": {
-			"position": "Lập trình viên React Native",
 			"app_description": "Kochan là một nền tảng thương mại điện tử độc đáo dành cho cộng đồng Aerobic, kết hợp giữa mua sắm trực tuyến và kết nối cộng đồng. Các tính năng chính bao gồm cơ hội tiếp thị liên kết và tạo dựng mối quan hệ cộng đồng, cho phép người dùng chia sẻ sở thích và tham gia sự kiện.",
 			"responsibilities": {
 				"fcm": {
@@ -41,7 +40,6 @@
 			}
 		},
 		"kolel": {
-			"position": "Lập trình viên React Native",
 			"app_description": "Ứng dụng Kolel cung cấp thư viện video lớn nhất về các bài học Torah, Halacha, đạo đức và quan điểm từ các giáo sĩ, giảng viên và tổ chức hàng đầu tại Israel và trên toàn thế giới. Ứng dụng cho phép: Cập nhật video mới nhất; Theo dõi giáo sĩ và tổ chức yêu thích; Trải nghiệm xem video nhanh, tiện lợi, thân thiện với người dùng; Tìm kiếm video theo chủ đề phổ biến (Đức tin và Niềm tin, Thành công và Kinh doanh, Kabbalah và Huyền bí, v.v.); Bình luận và chia sẻ video; Truy cập nhanh các video đã xem trước đó để tiếp tục theo dõi. Mục đích duy nhất của ứng dụng là truyền bá kiến thức Torah và mang lại lợi ích cho cộng đồng.",
 			"responsibilities": {
 				"maintain": {
@@ -63,8 +61,8 @@
 		"huit": {
 			"label": "Trường Đại học Công Thương TP.HCM",
 			"time": "Tháng 9/2020 - Tháng 5/2024",
-			"location": "Việt Nam",
-			"content": "Cử nhân Công nghệ Thông tin."
+			"content": "Cử nhân Công nghệ Thông tin",
+			"level": "Khá"
 		}
 	}
 }

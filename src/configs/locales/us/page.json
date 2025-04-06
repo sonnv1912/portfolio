@@ -1,0 +1,35 @@
+{
+	"portfolio": {
+		"title": "Portfolio - Ngo Van Son",
+
+		"me": {
+			"my_cv": "MY CV",
+			"worked_with": "Worked with"
+		},
+
+		"skills": {
+			"title": "Skills"
+		},
+
+		"projects": {
+			"title": "Projects",
+			"company": "Company",
+			"responsibility": "Responsibility",
+			"technologies": "Technologies",
+			"team_size": "Team size"
+		},
+
+		"contact": {
+			"title": "Contact"
+		},
+
+		"degrees": {
+			"title": "Degrees",
+			"graduation_level": "Graduation level"
+		},
+
+		"products": {
+			"title": "Products"
+		}
+	}
+}

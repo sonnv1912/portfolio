@@ -1,10 +1,13 @@
 import { DefaultLayoutSidebar } from '@components/layouts/default-layout/sidebar';
-import { useEffect, type PropsWithChildren } from 'react';
+import { type PropsWithChildren, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const DefaultLayout = ({ children }: PropsWithChildren) => {
+	const { t } = useTranslation();
+
 	useEffect(() => {
-		document.title = 'Portfolio - Ngo Van Son';
-	}, []);
+		document.title = t('page:portfolio.title');
+	}, [t]);
 
 	return (
 		<div className='relative flex'>

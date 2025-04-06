@@ -12,7 +12,9 @@ export const DegreesPage = () => {
 
 	return (
 		<div className={clsx('flex min-h-screen flex-col gap-16 p-8', 'md:p-12', 'lg:p-20')}>
-			<p className='text-center font-eb-raleway text-4xl'>{t('common:degrees').toUpperCase()}</p>
+			<p className='text-center font-eb-raleway text-4xl'>
+				{t('page:portfolio.degrees.title').toUpperCase()}
+			</p>
 
 			<div>
 				{me.education.map((item) => (
@@ -47,7 +49,9 @@ export const DegreesPage = () => {
 
 									<p>{item.content}</p>
 
-									<p>Graduation level: {item.level}</p>
+									<p>
+										{t('page:portfolio.degrees.graduation_level')}: {item.level}
+									</p>
 								</div>
 							</div>
 

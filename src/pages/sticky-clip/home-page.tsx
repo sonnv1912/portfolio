@@ -1,4 +1,4 @@
-import i18n from '@/configs/locales/i18n';
+import { i18n } from '@/configs/locales/i18n';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 import { FaApple, FaWindows } from 'react-icons/fa';

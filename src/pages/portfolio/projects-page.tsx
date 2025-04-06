@@ -16,7 +16,7 @@ export const ProjectsPage = () => {
 			)}
 		>
 			<p className='text-center font-eb-raleway text-4xl'>
-				{t('common:projects').toUpperCase()}
+				{t('page:portfolio.projects.title').toUpperCase()}
 			</p>
 
 			<div>

@@ -32,7 +32,7 @@ export const MePage = () => {
 									'flex items-center gap-4 shadow-green-400 transition-all duration-500 hover:bg-green-400',
 								)}
 							>
-								<p>My CV</p>
+								<p>{t('page:portfolio.me.my_cv')}</p>
 
 								<FiExternalLink className='size-5' />
 							</a>
@@ -59,7 +59,7 @@ export const MePage = () => {
 			</div>
 
 			<div>
-				<p className='mb-5'>{t('common:worked_with')}:</p>
+				<p className='mb-5'>{t('page:portfolio.me.worked_with')}:</p>
 
 				<BlinkBrand />
 			</div>

@@ -10,7 +10,9 @@ export const SkillsPage = () => {
 
 	return (
 		<Page className='lg:items-center'>
-			<p className='text-center font-eb-raleway text-4xl'>{t('common:skills').toUpperCase()}</p>
+			<p className='text-center font-eb-raleway text-4xl'>
+				{t('page:portfolio.skills.title').toUpperCase()}
+			</p>
 
 			<div className={clsx('grid grid-cols-1 gap-8', 'md:grid-cols-2', 'lg:gap-12')}>
 				{me.skills.map((skills) => (

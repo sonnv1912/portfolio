@@ -1,4 +1,4 @@
-import i18n from '@/configs/locales/i18n';
+import { i18n } from '@/configs/locales/i18n';
 import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
 import clsx from 'clsx';
@@ -11,7 +11,7 @@ export const ProductsPage = () => {
 	return (
 		<div className={clsx('flex min-h-screen flex-col gap-16 p-8', 'md:p-12', 'lg:p-20')}>
 			<p className='text-center font-eb-raleway text-4xl'>
-				{i18n.t('common:products').toUpperCase()}
+				{i18n.t('page:portfolio.products.title').toUpperCase()}
 			</p>
 
 			<div className={clsx('grid grid-cols-1 gap-5', 'md:grid-cols-2', 'lg:grid-cols-3')}>
@@ -41,7 +41,7 @@ export const ProductsPage = () => {
 						<div className='flex flex-1 flex-col gap-2'>
 							<p>{product.label}</p>
 							<p className='text-woodsmoke-400'>{product.desc}</p>
-							<p className='text-right text-sm text-blue-400'>1.0.0</p>
+							<p className='text-right text-sm text-blue-400'>{product.version}</p>
 						</div>
 					</div>
 				))}

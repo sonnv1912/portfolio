@@ -1,29 +1,13 @@
 {
 	"change": "Thay đổi",
-	"skills": "Kỹ năng",
-	"projects": "Dự án",
-	"experiences": "Kinh nghiệm",
-	"degrees": "Bằng cấp",
-	"contact": "Liên hệ",
-	"worked_with": "Đã làm việc với",
-	"programming_languages": "Ngôn ngữ lập trình",
-	"tool": "Công cụ",
-	"language": "Ngôn ngữ",
-	"team_size": "Quy mô nhóm",
 	"description": "Mô tả",
-	"responsibility": "Trách nhiệm",
-	"achievement": "Thành tựu",
 	"month": {
-		"may": "Tháng 5",
-		"nov": "Tháng 11",
-		"feb": "Tháng 2"
+		"may": "Thg 05",
+		"nov": "Thg 11",
+		"feb": "Thg 02"
 	},
-	"phone": "Số điện thoại",
-	"company": "Công ty",
-	"mine": "Của tôi",
+	"phone": "Điện thoại",
 	"current": "Hiện tại",
-	"platform": "Nền tảng",
 	"view_less": "Xem ít hơn",
-	"view_more": "Xem thêm",
-	"technologies:": "Công nghệ"
+	"view_more": "Xem nhiều hơn"
 }

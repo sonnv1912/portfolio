@@ -1,4 +1,4 @@
-import i18n from '@/configs/locales/i18n';
+import { i18n } from '@/configs/locales/i18n';
 import clsx from 'clsx';
 import { motion } from 'motion/react';
 import { useRef, useState } from 'react';
@@ -65,14 +65,16 @@ const ProjectItem = ({ data }: Props) => {
 
 			<div className={clsx('relative flex w-full flex-col gap-8')}>
 				<div className='flex flex-wrap'>
-					<p className='w-56 font-semibold text-woodsmoke-400'>{i18n.t('common:company')}:</p>
+					<p className='w-56 font-semibold text-woodsmoke-400'>
+						{i18n.t('page:portfolio.projects.company')}:
+					</p>
 
 					<p className='flex-1'>{data.company}</p>
 				</div>
 
 				<div className='flex flex-wrap'>
 					<p className='w-56 font-semibold text-woodsmoke-400'>
-						{i18n.t('common:team_size')}:
+						{i18n.t('page:portfolio.projects.team_size')}:
 					</p>
 
 					<p className='flex-1'>{data.teamSize}</p>
@@ -111,7 +113,7 @@ const ProjectItem = ({ data }: Props) => {
 				>
 					<div className='flex flex-wrap'>
 						<p className='w-56 font-semibold text-woodsmoke-400'>
-							{i18n.t('common:responsibility')}:
+							{i18n.t('page:portfolio.projects.responsibility')}:
 						</p>
 
 						<div
@@ -126,7 +128,6 @@ const ProjectItem = ({ data }: Props) => {
 									className={clsx('break-all leading-8')}
 									key={responsibility.label}
 								>
-									{/* <span className='text-blue-400 underline'>{responsibility.label}</span>:{' '} */}
 									- {responsibility.content}
 								</p>
 							))}
@@ -135,7 +136,7 @@ const ProjectItem = ({ data }: Props) => {
 
 					<div className='flex flex-wrap'>
 						<p className='w-56 font-semibold text-woodsmoke-400'>
-							{i18n.t('common:technologies')}:
+							{i18n.t('page:portfolio.projects.technologies')}:
 						</p>
 
 						<div

@@ -14,7 +14,9 @@ export const ContactPage = () => {
 				'lg:p-20',
 			)}
 		>
-			<p className='text-center font-eb-raleway text-4xl'>{t('common:contact').toUpperCase()}</p>
+			<p className='text-center font-eb-raleway text-4xl'>
+				{t('page:portfolio.contact.title').toUpperCase()}
+			</p>
 
 			<div className={clsx('grid gap-12', 'md:grid-cols-1', 'lg:grid-cols-2')}>
 				{me.contact.map((item) => (

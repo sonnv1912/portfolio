@@ -1,0 +1,35 @@
+{
+	"portfolio": {
+		"title": "Portfolio - Ngô Văn Sơn",
+
+		"me": {
+			"my_cv": "MY CV",
+			"worked_with": "Đã làm việc với"
+		},
+
+		"skills": {
+			"title": "Kỹ năng"
+		},
+
+		"projects": {
+			"title": "Dự án",
+			"company": "Công ty",
+			"responsibility": "Trách nhiệm",
+			"technologies": "Công nghệ",
+			"team_size": "Thành viên"
+		},
+
+		"contact": {
+			"title": "Liên hệ"
+		},
+
+		"degrees": {
+			"title": "Bằng cấp",
+			"graduation_level": "Trình độ tốt nghiệp"
+		},
+
+		"products": {
+			"title": "Sản phẩm"
+		}
+	}
+}

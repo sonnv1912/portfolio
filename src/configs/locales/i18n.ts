@@ -5,11 +5,11 @@ import { initReactI18next } from 'react-i18next';
 
 import usCommon from './us/common.json';
 import usMe from './us/me.json';
-import usSkill from './us/skill.json';
+import usPage from './us/page.json';
 
 import vnCommon from './vn/common.json';
 import vnMe from './vn/me.json';
-import vnSkill from './vn/skill.json';
+import vnPage from './vn/page.json';
 
 const languages: Record<
 	string,
@@ -56,15 +56,14 @@ i18n.use(initReactI18next).init({
 		us: {
 			me: usMe,
 			common: usCommon,
-			skill: usSkill,
+			page: usPage,
 		},
 		vn: {
 			me: vnMe,
 			common: vnCommon,
-			vnSkill: vnSkill,
+			page: vnPage,
 		},
 	},
 });
 
-export default i18n;
-export { languages };
+export { languages, i18n };

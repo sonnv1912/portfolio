@@ -1,4 +1,4 @@
-import i18n from '@/configs/locales/i18n';
+import { i18n } from '@/configs/locales/i18n';
 import StickyClipIcon from '@assets/icons/ic-clipboard.png';
 import { useNavigator } from '@hooks/use-navigator';
 import clsx from 'clsx';

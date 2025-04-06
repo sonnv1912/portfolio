@@ -38,7 +38,11 @@ const PortfolioNavigator = () => {
 		return Object.keys(tabs).includes(tab);
 	}, [me.products, name, tab, tabs]);
 
-	return shouldShow && <DefaultLayout>{tabs[tab || 'me']}</DefaultLayout>;
+	if (!shouldShow) {
+		return null;
+	}
+
+	return <DefaultLayout>{tabs[tab || 'me']}</DefaultLayout>;
 };
 
 const StickyClipNavigator = () => {
@@ -61,12 +65,14 @@ const StickyClipNavigator = () => {
 		return Object.keys(tabs).includes(tabPage);
 	}, [tab, name, tabs, tabPage]);
 
+	if (!shouldShow) {
+		return null;
+	}
+
 	return (
-		shouldShow && (
-			<StickyClipLayout>
-				<div className='flex w-screen flex-1 flex-col'>{tabs[tabPage]}</div>
-			</StickyClipLayout>
-		)
+		<StickyClipLayout>
+			<div className='flex w-screen flex-1 flex-col'>{tabs[tabPage]}</div>
+		</StickyClipLayout>
 	);
 };
 

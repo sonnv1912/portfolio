@@ -1,7 +1,11 @@
 import { StickyClipLayoutHeader } from '@components/layouts/sticky-clip-layout/header';
-import type { PropsWithChildren } from 'react';
+import { useEffect, type PropsWithChildren } from 'react';
 
 export const StickyClipLayout = ({ children }: PropsWithChildren) => {
+	useEffect(() => {
+		document.title = 'Sticky Clip - Your clipboard manager';
+	}, []);
+
 	return (
 		<div className='relative bg-black'>
 			<StickyClipLayoutHeader />

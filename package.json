@@ -8,9 +8,8 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview",
-		"predeploy": "yarn build",
-		"deploy": "gh-pages -d dist",
+		"preview": "yarn build && vite preview",
+		"deploy": "yarn build && gh-pages -d dist",
 		"prepare": "husky"
 	},
 	"dependencies": {

@@ -35,7 +35,7 @@ const PortfolioNavigator = () => {
 			return false;
 		}
 
-		return Object.keys(tabs).includes(tab);
+		return Object.keys(tabs).includes(tab || 'me');
 	}, [me.products, name, tab, tabs]);
 
 	if (!shouldShow) {

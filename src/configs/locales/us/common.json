@@ -8,6 +8,13 @@
 	},
 	"phone": "Phone",
 	"current": "Current",
-	"view_less": "View less",
-	"view_more": "View more"
+	"coming_soon": "Coming Soon",
+
+	"action": {
+		"view_less": "View less",
+		"view_more": "View more",
+		"download": "Download",
+		"download_for_mac": "Download for MacOS",
+		"download_for_win": "Download for Window"
+	}
 }

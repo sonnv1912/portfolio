@@ -16,7 +16,7 @@
 			"company": "Công ty",
 			"responsibility": "Trách nhiệm",
 			"technologies": "Công nghệ",
-			"team_size": "Thành viên"
+			"team_size": "Quy mô nhóm"
 		},
 
 		"contact": {
@@ -30,6 +30,17 @@
 
 		"products": {
 			"title": "Sản phẩm"
+		}
+	},
+
+	"sticky_clip": {
+		"title": "Sticky Clip - Trình quản lý clipboard của bạn",
+
+		"home": {
+			"product_short_description": "Trình quản lý clipboard của bạn",
+			"product_description": "Một công cụ giúp quản lý lịch sử clipboard của bạn. Nhanh chóng, thân thiện.",
+			"teams": "Đội ngũ",
+			"changelog": "Nhật ký thay đổi"
 		}
 	}
 }

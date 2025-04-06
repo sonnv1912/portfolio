@@ -1,5 +1,3 @@
-import UnitedStateImage from '@assets/images/img-united-states.png';
-import VietNamImage from '@assets/images/img-viet-nam.png';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
@@ -10,26 +8,7 @@ import usPage from './us/page.json';
 import vnCommon from './vn/common.json';
 import vnMe from './vn/me.json';
 import vnPage from './vn/page.json';
-
-const languages: Record<
-	string,
-	{
-		image: string;
-		label: string;
-		code: string;
-	}
-> = {
-	us: {
-		image: UnitedStateImage,
-		label: 'English',
-		code: 'us',
-	},
-	vn: {
-		image: VietNamImage,
-		label: 'Tiếng Việt',
-		code: 'vn',
-	},
-};
+import { languages } from '../constants';
 
 const getLanguage = () => {
 	const language = localStorage.getItem('i18n');
@@ -66,4 +45,4 @@ i18n.use(initReactI18next).init({
 	},
 });
 
-export { languages, i18n };
+export default i18n;

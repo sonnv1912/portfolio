@@ -1,7 +1,7 @@
-import { i18n } from '@/configs/locales/i18n';
 import clsx from 'clsx';
 import { motion } from 'motion/react';
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MdLocationPin } from 'react-icons/md';
 
 type Props = {
@@ -25,6 +25,7 @@ type Props = {
 const ProjectItem = ({ data }: Props) => {
 	const [showMore, setShowMore] = useState(false);
 	const ref = useRef<HTMLDivElement>(null);
+	const { t } = useTranslation();
 
 	return (
 		<div
@@ -66,7 +67,7 @@ const ProjectItem = ({ data }: Props) => {
 			<div className={clsx('relative flex w-full flex-col gap-8')}>
 				<div className='flex flex-wrap'>
 					<p className='w-56 font-semibold text-woodsmoke-400'>
-						{i18n.t('page:portfolio.projects.company')}:
+						{t('page:portfolio.projects.company')}:
 					</p>
 
 					<p className='flex-1'>{data.company}</p>
@@ -74,16 +75,14 @@ const ProjectItem = ({ data }: Props) => {
 
 				<div className='flex flex-wrap'>
 					<p className='w-56 font-semibold text-woodsmoke-400'>
-						{i18n.t('page:portfolio.projects.team_size')}:
+						{t('page:portfolio.projects.team_size')}:
 					</p>
 
 					<p className='flex-1'>{data.teamSize}</p>
 				</div>
 
 				<div className='flex flex-wrap'>
-					<p className='w-56 font-semibold text-woodsmoke-400'>
-						{i18n.t('common:description')}:
-					</p>
+					<p className='w-56 font-semibold text-woodsmoke-400'>{t('common:description')}:</p>
 
 					<p
 						className={clsx(
@@ -113,7 +112,7 @@ const ProjectItem = ({ data }: Props) => {
 				>
 					<div className='flex flex-wrap'>
 						<p className='w-56 font-semibold text-woodsmoke-400'>
-							{i18n.t('page:portfolio.projects.responsibility')}:
+							{t('page:portfolio.projects.responsibility')}:
 						</p>
 
 						<div
@@ -136,7 +135,7 @@ const ProjectItem = ({ data }: Props) => {
 
 					<div className='flex flex-wrap'>
 						<p className='w-56 font-semibold text-woodsmoke-400'>
-							{i18n.t('page:portfolio.projects.technologies')}:
+							{t('page:portfolio.projects.technologies')}:
 						</p>
 
 						<div
@@ -177,7 +176,7 @@ const ProjectItem = ({ data }: Props) => {
 							//
 						}}
 					>
-						{showMore ? i18n.t('common:view_less') : i18n.t('common:view_more')}
+						{showMore ? t('common:action.view_less') : t('common:action.view_more')}
 					</div>
 				</div>
 			</div>

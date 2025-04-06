@@ -31,5 +31,16 @@
 		"products": {
 			"title": "Products"
 		}
+	},
+
+	"sticky_clip": {
+		"title": "Sticky Clip - Your clipboard manager",
+
+		"home": {
+			"product_short_description": "Your clipboard manager",
+			"product_description": "A tool for manage your clipboard history. Fast, friendly.",
+			"teams": "Teams",
+			"changelog": "Changelog"
+		}
 	}
 }

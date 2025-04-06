@@ -1,17 +1,17 @@
-import { i18n } from '@/configs/locales/i18n';
 import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
 import clsx from 'clsx';
+import { useTranslation } from 'react-i18next';
 
 export const ProductsPage = () => {
 	const me = useMyProfile();
-
+	const { t } = useTranslation();
 	const { setQuery } = useNavigator();
 
 	return (
 		<div className={clsx('flex min-h-screen flex-col gap-16 p-8', 'md:p-12', 'lg:p-20')}>
 			<p className='text-center font-eb-raleway text-4xl'>
-				{i18n.t('page:portfolio.products.title').toUpperCase()}
+				{t('page:portfolio.products.title').toUpperCase()}
 			</p>
 
 			<div className={clsx('grid grid-cols-1 gap-5', 'md:grid-cols-2', 'lg:grid-cols-3')}>

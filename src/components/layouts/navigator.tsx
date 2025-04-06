@@ -69,11 +69,7 @@ const StickyClipNavigator = () => {
 		return null;
 	}
 
-	return (
-		<StickyClipLayout>
-			<div className='flex w-screen flex-1 flex-col'>{tabs[tabPage]}</div>
-		</StickyClipLayout>
-	);
+	return <StickyClipLayout>{tabs[tabPage]}</StickyClipLayout>;
 };
 
 export const Navigator = () => {

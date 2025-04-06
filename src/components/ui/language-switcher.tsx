@@ -1,19 +1,18 @@
-import { languages } from '@/configs/locales/i18n';
+import { languages } from '@configs/constants';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
-const LanguageSwitcher = () => {
-	const { i18n, t } = useTranslation();
+type Props = {
+	className?: string;
+	imgClassName?: string;
+};
+
+const LanguageSwitcher = ({ className, imgClassName }: Props) => {
+	const { i18n } = useTranslation();
 
 	return (
 		<div
-			className={clsx(
-				'flex size-12 flex-col items-center justify-center hover:bg-woodsmoke-700',
-				'cursor-pointer select-none gap-2 rounded-md transition-all duration-500',
-			)}
-			data-tooltip-id='tooltip'
-			data-tooltip-content={t('common:change')}
-			data-tooltip-place='right'
+			className={clsx('flex cursor-pointer select-none items-center justify-center', className)}
 			onKeyUp={() => {
 				//
 			}}
@@ -38,7 +37,7 @@ const LanguageSwitcher = () => {
 			<img
 				alt=''
 				src={languages[i18n.language].image}
-				className='w-6'
+				className={clsx('w-6', imgClassName)}
 			/>
 		</div>
 	);

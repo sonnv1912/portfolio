@@ -16,12 +16,14 @@ import MeImage from '@assets/images/img-me-1.png';
 import PlayConsoleImage from '@assets/images/img-play-console.png';
 import ToeicImage from '@assets/images/img-toeic.jpg';
 import StickyClipIcon from '@assets/icons/ic-clipboard.png';
-import { i18n } from '@/configs/locales/i18n';
+import { useTranslation } from 'react-i18next';
 
 export const useMyProfile = () => {
+	const { t } = useTranslation();
+
 	return {
-		name: i18n.t('me:name'),
-		shortDesc: i18n.t('me:shortDesc'),
+		name: t('me:name'),
+		shortDesc: t('me:shortDesc'),
 		image: MeImage,
 		cv: {
 			us: 'https://drive.google.com/file/d/1L5LwkxMuSDzMxi-bpTr2VGnLs7jjphF3/view?usp=drive_link',
@@ -210,42 +212,42 @@ export const useMyProfile = () => {
 				position: 'React Native Developer',
 				appLogo: KoChanImage,
 				appName: 'Kochan',
-				time: `${i18n.t('common:month.may')}, 2023 - ${i18n.t('common:current')}`,
+				time: `${t('common:month.may')}, 2023 - ${t('common:current')}`,
 				location: 'Viet Nam',
-				appDescription: i18n.t('me:experiences.kochan.app_description'),
+				appDescription: t('me:experiences.kochan.app_description'),
 				teamSize: 2,
 				responsibilities: [
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.fcm.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.fcm.content'),
+						label: t('me:experiences.kochan.responsibilities.fcm.label'),
+						content: t('me:experiences.kochan.responsibilities.fcm.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.collaborated.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.collaborated.content'),
+						label: t('me:experiences.kochan.responsibilities.collaborated.label'),
+						content: t('me:experiences.kochan.responsibilities.collaborated.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.env.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.env.content'),
+						label: t('me:experiences.kochan.responsibilities.env.label'),
+						content: t('me:experiences.kochan.responsibilities.env.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.music.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.music.content'),
+						label: t('me:experiences.kochan.responsibilities.music.label'),
+						content: t('me:experiences.kochan.responsibilities.music.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.debug.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.debug.content'),
+						label: t('me:experiences.kochan.responsibilities.debug.label'),
+						content: t('me:experiences.kochan.responsibilities.debug.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.design.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.design.content'),
+						label: t('me:experiences.kochan.responsibilities.design.label'),
+						content: t('me:experiences.kochan.responsibilities.design.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.otp.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.otp.content'),
+						label: t('me:experiences.kochan.responsibilities.otp.label'),
+						content: t('me:experiences.kochan.responsibilities.otp.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kochan.responsibilities.automated.label'),
-						content: i18n.t('me:experiences.kochan.responsibilities.automated.content'),
+						label: t('me:experiences.kochan.responsibilities.automated.label'),
+						content: t('me:experiences.kochan.responsibilities.automated.content'),
 					},
 				],
 				technologies:
@@ -256,22 +258,22 @@ export const useMyProfile = () => {
 				position: 'React Native Developer',
 				appLogo: KolelImage,
 				appName: 'Kochan Kolel - Judaism, Torah Videos',
-				time: `${i18n.t('common:month.feb')}, 2024 - ${i18n.t('common:current')}`,
+				time: `${t('common:month.feb')}, 2024 - ${t('common:current')}`,
 				location: 'Viet Nam',
-				appDescription: i18n.t('me:experiences.kolel.app_description'),
+				appDescription: t('me:experiences.kolel.app_description'),
 				teamSize: 1,
 				responsibilities: [
 					{
-						label: i18n.t('me:experiences.kolel.responsibilities.maintain.label'),
-						content: i18n.t('me:experiences.kolel.responsibilities.maintain.content'),
+						label: t('me:experiences.kolel.responsibilities.maintain.label'),
+						content: t('me:experiences.kolel.responsibilities.maintain.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kolel.responsibilities.release.label'),
-						content: i18n.t('me:experiences.kolel.responsibilities.release.content'),
+						label: t('me:experiences.kolel.responsibilities.release.label'),
+						content: t('me:experiences.kolel.responsibilities.release.content'),
 					},
 					{
-						label: i18n.t('me:experiences.kolel.responsibilities.sentry.label'),
-						content: i18n.t('me:experiences.kolel.responsibilities.sentry.content'),
+						label: t('me:experiences.kolel.responsibilities.sentry.label'),
+						content: t('me:experiences.kolel.responsibilities.sentry.content'),
 					},
 				],
 				technologies:
@@ -306,12 +308,12 @@ export const useMyProfile = () => {
 		],
 		education: [
 			{
-				label: i18n.t('me:education.huit.label'),
-				time: i18n.t('me:education.huit.time'),
+				label: t('me:education.huit.label'),
+				time: t('me:education.huit.time'),
 				location: 'Viet Nam',
-				content: i18n.t('me:education.huit.content'),
+				content: t('me:education.huit.content'),
 				image: HUITImage,
-				level: i18n.t('me:education.huit.level'),
+				level: t('me:education.huit.level'),
 				images: [DegreeImage, ToeicImage],
 			},
 		],

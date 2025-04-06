@@ -1,4 +1,3 @@
-import { i18n } from '@/configs/locales/i18n';
 import { LanguageSwitcher } from '@components/ui/language-switcher';
 import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
@@ -11,11 +10,13 @@ import { HiBookOpen } from 'react-icons/hi2';
 import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
 import { DefaultLayoutSidebarItem } from './sidebar-item';
+import { useTranslation } from 'react-i18next';
 
 const DefaultLayoutSidebar = () => {
 	const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
 	const { setQuery } = useNavigator();
 	const me = useMyProfile();
+	const { t } = useTranslation();
 
 	const tabs = [
 		{
@@ -33,27 +34,27 @@ const DefaultLayoutSidebar = () => {
 			tab: 'me',
 		},
 		{
-			label: i18n.t('page:portfolio.skills.title'),
+			label: t('page:portfolio.skills.title'),
 			icon: GiSkills,
 			tab: 'skills',
 		},
 		{
-			label: i18n.t('page:portfolio.degrees.title'),
+			label: t('page:portfolio.degrees.title'),
 			icon: HiBookOpen,
 			tab: 'degrees',
 		},
 		{
-			label: i18n.t('page:portfolio.projects.title'),
+			label: t('page:portfolio.projects.title'),
 			icon: MdFolder,
 			tab: 'projects',
 		},
 		{
-			label: i18n.t('page:portfolio.products.title'),
+			label: t('page:portfolio.products.title'),
 			icon: AiFillProduct,
 			tab: 'products',
 		},
 		{
-			label: i18n.t('page:portfolio.contact.title'),
+			label: t('page:portfolio.contact.title'),
 			icon: FaAddressCard,
 			tab: 'contact',
 		},
@@ -92,7 +93,12 @@ const DefaultLayoutSidebar = () => {
 						/>
 					))}
 
-					<LanguageSwitcher />
+					<LanguageSwitcher
+						className={clsx(
+							'size-12 hover:bg-woodsmoke-950',
+							'rounded-md transition-all duration-500',
+						)}
+					/>
 				</div>
 
 				<div

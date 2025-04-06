@@ -27,7 +27,7 @@
 			"@assets/*": ["./src/assets/*"],
 			"@layouts/*": ["./src/layouts/*"],
 			"@hooks/*": ["./src/hooks/*"],
-			"@configs/*": ["./src/config/*"],
+			"@configs/*": ["./src/configs/*"],
 			"@/*": ["./src/*"]
 		},
 		"types": ["./node_modules/user-agent-data-types"]

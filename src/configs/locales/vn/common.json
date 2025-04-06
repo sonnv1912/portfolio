@@ -8,6 +8,13 @@
 	},
 	"phone": "Điện thoại",
 	"current": "Hiện tại",
-	"view_less": "Xem ít hơn",
-	"view_more": "Xem nhiều hơn"
+	"coming_soon": "Sắp ra mắt",
+
+	"action": {
+		"view_less": "Xem ít hơn",
+		"view_more": "Xem nhiều hơn",
+		"download": "Tải xuống",
+		"download_for_mac": "Tải xuống cho MacOS",
+		"download_for_win": "Tải xuống cho Window"
+	}
 }

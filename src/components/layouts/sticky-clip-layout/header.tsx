@@ -1,7 +1,7 @@
 import i18n from '@/configs/locales/i18n';
 import StickyClipIcon from '@assets/icons/ic-clipboard.png';
+import { useNavigator } from '@hooks/use-navigator';
 import clsx from 'clsx';
-import { useQueryStates, parseAsString } from 'nuqs';
 import { FaApple, FaWindows } from 'react-icons/fa';
 import { FaArrowLeftLong } from 'react-icons/fa6';
 
@@ -9,15 +9,7 @@ export const StickyClipLayoutHeader = () => {
 	const isMac = window.navigator.userAgentData?.platform.includes('mac');
 	const isWin = window.navigator.userAgentData?.platform.includes('win');
 
-	const [, setQuery] = useQueryStates({
-		tab: parseAsString.withDefault(''),
-		name: parseAsString.withDefault('').withOptions({
-			clearOnDefault: true,
-		}),
-		tabPage: parseAsString.withDefault('').withOptions({
-			clearOnDefault: true,
-		}),
-	});
+	const { setQuery } = useNavigator();
 
 	const tab = [
 		{

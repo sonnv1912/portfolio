@@ -1,18 +1,22 @@
+import './utils/locales/i18n';
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './app';
 import { NuqsAdapter } from 'nuqs/adapters/react';
-
-import './configs/locales/i18n';
+import { QueryClientProvider } from '@tanstack/react-query';
+import { queryClient } from '@utils/query';
 
 const root = document.getElementById('root');
 
 if (root) {
 	createRoot(root).render(
 		<StrictMode>
-			<NuqsAdapter>
-				<App />
-			</NuqsAdapter>
+			<QueryClientProvider client={queryClient}>
+				<NuqsAdapter>
+					<App />
+				</NuqsAdapter>
+			</QueryClientProvider>
 		</StrictMode>,
 	);
 }

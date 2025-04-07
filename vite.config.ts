@@ -4,6 +4,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	base: '/portfolio',
+	server: {
+		port: 2222,
+	},
 	resolve: {
 		alias: {
 			'@': path.resolve(__dirname, './src'),
@@ -12,6 +15,7 @@ export default defineConfig({
 			'@hooks': path.resolve(__dirname, './src/hooks'),
 			'@configs': path.resolve(__dirname, './src/configs'),
 			'@layouts': path.resolve(__dirname, './src/layouts'),
+			'@utils': path.resolve(__dirname, './src/utils'),
 		},
 	},
 	plugins: [react()],

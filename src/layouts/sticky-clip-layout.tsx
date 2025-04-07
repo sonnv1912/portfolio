@@ -1,4 +1,5 @@
 import { StickyClipLayoutHeader } from '@components/layouts/sticky-clip-layout/header';
+import clsx from 'clsx';
 import { useEffect, type PropsWithChildren } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -10,14 +11,14 @@ export const StickyClipLayout = ({ children }: PropsWithChildren) => {
 	}, [t]);
 
 	return (
-		<div
-			className='relative bg-black'
-			id='animated_layout'
-		>
+		<div className='relative bg-black'>
 			<StickyClipLayoutHeader />
 
 			<div
-				className='flex min-h-screen w-screen flex-col overflow-auto scroll-smooth pt-24 text-white'
+				className={clsx(
+					'h-screen overflow-auto scroll-smooth px-5 pb-10 pt-24 text-white',
+					'lg:px-20',
+				)}
 				style={{
 					scrollbarGutter: 'stable',
 				}}

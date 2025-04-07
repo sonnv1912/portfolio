@@ -34,7 +34,7 @@ export const StickyClipHomePage = () => {
 			scale: 1,
 			scaleMobile: 1,
 			color: '#27b5e9',
-			backgroundColor: '#171717',
+			backgroundColor: '#0b0c0d',
 		});
 	}, []);
 
@@ -42,7 +42,7 @@ export const StickyClipHomePage = () => {
 		<>
 			<div
 				className={clsx(
-					'flex flex-1 flex-col items-center justify-center px-10 pb-10',
+					'relative flex h-full flex-col items-center justify-center px-10 pb-10',
 					'z-50 lg:justify-between',
 				)}
 			>

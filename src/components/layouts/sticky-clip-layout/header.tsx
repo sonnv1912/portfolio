@@ -7,7 +7,6 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CgMenuGridO } from 'react-icons/cg';
 import { FaApple, FaWindows } from 'react-icons/fa';
-import { FaArrowLeftLong } from 'react-icons/fa6';
 
 export const StickyClipLayoutHeader = () => {
 	const isMac = window.navigator.userAgentData?.platform.includes('mac');
@@ -50,21 +49,6 @@ export const StickyClipLayoutHeader = () => {
 							});
 						}}
 					>
-						<FaArrowLeftLong
-							className='cursor-pointer text-woodsmoke-300 hover:text-white'
-							data-tooltip-id='tooltip'
-							data-tooltip-content={t('common:back')}
-							onClick={() => {
-								setQuery({
-									name: '',
-									tab: 'products',
-									tabPage: '',
-								});
-							}}
-						/>
-
-						<div className='mx-2 h-5 w-[1px] bg-woodsmoke-300' />
-
 						<img
 							src={StickyClipIcon}
 							alt=''

@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import { languages } from '@configs/constants';
 
 import usCommon from './us/common.json';
 import usMe from './us/me.json';
@@ -8,7 +9,6 @@ import usPage from './us/page.json';
 import vnCommon from './vn/common.json';
 import vnMe from './vn/me.json';
 import vnPage from './vn/page.json';
-import { languages } from '../constants';
 
 const getLanguage = () => {
 	const language = localStorage.getItem('i18n');

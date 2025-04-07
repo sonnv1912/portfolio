@@ -28,6 +28,7 @@
 			"@layouts/*": ["./src/layouts/*"],
 			"@hooks/*": ["./src/hooks/*"],
 			"@configs/*": ["./src/configs/*"],
+			"@utils/*": ["./src/utils/*"],
 			"@/*": ["./src/*"]
 		},
 		"types": ["./node_modules/user-agent-data-types"]

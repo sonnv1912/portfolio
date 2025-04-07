@@ -32,6 +32,6 @@ jobs:
          - name: Deploy to gh-pages
            uses: peaceiris/actions-gh-pages@v3
            with:
-              personal_token: ${{ secrets.GITHUB_TOKEN }}
+              personal_token: ${{ secrets.REPO_INFO }}
               branch: gh-pages # Nhánh sẽ chứa mã nguồn cho GitHub Pages
               folder: dist # Thư mục chứa các file build (ví dụ: 'build' nếu bạn dùng React, Vite, hoặc 'dist' nếu dùng các công cụ khác)

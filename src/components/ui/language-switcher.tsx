@@ -13,9 +13,6 @@ const LanguageSwitcher = ({ className, imgClassName }: Props) => {
 	return (
 		<div
 			className={clsx('flex cursor-pointer select-none items-center justify-center', className)}
-			onKeyUp={() => {
-				//
-			}}
 			onClick={() => {
 				if (i18n.language === languages.vn.code) {
 					i18n.changeLanguage(languages.us.code);

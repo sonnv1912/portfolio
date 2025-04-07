@@ -160,9 +160,6 @@ const ProjectItem = ({ data }: Props) => {
 							ref.current?.scrollIntoView();
 						}, 200);
 					}}
-					onKeyUp={() => {
-						//
-					}}
 				>
 					<div
 						className={clsx(
@@ -171,9 +168,6 @@ const ProjectItem = ({ data }: Props) => {
 						)}
 						onClick={() => {
 							setShowMore((prev) => !prev);
-						}}
-						onKeyUp={() => {
-							//
 						}}
 					>
 						{showMore ? t('common:action.view_less') : t('common:action.view_more')}

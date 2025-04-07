@@ -65,9 +65,6 @@ export const DegreesPage = () => {
 											alt=''
 											className='cursor-pointer rounded-lg shadow-lg shadow-woodsmoke-600'
 											src={image}
-											onKeyUp={() => {
-												//
-											}}
 											onClick={() => {
 												setActive(image);
 											}}
@@ -88,18 +85,12 @@ export const DegreesPage = () => {
 						'md:p-12',
 						'lg:p-20',
 					)}
-					onKeyUp={() => {
-						//
-					}}
 					onClick={() => {}}
 				>
 					<img
 						alt=''
 						src={active}
 						className='h-full w-full object-contain'
-						onKeyUp={() => {
-							//
-						}}
 						onClick={() => {
 							setActive('');
 						}}
@@ -108,9 +99,6 @@ export const DegreesPage = () => {
 					<div className='absolute right-4 top-4 flex items-center'>
 						<div
 							className={clsx('cursor-pointer rounded-full bg-woodsmoke-700 p-2')}
-							onKeyUp={() => {
-								//
-							}}
 							onClick={() => {
 								setActive('');
 							}}

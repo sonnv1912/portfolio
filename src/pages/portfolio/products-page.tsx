@@ -23,9 +23,6 @@ export const ProductsPage = () => {
 							'cursor-pointer transition-all duration-500',
 							'hover:bg-woodsmoke-800 hover:shadow-lg hover:shadow-sky-500',
 						)}
-						onKeyUp={() => {
-							//
-						}}
 						onClick={() => {
 							setQuery(product.params);
 						}}

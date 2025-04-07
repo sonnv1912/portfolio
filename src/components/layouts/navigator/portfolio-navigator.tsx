@@ -4,14 +4,12 @@ import { MePage } from '@/pages/portfolio/me-page';
 import { ProductsPage } from '@/pages/portfolio/products-page';
 import { ProjectsPage } from '@/pages/portfolio/projects-page';
 import { SkillsPage } from '@/pages/portfolio/skills-page';
-import { StickyClipHomePage } from '@/pages/sticky-clip/home-page';
 import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
 import { DefaultLayout } from '@layouts/default-layout';
-import { StickyClipLayout } from '@layouts/sticky-clip-layout';
-import { type ReactElement, useMemo } from 'react';
+import { useMemo, type ReactElement } from 'react';
 
-const PortfolioNavigator = () => {
+export const PortfolioNavigator = () => {
 	const me = useMyProfile();
 
 	const {
@@ -43,41 +41,4 @@ const PortfolioNavigator = () => {
 	}
 
 	return <DefaultLayout>{tabs[tab || 'me']}</DefaultLayout>;
-};
-
-const StickyClipNavigator = () => {
-	const {
-		query: { name, tab, tabPage },
-	} = useNavigator();
-
-	const tabs = useMemo<Record<string, ReactElement>>(
-		() => ({
-			home: <StickyClipHomePage />,
-		}),
-		[],
-	);
-
-	const shouldShow = useMemo(() => {
-		if (tab === 'products' && name === 'sticky-clip') {
-			return true;
-		}
-
-		return Object.keys(tabs).includes(tabPage);
-	}, [tab, name, tabs, tabPage]);
-
-	if (!shouldShow) {
-		return null;
-	}
-
-	return <StickyClipLayout>{tabs[tabPage]}</StickyClipLayout>;
-};
-
-export const Navigator = () => {
-	return (
-		<>
-			<PortfolioNavigator />
-
-			<StickyClipNavigator />
-		</>
-	);
 };

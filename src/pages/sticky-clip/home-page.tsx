@@ -25,7 +25,7 @@ export const StickyClipHomePage = () => {
 
 	useEffect(() => {
 		VANTA.NET({
-			el: '#animated_layout',
+			el: '#background',
 			mouseControls: false,
 			touchControls: false,
 			gyroControls: false,
@@ -39,53 +39,62 @@ export const StickyClipHomePage = () => {
 	}, []);
 
 	return (
-		<div
-			className={clsx(
-				'flex flex-1 flex-col items-center justify-center px-10 pb-10',
-				'lg:justify-between',
-			)}
-		>
-			<div className={clsx('hidden', 'lg:flex')} />
+		<>
+			<div
+				className={clsx(
+					'flex flex-1 flex-col items-center justify-center px-10 pb-10',
+					'z-50 lg:justify-between',
+				)}
+			>
+				<div className={clsx('hidden', 'lg:flex')} />
 
-			<div className='flex flex-col items-center justify-center gap-5'>
-				<p className='text-center font-semibold text-5xl'>
-					{t('page:sticky_clip.home.product_short_description')}
-				</p>
+				<div className='flex flex-col items-center justify-center gap-5'>
+					<p className='text-center font-semibold text-5xl'>
+						{t('page:sticky_clip.home.product_short_description')}
+					</p>
 
-				<p className='text-center text-sm'>{t('page:sticky_clip.home.product_description')}</p>
-			</div>
-
-			<div className={clsx('hidden items-center gap-4 text-black', 'lg:flex')}>
-				<div
-					className={clsx(
-						'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
-						{
-							'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
-								!isMac,
-							'bg-woodsmoke-100 hover:bg-white': isMac,
-						},
-					)}
-				>
-					<FaApple size={18} />
-
-					<p>{t('common:action.download_for_mac')}</p>
+					<p className='text-center text-sm'>
+						{t('page:sticky_clip.home.product_description')}
+					</p>
 				</div>
 
-				<div
-					className={clsx(
-						'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
-						{
-							'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
-								!isWin,
-							'bg-woodsmoke-100 hover:bg-white': isWin,
-						},
-					)}
-				>
-					<FaWindows size={18} />
+				<div className={clsx('hidden items-center gap-4 text-black', 'lg:flex')}>
+					<div
+						className={clsx(
+							'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+							{
+								'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
+									!isMac,
+								'bg-woodsmoke-100 hover:bg-white': isMac,
+							},
+						)}
+					>
+						<FaApple size={18} />
 
-					<p>{t('common:coming_soon')}</p>
+						<p>{t('common:action.download_for_mac')}</p>
+					</div>
+
+					<div
+						className={clsx(
+							'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+							{
+								'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
+									!isWin,
+								'bg-woodsmoke-100 hover:bg-white': isWin,
+							},
+						)}
+					>
+						<FaWindows size={18} />
+
+						<p>{t('common:coming_soon')}</p>
+					</div>
 				</div>
 			</div>
-		</div>
+
+			<div
+				id='background'
+				className='fixed bottom-0 left-0 right-0 top-0'
+			/>
+		</>
 	);
 };

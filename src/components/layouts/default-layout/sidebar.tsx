@@ -111,9 +111,6 @@ const DefaultLayoutSidebar = () => {
 						},
 					)}
 					onClick={() => setShowMenuBtnClicked((prev) => !prev)}
-					onKeyUp={() => {
-						//
-					}}
 				>
 					<IoMenu className='size-6 text-white' />
 				</div>
@@ -130,9 +127,6 @@ const DefaultLayoutSidebar = () => {
 				)}
 				onClick={() => {
 					setShowMenuBtnClicked(true);
-				}}
-				onKeyUp={() => {
-					//
 				}}
 			/>
 		</div>

@@ -27,9 +27,6 @@ export const DefaultLayoutSidebarItem = ({ data, index, onPress }: Props) => {
 			data-tooltip-id='tooltip'
 			data-tooltip-content={data.label}
 			data-tooltip-place='right'
-			onKeyUp={() => {
-				//
-			}}
 			onClick={() => {
 				onPress();
 			}}

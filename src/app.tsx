@@ -1,11 +1,11 @@
-import { Navigator } from '@components/layouts/navigator';
+import { MainNavigator } from '@components/layouts/navigator/main-navigator';
 import clsx from 'clsx';
 import { Tooltip } from 'react-tooltip';
 
 export const App = () => {
 	return (
 		<>
-			<Navigator />
+			<MainNavigator />
 
 			<Tooltip
 				id='tooltip'

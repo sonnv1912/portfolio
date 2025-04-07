@@ -19,9 +19,15 @@ export const StickyClipLayoutHeader = () => {
 	const tabs = [
 		{
 			label: t('page:sticky_clip.home.teams'),
+			query: {
+				tabPage: 'teams',
+			},
 		},
 		{
 			label: t('page:sticky_clip.home.changelog'),
+			query: {
+				tabPage: 'changelog',
+			},
 		},
 	];
 
@@ -36,7 +42,14 @@ export const StickyClipLayoutHeader = () => {
 				)}
 			>
 				<div className={clsx('flex w-full items-center justify-between gap-5 px-5 py-4')}>
-					<div className='flex items-center gap-2 text-white'>
+					<div
+						className='flex cursor-pointer items-center gap-2 text-white'
+						onClick={() => {
+							setQuery({
+								tabPage: 'home',
+							});
+						}}
+					>
 						<FaArrowLeftLong
 							className='cursor-pointer text-woodsmoke-300 hover:text-white'
 							data-tooltip-id='tooltip'
@@ -66,6 +79,9 @@ export const StickyClipLayoutHeader = () => {
 							<p
 								key={item.label}
 								className='cursor-pointer text-sm text-woodsmoke-300 hover:text-white'
+								onClick={() => {
+									setQuery(item.query);
+								}}
 							>
 								{item.label}
 							</p>

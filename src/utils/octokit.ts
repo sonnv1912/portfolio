@@ -3,6 +3,8 @@ import { Octokit } from 'octokit';
 
 const octokit = new Octokit({ auth: env.githubToken });
 
+console.log('🚀 ~ octokit.ts:7 ~ env.githubToken:', env.githubToken);
+
 export const octokitRequest = async <T>({ endpoint, repo }: OctokitRequestProps) => {
 	const response = await octokit.request(`GET /repos/{owner}/{repo}${endpoint}`, {
 		owner: env.owner,

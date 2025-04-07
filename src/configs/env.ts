@@ -1,5 +1,5 @@
 export const env = {
-	githubToken: import.meta.env.VITE_GITHUB_KEY,
+	githubToken: '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',
 	owner: 'sonnv1912',
 	repo: {
 		stickyClip: 'sticky-clip',

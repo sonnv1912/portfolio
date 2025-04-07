@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+
+on:
+   push:
+      branches:
+         - main # Hoặc nhánh mà bạn muốn trigger hành động khi có commit mới
+
+jobs:
+   deploy:
+      runs-on: ubuntu-latest
+
+      steps:
+         # Checkout mã nguồn của bạn
+         - name: Checkout repository
+           uses: actions/checkout@v2
+
+         # Cài đặt Node.js (nếu dự án của bạn là React, Vite, hoặc các framework JavaScript)
+         - name: Set up Node.js
+           uses: actions/setup-node@v2
+           with:
+              node-version: '16' # Chỉnh sửa theo phiên bản Node.js bạn cần
+
+         # Cài đặt dependencies
+         - name: Install dependencies
+           run: npm install
+
+         # Build dự án (nếu cần, ví dụ đối với React hoặc Vite)
+         - name: Build project
+           run: npm run build # Thay thế bằng lệnh build của bạn, ví dụ: 'npm run build' hoặc 'vite build'
+
+         # Đưa các file build vào gh-pages branch
+         - name: Deploy to gh-pages
+           uses: peaceiris/actions-gh-pages@v3
+           with:
+              personal_token: ${{ secrets.GITHUB_TOKEN }}
+              branch: gh-pages # Nhánh sẽ chứa mã nguồn cho GitHub Pages
+              folder: dist # Thư mục chứa các file build (ví dụ: 'build' nếu bạn dùng React, Vite, hoặc 'dist' nếu dùng các công cụ khác)

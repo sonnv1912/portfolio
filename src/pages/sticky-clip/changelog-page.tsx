@@ -6,19 +6,22 @@ import Markdown from 'react-markdown';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 import { env } from '@configs/env';
+import { Loading } from '@components/ui/loading';
 
 export const StickyClipChangelogPage = () => {
 	const releasesQuery = useGetRelease(env.repo.stickyClip);
 	const { t } = useTranslation();
 
 	return (
-		<div className={clsx('mx-auto mt-10', 'lg:max-w-[80vw]')}>
+		<div className={clsx('relative mx-auto mt-10', 'lg:max-w-[80vw]')}>
 			<div>
 				<div className='flex gap-10'>
 					<div className='w-28' />
 
 					<p className='font-semibold text-5xl'>{t('page:sticky_clip:home.changelog')}</p>
 				</div>
+
+				<Loading loading={releasesQuery.isLoading} />
 
 				<div className='mt-20 flex flex-col gap-40'>
 					{releasesQuery.data?.data?.map((release) => (

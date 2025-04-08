@@ -12,17 +12,7 @@ export const Loading = ({ loading, size = 60 }: PropsWithChildren<Props>) => {
 
 	return (
 		loading && (
-			<div
-				style={{
-					position: 'fixed',
-					top: 0,
-					left: 0,
-					right: 0,
-					bottom: 0,
-					zIndex: 9999,
-					backgroundColor: '#1b1b1b',
-				}}
-			>
+			<div className='absolute bottom-0 left-0 right-0 top-0 z-50 bg-black/40'>
 				<div
 					className={clsx(styles.loader)}
 					style={{ width: size, height: size }}

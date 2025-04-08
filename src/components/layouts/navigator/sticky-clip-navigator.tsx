@@ -1,6 +1,7 @@
 import { StickyClipChangelogPage } from '@/pages/sticky-clip/changelog-page';
 import { StickyClipHomePage } from '@/pages/sticky-clip/home-page';
 import { StickyClipTeamsPage } from '@/pages/sticky-clip/teams-page';
+import { env } from '@configs/env';
 import { useNavigator } from '@hooks/use-navigator';
 import { StickyClipLayout } from '@layouts/sticky-clip-layout';
 import { useMemo, type ReactElement } from 'react';
@@ -20,7 +21,7 @@ export const StickyClipNavigator = () => {
 	);
 
 	const shouldShow = useMemo(() => {
-		if (tab === 'products' && name === 'sticky-clip') {
+		if (tab === 'products' && name === env.repo.stickyClip) {
 			return true;
 		}
 

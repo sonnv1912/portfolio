@@ -17,6 +17,7 @@ import PlayConsoleImage from '@assets/images/img-play-console.png';
 import ToeicImage from '@assets/images/img-toeic.jpg';
 import StickyClipIcon from '@assets/icons/ic-clipboard.png';
 import { useTranslation } from 'react-i18next';
+import { env } from '@configs/env';
 
 export const useMyProfile = () => {
 	const { t } = useTranslation();
@@ -322,9 +323,8 @@ export const useMyProfile = () => {
 				label: 'Sticky Clip',
 				desc: 'Your clipboard manager',
 				image: StickyClipIcon,
-				version: '1.0.0',
 				params: {
-					name: 'sticky-clip',
+					name: env.repo.stickyClip,
 					tabPage: 'home',
 				},
 			},

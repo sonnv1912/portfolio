@@ -29,6 +29,7 @@
 			"@hooks/*": ["./src/hooks/*"],
 			"@configs/*": ["./src/configs/*"],
 			"@utils/*": ["./src/utils/*"],
+			"@stores/*": ["./src/stores/*"],
 			"@/*": ["./src/*"]
 		},
 		"types": ["./node_modules/user-agent-data-types"]

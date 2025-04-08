@@ -6,7 +6,7 @@ export const useGetLatestRelease = (repo: string) => {
 	return useQuery({
 		queryKey: queryKey.release.latest(repo),
 		queryFn: () => {
-			const response = octokitRequest<Release[]>({
+			const response = octokitRequest<Release>({
 				endpoint: '/releases/latest',
 				repo: repo,
 			});

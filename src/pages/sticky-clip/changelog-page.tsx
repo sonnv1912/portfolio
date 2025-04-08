@@ -30,7 +30,7 @@ export const StickyClipChangelogPage = () => {
 							className='flex gap-8'
 						>
 							<div className='flex w-28 flex-col gap-4 text-sm'>
-								<p className='bg-stickyclip-500/50 text-stickyclip-300 w-fit rounded-md px-4 py-1 text-center'>
+								<p className='w-fit rounded-md bg-stickyclip-500/50 px-4 py-1 text-center text-stickyclip-300'>
 									{release.tag_name}
 								</p>
 
@@ -43,7 +43,20 @@ export const StickyClipChangelogPage = () => {
 								className='markdown-body mt-10 flex-1'
 								style={{ backgroundColor: 'transparent' }}
 							>
-								<Markdown>{release.body}</Markdown>
+								<Markdown
+									components={{
+										a: (props) => {
+											return (
+												<a
+													{...props}
+													target='_blank'
+												/>
+											);
+										},
+									}}
+								>
+									{release.body}
+								</Markdown>
 							</div>
 						</div>
 					))}

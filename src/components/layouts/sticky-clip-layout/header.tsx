@@ -1,6 +1,7 @@
 import StickyClipIcon from '@assets/icons/ic-clipboard.png';
 import { LanguageSwitcher } from '@components/ui/language-switcher';
 import { useNavigator } from '@hooks/use-navigator';
+import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
@@ -14,6 +15,7 @@ export const StickyClipLayoutHeader = () => {
 	const { t } = useTranslation();
 	const { setQuery } = useNavigator();
 	const [showMenu, setShowMenu] = useState(false);
+	const { getWinDownload, getMacDownload } = useLatestRelease();
 
 	const tabs = [
 		{
@@ -32,7 +34,7 @@ export const StickyClipLayoutHeader = () => {
 
 	return (
 		<div className={clsx('fixed left-0 right-0 top-5 z-10', 'flex justify-center')}>
-			<motion.div
+			<div
 				className={clsx(
 					'bg-white-950/50 rounded-lg border border-woodsmoke-600 backdrop-blur-sm',
 					'overflow-hidden transition-all',
@@ -86,31 +88,47 @@ export const StickyClipLayoutHeader = () => {
 						/>
 
 						{isMac && (
-							<div
+							<a
+								href={getMacDownload('stickyClip')}
+								target='_blank'
 								className={clsx(
-									'cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-sm',
-									'hidden bg-woodsmoke-100 hover:bg-white',
-									'lg:flex',
+									'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+									{
+										'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
+											!isMac,
+										'bg-woodsmoke-100 hover:bg-white': isMac,
+									},
 								)}
 							>
 								<FaApple size={18} />
 
 								<p>{t('common:action.download')}</p>
-							</div>
+							</a>
 						)}
 
 						{isWin && (
-							<div
+							<a
+								href={getWinDownload('stickyClip')}
+								target='_blank'
 								className={clsx(
-									'cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-sm',
-									'hidden bg-woodsmoke-100 hover:bg-white',
-									'lg:flex',
+									'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+									{
+										'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
+											!isWin,
+										'bg-woodsmoke-100 hover:bg-white': isWin,
+									},
 								)}
 							>
 								<FaWindows size={18} />
 
-								<p>{t('common:coming_soon')}</p>
-							</div>
+								<p>
+									{t(
+										getWinDownload('stickyClip')
+											? 'common:download_for_win'
+											: 'common:coming_soon',
+									)}
+								</p>
+							</a>
 						)}
 					</div>
 				</div>
@@ -118,7 +136,7 @@ export const StickyClipLayoutHeader = () => {
 				<AnimatePresence initial={true}>
 					{showMenu && (
 						<motion.div
-							className={clsx('md:hidden')}
+							className={clsx('lg:hidden')}
 							initial={{
 								height: 0,
 								paddingBottom: 0,
@@ -145,7 +163,7 @@ export const StickyClipLayoutHeader = () => {
 						</motion.div>
 					)}
 				</AnimatePresence>
-			</motion.div>
+			</div>
 		</div>
 	);
 };

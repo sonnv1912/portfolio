@@ -1,5 +1,7 @@
 import StickyClipIcon from '@assets/icons/ic-clipboard.png';
+import { Divider } from '@components/ui/divider';
 import { LanguageSwitcher } from '@components/ui/language-switcher';
+import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
 import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
@@ -16,6 +18,7 @@ export const StickyClipLayoutHeader = () => {
 	const { setQuery } = useNavigator();
 	const [showMenu, setShowMenu] = useState(false);
 	const { getWinDownload, getMacDownload } = useLatestRelease();
+	const me = useMyProfile();
 
 	const tabs = [
 		{
@@ -43,21 +46,39 @@ export const StickyClipLayoutHeader = () => {
 				)}
 			>
 				<div className={clsx('flex w-full items-center justify-between gap-5 px-5 py-4')}>
-					<div
-						className='flex cursor-pointer items-center gap-2 text-white'
-						onClick={() => {
-							setQuery({
-								tabPage: 'home',
-							});
-						}}
-					>
+					<div className='flex items-center gap-4'>
 						<img
-							src={StickyClipIcon}
-							alt=''
-							className='size-6'
+							src={me.image}
+							className='size-9 cursor-pointer rounded-full'
+							data-tooltip-id='tooltip'
+							data-tooltip-content={t('page:sticky_clip.home.back_to_product')}
+							onClick={() => {
+								setQuery({
+									tabPage: '',
+									name: '',
+									tab: 'products',
+								});
+							}}
 						/>
 
-						<p className='text-sm'>Sticky Clip</p>
+						<Divider />
+
+						<div
+							className='flex cursor-pointer items-center gap-2 text-white'
+							onClick={() => {
+								setQuery({
+									tabPage: 'home',
+								});
+							}}
+						>
+							<img
+								src={StickyClipIcon}
+								alt=''
+								className='size-6'
+							/>
+
+							<p className='text-sm'>Sticky Clip</p>
+						</div>
 					</div>
 
 					<div className={clsx('hidden items-center gap-7', 'lg:flex')}>

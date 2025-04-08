@@ -21,7 +21,7 @@ export const ProductsPage = () => {
 						className={clsx(
 							'flex gap-4 rounded-xl border border-woodsmoke-600 p-4',
 							'cursor-pointer transition-all duration-500',
-							'hover:bg-woodsmoke-800 hover:shadow-lg hover:shadow-sky-500',
+							'hover:shadow-lg hover:shadow-stickyclip-900',
 						)}
 						onClick={() => {
 							setQuery(product.params);

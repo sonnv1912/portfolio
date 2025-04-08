@@ -3,6 +3,7 @@ import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { t } from 'i18next';
 import { FaApple, FaWindows } from 'react-icons/fa';
+import { Divider } from './divider';
 
 type Props = {
 	repo: keyof typeof env.repo;
@@ -54,7 +55,7 @@ export const RepoDownloadInfo = ({ repo }: Props) => {
 			<div className='mt-4 flex items-center justify-center gap-4 text-xs text-woodsmoke-300'>
 				<p>{rest[repo]?.tag_name}</p>
 
-				<div className='h-4 w-[1px] rounded-md bg-woodsmoke-300' />
+				<Divider />
 
 				<p>macOS 11+</p>
 			</div>

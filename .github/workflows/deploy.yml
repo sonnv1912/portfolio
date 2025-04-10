@@ -38,6 +38,6 @@ jobs:
          - name: Deploy to gh-pages Sticky Clip
            uses: peaceiris/actions-gh-pages@v4
            with:
-               deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+               personal_token: ${{ secrets.REPO_INFO }}
                external_repository: sonnv1912/sticky-clip
                publish_dir: .apps/sticky-clip/dist

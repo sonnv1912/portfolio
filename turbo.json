@@ -7,9 +7,13 @@
          "persistent": true
       },
       "build": {
-         "cache": true,
+         "cache": false,
          "persistent": false,
          "outputs": ["dist"]
+      },
+      "preview": {
+         "cache": false,
+         "persistent": true
       }
    }
 }

@@ -3,9 +3,10 @@
    "private": true,
    "scripts": {
       "dev": "turbo run dev",
-      "clear-modules": "chmod +x ./scripts/clear-node-modules.sh && sh ./scripts/clear-node-modules.sh",
+      "build": "turbo run build",
+      "preview": "yarn build && turbo run preview",
       "format": "biome format --write --config-path ./biome.json ./",
-      "build": "turbo run build"
+      "clear-modules": "chmod +x ./scripts/clear-node-modules.sh && sh ./scripts/clear-node-modules.sh"
    },
    "devDependencies": {
       "@biomejs/biome": "1.9.4",

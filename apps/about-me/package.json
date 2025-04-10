@@ -10,7 +10,7 @@
       "dev": "vite",
       "build": "tsc -b && vite build",
       "lint": "eslint .",
-      "preview": "yarn build && vite preview",
+      "preview": "vite preview",
       "prepare": "husky"
    },
    "private": true,

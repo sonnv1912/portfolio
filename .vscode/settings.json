@@ -8,5 +8,6 @@
    },
    "[javascript]": {
       "editor.defaultFormatter": "biomejs.biome"
-   }
+   },
+   "cSpell.words": ["nuqs"]
 }

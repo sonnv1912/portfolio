@@ -49,6 +49,9 @@
          "performance": {
             "noReExportAll": "off",
             "noBarrelFile": "off"
+         },
+         "suspicious": {
+            "noReactSpecificProps": "off"
          }
       }
    },

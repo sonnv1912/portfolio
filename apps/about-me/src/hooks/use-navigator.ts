@@ -6,14 +6,6 @@ export const useNavigator = () => {
          clearOnDefault: true,
          history: 'push',
       }),
-      name: parseAsString.withDefault('').withOptions({
-         clearOnDefault: true,
-         history: 'push',
-      }),
-      tabPage: parseAsString.withDefault('').withOptions({
-         clearOnDefault: true,
-         history: 'push',
-      }),
    });
 
    return {

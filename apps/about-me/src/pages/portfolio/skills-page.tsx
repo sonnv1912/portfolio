@@ -1,8 +1,8 @@
 import { Page } from '@components/layouts/page';
-import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { LuCode2 } from 'react-icons/lu';
+import { LuCode } from 'react-icons/lu';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 
 export const SkillsPage = () => {
    const me = useMyProfile();
@@ -30,7 +30,7 @@ export const SkillsPage = () => {
                            'bg-woodsmoke-800 text-white hover:bg-woodsmoke-600',
                         )}
                      >
-                        <LuCode2 />
+                        <LuCode />
                      </div>
 
                      <p

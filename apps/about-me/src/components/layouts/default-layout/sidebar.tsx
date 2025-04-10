@@ -1,5 +1,4 @@
 import { LanguageSwitcher } from '@components/ui/language-switcher';
-import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
 import clsx from 'clsx';
 import { useState } from 'react';
@@ -11,6 +10,7 @@ import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
 import { DefaultLayoutSidebarItem } from './sidebar-item';
 import { useTranslation } from 'react-i18next';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 
 const DefaultLayoutSidebar = () => {
    const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
@@ -70,7 +70,7 @@ const DefaultLayoutSidebar = () => {
             <div
                className={clsx(
                   'flex h-screen flex-col gap-2 overflow-y-auto',
-                  'bg-woodsmoke-700 p-2 text-woodsmoke-200',
+                  'bg-woodsmoke-900 p-2 text-woodsmoke-200',
                )}
             >
                {tabs.map((tab, index) => (

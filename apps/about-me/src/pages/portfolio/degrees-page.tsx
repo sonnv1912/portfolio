@@ -1,9 +1,10 @@
-import { useMyProfile } from '@hooks/use-my-profile';
+import { Page } from '@components/layouts/page';
 import clsx from 'clsx';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HiXMark } from 'react-icons/hi2';
 import { MdLocationPin } from 'react-icons/md';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 
 export const DegreesPage = () => {
    const me = useMyProfile();
@@ -11,13 +12,7 @@ export const DegreesPage = () => {
    const [active, setActive] = useState('');
 
    return (
-      <div
-         className={clsx(
-            'flex min-h-screen flex-col gap-16 p-8',
-            'md:p-12',
-            'lg:p-20',
-         )}
-      >
+      <Page>
          <p className='text-center font-eb-raleway text-4xl'>
             {t('page:portfolio.degrees.title').toUpperCase()}
          </p>
@@ -95,7 +90,6 @@ export const DegreesPage = () => {
                   'md:p-12',
                   'lg:p-20',
                )}
-               onClick={() => {}}
             >
                <img
                   alt=''
@@ -120,6 +114,6 @@ export const DegreesPage = () => {
                </div>
             </div>
          )}
-      </div>
+      </Page>
    );
 };

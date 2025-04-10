@@ -1,5 +1,6 @@
-import { useMyProfile } from '@hooks/use-my-profile';
+import { Page } from '@components/layouts/page';
 import clsx from 'clsx';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 import { useTranslation } from 'react-i18next';
 
 export const ContactPage = () => {
@@ -7,13 +8,7 @@ export const ContactPage = () => {
    const { t } = useTranslation();
 
    return (
-      <div
-         className={clsx(
-            'flex min-h-screen flex-col gap-16 bg-black p-8 text-white',
-            'md:p-12',
-            'lg:p-20',
-         )}
-      >
+      <Page>
          <p className='text-center font-eb-raleway text-4xl'>
             {t('page:portfolio.contact.title').toUpperCase()}
          </p>
@@ -44,6 +39,6 @@ export const ContactPage = () => {
                </a>
             ))}
          </div>
-      </div>
+      </Page>
    );
 };

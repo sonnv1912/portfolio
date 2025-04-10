@@ -1,4 +1,4 @@
-import { languages } from '@configs/constants';
+import { languages } from 'configs/constants';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 

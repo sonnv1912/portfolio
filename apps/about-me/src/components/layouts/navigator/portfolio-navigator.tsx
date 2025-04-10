@@ -4,16 +4,13 @@ import { MePage } from '@/pages/portfolio/me-page';
 import { ProductsPage } from '@/pages/portfolio/products-page';
 import { ProjectsPage } from '@/pages/portfolio/projects-page';
 import { SkillsPage } from '@/pages/portfolio/skills-page';
-import { useMyProfile } from '@hooks/use-my-profile';
 import { useNavigator } from '@hooks/use-navigator';
 import { DefaultLayout } from '@layouts/default-layout';
-import { useMemo, type ReactElement } from 'react';
+import { type ReactElement, useMemo } from 'react';
 
 export const PortfolioNavigator = () => {
-   const me = useMyProfile();
-
    const {
-      query: { name, tab },
+      query: { tab },
    } = useNavigator();
 
    const tabs = useMemo<Record<string, ReactElement>>(
@@ -29,19 +26,12 @@ export const PortfolioNavigator = () => {
    );
 
    const shouldShow = useMemo(() => {
-      if (
-         tab === 'products' &&
-         me.products.find((t) => t.params.name === name)
-      ) {
-         return false;
-      }
-
-      return Object.keys(tabs).includes(tab || 'me');
-   }, [me.products, name, tab, tabs]);
+      return Object.keys(tabs).includes(tab);
+   }, [tab, tabs]);
 
    if (!shouldShow) {
       return null;
    }
 
-   return <DefaultLayout>{tabs[tab || 'me']}</DefaultLayout>;
+   return <DefaultLayout>{tabs[tab]}</DefaultLayout>;
 };

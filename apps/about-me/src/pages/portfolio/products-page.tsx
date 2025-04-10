@@ -1,24 +1,17 @@
+import { Page } from '@components/layouts/page';
 import { Loading } from '@components/ui/loading';
-import { useGetAllRepoRelease } from '@hooks/query/use-get-release';
-import { useMyProfile } from '@hooks/use-my-profile';
-import { useNavigator } from '@hooks/use-navigator';
+import { useGetAllRepoRelease } from 'hooks/query/use-get-release.ts';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 
 export const ProductsPage = () => {
    const me = useMyProfile();
    const { t } = useTranslation();
-   const { setQuery } = useNavigator();
    const allRepoRelease = useGetAllRepoRelease();
 
    return (
-      <div
-         className={clsx(
-            'relative flex min-h-screen flex-col gap-16 p-8',
-            'md:p-12',
-            'lg:p-20',
-         )}
-      >
+      <Page>
          <p className='text-center font-eb-raleway text-4xl'>
             {t('page:portfolio.products.title').toUpperCase()}
          </p>
@@ -34,16 +27,16 @@ export const ProductsPage = () => {
          >
             {allRepoRelease.some((t) => t.tag_name) &&
                me.products.map((product, index) => (
-                  <div
+                  <a
                      key={product.label}
+                     href={product.url}
+                     target='_blank'
                      className={clsx(
                         'flex gap-4 rounded-xl border border-woodsmoke-600 p-4',
                         'cursor-pointer transition-all duration-500',
                         'hover:shadow-lg hover:shadow-stickyclip-900',
                      )}
-                     onClick={() => {
-                        setQuery(product.params);
-                     }}
+                     rel='noreferrer'
                   >
                      <div className='flex size-14 items-center justify-center rounded-xl bg-white'>
                         <img alt='' src={product.image} className='size-10' />
@@ -56,9 +49,9 @@ export const ProductsPage = () => {
                            {allRepoRelease?.[index].tag_name}
                         </p>
                      </div>
-                  </div>
+                  </a>
                ))}
          </div>
-      </div>
+      </Page>
    );
 };

@@ -1,9 +1,9 @@
 import { Page } from '@components/layouts/page';
 import { BlinkBrand } from '@components/pages/me-page/blink-brand';
-import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { FiExternalLink } from 'react-icons/fi';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 
 export const MePage = () => {
    const me = useMyProfile();
@@ -20,7 +20,7 @@ export const MePage = () => {
          >
             <div className='flex flex-1 flex-col gap-10'>
                <div className='flex flex-1 flex-wrap items-center gap-6'>
-                  <p className='flex font-eb-raleway text-5xl'>{me.name}</p>
+                  <p className='flex font-bold text-5xl'>{me.name}</p>
 
                   <div className='flex items-center gap-4'>
                      <a

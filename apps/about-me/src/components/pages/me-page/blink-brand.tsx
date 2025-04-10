@@ -1,5 +1,5 @@
-import { useMyProfile } from '@hooks/use-my-profile';
 import clsx from 'clsx';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 import { useEffect, useState } from 'react';
 
 const BlinkBrand = () => {

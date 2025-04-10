@@ -1,0 +1,22 @@
+{
+   "name": "types",
+   "version": "1.0.0",
+   "exports": {
+      "./data/*": {
+         "import": "./src/data/*",
+         "require": "./dist/data/*"
+      },
+      "./shared/*": {
+         "import": "./src/shared/*",
+         "require": "./dist/shared/*"
+      }
+   },
+   "scripts": {
+      "watch_package": "tsup"
+   },
+   "dependencies": {},
+   "devDependencies": {
+      "tsup": "^8.4.0"
+   },
+   "peerDependencies": {}
+}

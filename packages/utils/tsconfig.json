@@ -1,0 +1,8 @@
+{
+   "compilerOptions": {
+      "moduleResolution": "nodenext",
+      "module": "NodeNext"
+   },
+   "include": ["src"],
+   "exclude": ["node_module", "dist"]
+}

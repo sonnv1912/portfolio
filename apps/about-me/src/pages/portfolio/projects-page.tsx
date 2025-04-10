@@ -1,20 +1,14 @@
-import { ProjectItem } from '@components/pages/project-page/item';
-import { useMyProfile } from '@hooks/use-my-profile';
-import clsx from 'clsx';
+import { Page } from '@components/layouts/page';
 import { useTranslation } from 'react-i18next';
+import { ProjectItem } from '../project-page/item';
+import { useMyProfile } from 'hooks/use-my-profile.js';
 
 export const ProjectsPage = () => {
    const me = useMyProfile();
    const { t } = useTranslation();
 
    return (
-      <div
-         className={clsx(
-            'flex min-h-screen flex-col gap-16 bg-black p-8 text-white',
-            'md:p-12',
-            'lg:p-20',
-         )}
-      >
+      <Page>
          <p className='text-center font-eb-raleway text-4xl'>
             {t('page:portfolio.projects.title').toUpperCase()}
          </p>
@@ -24,6 +18,6 @@ export const ProjectsPage = () => {
                <ProjectItem key={item.appName} data={item} />
             ))}
          </div>
-      </div>
+      </Page>
    );
 };

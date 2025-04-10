@@ -1,0 +1,29 @@
+{
+   "name": "hooks",
+   "version": "1.0.0",
+   "exports": {
+      "./query/*": {
+         "import": "./src/query/*",
+         "require": "./dist/query/*"
+      },
+      "./*": {
+         "import": "./src/*",
+         "require": "./dist/*"
+      }
+   },
+   "scripts": {
+      "watch_package": "tsup"
+   },
+   "dependencies": {
+      "configs": "*",
+      "utils": "*",
+      "assets": "*",
+      "types": "*"
+   },
+   "devDependencies": {
+      "tsup": "^8.4.0"
+   },
+   "peerDependencies": {
+      "react-i18next": "*"
+   }
+}

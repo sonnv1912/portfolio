@@ -1,0 +1,27 @@
+{
+   "name": "configs",
+   "version": "1.0.0",
+   "exports": {
+      "./constants": {
+         "import": "./src/constants.ts",
+         "require": "./dist/constants.js"
+      },
+      "./env": {
+         "import": "./src/env.ts",
+         "require": "./dist/env.js"
+      },
+      "./query-key": {
+         "import": "./src/query-key.ts",
+         "require": "./dist/query-key.js"
+      }
+   },
+   "scripts": {
+      "watch_package": "tsup"
+   },
+   "dependencies": {
+      "assets": "*"
+   },
+   "devDependencies": {
+      "tsup": "^8.4.0"
+   }
+}

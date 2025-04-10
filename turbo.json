@@ -5,6 +5,11 @@
       "dev": {
          "cache": false,
          "persistent": true
+      },
+      "build": {
+         "cache": true,
+         "persistent": false,
+         "outputs": ["dist"]
       }
    }
 }

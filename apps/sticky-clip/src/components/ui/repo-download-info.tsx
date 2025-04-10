@@ -1,4 +1,4 @@
-import type { env } from '@configs/env';
+import type { env } from 'configs/env';
 import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { t } from 'i18next';

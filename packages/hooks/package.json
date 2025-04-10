@@ -15,7 +15,8 @@
       }
    },
    "scripts": {
-      "dev": "tsup --watch"
+      "dev": "tsup --watch",
+      "build": "tsup"
    },
    "dependencies": {
       "configs": "*",

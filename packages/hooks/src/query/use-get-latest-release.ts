@@ -1,7 +1,7 @@
 import { queryKey } from 'configs/query-key';
 import { useQuery } from '@tanstack/react-query';
 import { octokitRequest } from 'utils/octokit';
-import type { Release } from 'types/data/release.ts';
+import type { Release } from 'types/data';
 
 export const useGetLatestRelease = (repo: string) => {
    return useQuery({

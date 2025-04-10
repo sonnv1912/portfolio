@@ -4,7 +4,8 @@
    "scripts": {
       "dev": "turbo run dev",
       "clear-modules": "chmod +x ./scripts/clear-node-modules.sh && sh ./scripts/clear-node-modules.sh",
-      "format": "biome format --write --config-path ./biome.json ./"
+      "format": "biome format --write --config-path ./biome.json ./",
+      "build": "turbo run build"
    },
    "devDependencies": {
       "@biomejs/biome": "1.9.4",

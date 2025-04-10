@@ -1,9 +1,6 @@
 import { env } from 'configs/env';
 import { Octokit } from 'octokit';
-import type {
-   OctokitRequestProps,
-   OctokitRequestResponse,
-} from 'types/shared/request.js';
+import type { OctokitRequestProps, OctokitRequestResponse } from 'types/shared';
 
 const octokit = new Octokit({ auth: env.githubToken });
 

@@ -1,0 +1,37 @@
+{
+   "name": "utils",
+   "version": "1.0.0",
+   "exports": {
+      "./i18n": {
+         "types": "./src/locales/i18n.ts",
+         "import": "./src/locales/i18n.ts",
+         "require": "./dist/locales/i18n.js"
+      },
+      "./octokit": {
+         "types": "./src/octokit.ts",
+         "import": "./src/octokit.ts",
+         "require": "./dist/octokit.js"
+      },
+      "./query": {
+         "types": "./src/query.ts",
+         "import": "./src/query.ts",
+         "require": "./dist/query.js"
+      }
+   },
+   "scripts": {
+      "dev": "tsup --watch",
+      "build": "tsup"
+   },
+   "dependencies": {
+      "assets": "*"
+   },
+   "devDependencies": {
+      "tsup": "^8.4.0"
+   },
+   "peerDependencies": {
+      "i18next": "*",
+      "react-i18next": "*",
+      "octokit": "*",
+      "@tanstack/react-query": "*"
+   }
+}

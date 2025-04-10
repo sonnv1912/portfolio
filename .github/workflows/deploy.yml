@@ -35,7 +35,7 @@ jobs:
                publish_branch: gh-pages
                publish_dir: .apps/about-me/dist
          
-         - name: Deploy
+         - name: Deploy to gh-pages Sticky Clip
            uses: peaceiris/actions-gh-pages@v4
            with:
                deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}

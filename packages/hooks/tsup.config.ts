@@ -6,6 +6,6 @@ export default defineConfig((options) => {
       minify: !options.watch,
       dts: true,
       clean: true,
-      loader: {},
+      tsconfig: './tsconfig.json',
    };
 });

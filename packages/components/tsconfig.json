@@ -1,8 +1,7 @@
 {
    "compilerOptions": {
       "moduleResolution": "nodenext",
-      "module": "NodeNext",
-      "resolveJsonModule": true
+      "module": "NodeNext"
    },
    "include": ["src"],
    "exclude": ["node_module", "dist"]

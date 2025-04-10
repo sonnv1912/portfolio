@@ -1,11 +1,11 @@
 import 'github-markdown-css/github-markdown.css';
 
-import { useGetRelease } from '@hooks/query/use-get-release';
+import { useGetRelease } from 'hooks/query/use-get-release.js';
 import clsx from 'clsx';
 import Markdown from 'react-markdown';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
-import { env } from '@configs/env';
+import { env } from 'configs/env';
 import { Loading } from '@components/ui/loading';
 
 export const StickyClipChangelogPage = () => {

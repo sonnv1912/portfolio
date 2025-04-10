@@ -3,16 +3,18 @@
    "version": "1.0.0",
    "exports": {
       "./query/*": {
+         "types": "./src/query/*",
          "import": "./src/query/*",
          "require": "./dist/query/*"
       },
       "./*": {
+         "types": "./src/*",
          "import": "./src/*",
          "require": "./dist/*"
       }
    },
    "scripts": {
-      "watch_package": "tsup"
+      "watch_package": "tsup --watch"
    },
    "dependencies": {
       "configs": "*",
@@ -24,6 +26,7 @@
       "tsup": "^8.4.0"
    },
    "peerDependencies": {
-      "react-i18next": "*"
+      "react-i18next": "*",
+      "@tanstack/react-query": "*"
    }
 }

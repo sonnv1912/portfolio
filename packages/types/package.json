@@ -12,7 +12,7 @@
       }
    },
    "scripts": {
-      "watch_package": "tsup"
+      "watch_package": "tsup --watch"
    },
    "dependencies": {},
    "devDependencies": {

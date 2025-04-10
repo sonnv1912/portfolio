@@ -1,10 +1,10 @@
 import { RepoDownloadInfo } from '@components/ui/repo-download-info';
-import { env } from '@configs/env';
-import { useGetLatestRelease } from '@hooks/query/use-get-latest-release';
+import { useGetLatestRelease } from 'hooks/query/use-get-latest-release.js';
 import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { env } from 'configs/env';
 
 declare const VANTA: {
    NET: (options: {

@@ -4,8 +4,8 @@ export default defineConfig((options) => {
    return {
       entry: ['./src/**/*'],
       minify: !options.watch,
-      clean: true,
       dts: true,
+      clean: true,
       loader: {},
    };
 });

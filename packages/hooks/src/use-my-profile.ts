@@ -344,7 +344,7 @@ export const useMyProfile = () => {
             label: 'Sticky Clip',
             desc: 'Your clipboard manager',
             image: images.Clipboard,
-            url: 'localhost:3333/sticky-clip',
+            url: 'http://localhost:3333/sticky-clip',
             repo: env.repo.stickyClip,
          },
       ],

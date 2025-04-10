@@ -1,0 +1,18 @@
+{
+   "name": "components",
+   "version": "1.0.0",
+   "exports": {},
+   "scripts": {
+      "watch_package": "tsup --watch"
+   },
+   "dependencies": {
+      "configs": "*",
+      "utils": "*",
+      "assets": "*",
+      "types": "*"
+   },
+   "devDependencies": {
+      "tsup": "^8.4.0"
+   },
+   "peerDependencies": {}
+}

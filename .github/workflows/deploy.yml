@@ -1,43 +1,43 @@
 name: Deploy to GitHub Pages
 
 on:
-   push:
-      branches:
-         - main
+  push:
+    branches:
+      - main
 
 jobs:
-   deploy:
-      runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-      steps:
-         - name: Checkout repository
-           uses: actions/checkout@v4.2.2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
 
-         - name: Set up Node.js
-           uses: actions/setup-node@v4.3.0
-           with:
-               node-version: '>=20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4.3.0
+        with:
+          node-version: ">=20"
 
-         - name: Install dependencies
-           uses: Borales/actions-yarn@v5.0.0
-           with:
-               cmd: install
+      - name: Install dependencies
+        uses: Borales/actions-yarn@v5.0.0
+        with:
+          cmd: install
 
-         - name: Build project
-           uses: Borales/actions-yarn@v5.0.0
-           with:
-               cmd: build
+      - name: Build project
+        uses: Borales/actions-yarn@v5.0.0
+        with:
+          cmd: build
 
-         - name: Deploy to gh-pages Portfolio
-           uses: peaceiris/actions-gh-pages@v4.0.0
-           with:
-               personal_token: ${{ secrets.REPO_INFO }}
-               publish_branch: gh-pages
-               publish_dir: ./apps/about-me/dist
-         
-         - name: Deploy to gh-pages Sticky Clip
-           uses: peaceiris/actions-gh-pages@v4
-           with:
-               personal_token: ${{ secrets.REPO_INFO }}
-               external_repository: sonnv1912/sticky-clip
-               publish_dir: ./apps/sticky-clip/dist
+      - name: Deploy to gh-pages Portfolio
+        uses: peaceiris/actions-gh-pages@v4.0.0
+        with:
+          personal_token: ${{ secrets.REPO_INFO }}
+          publish_branch: gh-pages
+          publish_dir: ./apps/about-me/dist
+
+      - name: Deploy to gh-pages Sticky Clip
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.REPO_INFO }}
+          external_repository: sonnv1912/sticky-clip
+          publish_dir: ./apps/sticky-clip/dist

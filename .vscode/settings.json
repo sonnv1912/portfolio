@@ -26,5 +26,8 @@
       "Turborepo",
       "woodsmoke",
       "zipball"
-   ]
+   ],
+   "[github-actions-workflow]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+   }
 }

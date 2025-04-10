@@ -16,21 +16,28 @@ jobs:
          - name: Set up Node.js
            uses: actions/setup-node@v4.3.0
            with:
-              node-version: '>=20'
+               node-version: '>=20'
 
          - name: Install dependencies
            uses: Borales/actions-yarn@v5.0.0
            with:
-              cmd: install
+               cmd: install
 
          - name: Build project
            uses: Borales/actions-yarn@v5.0.0
            with:
-              cmd: build
+               cmd: build
 
-         - name: Deploy to gh-pages
+         - name: Deploy to gh-pages Portfolio
            uses: peaceiris/actions-gh-pages@v4.0.0
            with:
-              personal_token: ${{ secrets.REPO_INFO }}
-              publish_branch: gh-pages
-              publish_dir: dist
+               personal_token: ${{ secrets.REPO_INFO }}
+               publish_branch: gh-pages
+               publish_dir: .apps/about-me/dist
+         
+         - name: Deploy
+           uses: peaceiris/actions-gh-pages@v4
+           with:
+               deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+               external_repository: sonnv1912/sticky-clip
+               publish_dir: .apps/sticky-clip/dist

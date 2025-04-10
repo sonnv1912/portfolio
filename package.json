@@ -5,13 +5,15 @@
       "dev": "turbo run dev",
       "build": "turbo run build",
       "preview": "yarn build && turbo run preview",
+      "deploy": "yarn build && gh-pages -d ./apps/about-me/dist",
       "format": "biome format --write --config-path ./biome.json ./",
       "clear-modules": "chmod +x ./scripts/clear-node-modules.sh && sh ./scripts/clear-node-modules.sh"
    },
    "devDependencies": {
       "@biomejs/biome": "1.9.4",
       "turbo": "^2.5.0",
-      "typescript": "5.8.2"
+      "typescript": "5.8.2",
+      "gh-pages": "^6.2.0"
    },
    "engines": {
       "node": ">=20"

@@ -9,6 +9,12 @@
       "build": {
          "cache": false,
          "persistent": false,
+         "outputs": ["dist"],
+         "dependsOn": ["^build_package"]
+      },
+      "build_package": {
+         "cache": false,
+         "persistent": false,
          "outputs": ["dist"]
       },
       "preview": {

@@ -20,7 +20,7 @@
    },
    "scripts": {
       "dev": "tsup --watch",
-      "build": "tsup"
+      "build_package": "tsup"
    },
    "dependencies": {
       "assets": "*"

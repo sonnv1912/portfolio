@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { env } from 'configs/env';
-import { images } from 'assets';
+import { images } from 'assets/images';
 
 export const useMyProfile = () => {
    const { t } = useTranslation();
@@ -344,7 +344,9 @@ export const useMyProfile = () => {
             label: 'Sticky Clip',
             desc: 'Your clipboard manager',
             image: images.Clipboard,
-            url: 'http://localhost:3333/sticky-clip',
+            url: import.meta.env.DEV
+               ? 'http://localhost:3333/sticky-clip'
+               : 'https://sonnv1912.github.io/sticky-clip/',
             repo: env.repo.stickyClip,
          },
       ],

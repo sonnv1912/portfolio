@@ -3,10 +3,15 @@
    "version": "1.0.0",
    "private": true,
    "exports": {
-      ".": {
-         "types": "./src/index.ts",
-         "import": "./src/index.ts",
-         "require": "./dist/index.js"
+      "./icons": {
+         "types": "./src/icons/index.ts",
+         "import": "./src/icons/index.ts",
+         "require": "./dist/icons/index.js"
+      },
+      "./images": {
+         "types": "./src/images/index.ts",
+         "import": "./src/images/index.ts",
+         "require": "./dist/images/index.js"
       },
       "./styles/*": {
          "import": "./src/styles/*",
@@ -14,7 +19,7 @@
       }
    },
    "scripts": {
-      "watch_package": "tsup --watch"
+      "dev": "tsup --watch"
    },
    "dependencies": {},
    "devDependencies": {

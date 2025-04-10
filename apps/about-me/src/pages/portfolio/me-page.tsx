@@ -3,7 +3,7 @@ import { BlinkBrand } from '@components/pages/me-page/blink-brand';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { FiExternalLink } from 'react-icons/fi';
-import { useMyProfile } from 'hooks/use-my-profile.js';
+import { useMyProfile } from 'hooks/shared';
 
 export const MePage = () => {
    const me = useMyProfile();

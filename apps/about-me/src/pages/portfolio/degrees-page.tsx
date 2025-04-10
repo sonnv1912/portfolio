@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { HiXMark } from 'react-icons/hi2';
 import { MdLocationPin } from 'react-icons/md';
-import { useMyProfile } from 'hooks/use-my-profile.js';
+import { useMyProfile } from 'hooks/shared';
 
 export const DegreesPage = () => {
    const me = useMyProfile();

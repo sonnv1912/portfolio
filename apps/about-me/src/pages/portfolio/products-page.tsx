@@ -1,9 +1,9 @@
 import { Page } from '@components/layouts/page';
 import { Loading } from '@components/ui/loading';
-import { useGetAllRepoRelease } from 'hooks/query/use-get-release.ts';
+import { useGetAllRepoRelease } from 'hooks/query';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
-import { useMyProfile } from 'hooks/use-my-profile.js';
+import { useMyProfile } from 'hooks/shared';
 
 export const ProductsPage = () => {
    const me = useMyProfile();

@@ -1,9 +1,15 @@
 {
    "name": "components",
    "version": "1.0.0",
-   "exports": {},
+   "exports": {
+      "./ui": {
+         "types": "./src/ui/index.ts",
+         "import": "./src/ui/index.ts",
+         "require": "./dist/ui/index.js"
+      }
+   },
    "scripts": {
-      "watch_package": "tsup --watch"
+      "dev": "tsup --watch"
    },
    "dependencies": {
       "configs": "*",
@@ -14,5 +20,10 @@
    "devDependencies": {
       "tsup": "^8.4.0"
    },
-   "peerDependencies": {}
+   "peerDependencies": {
+      "react": "*",
+      "react-dom": "*",
+      "@types/react": "*",
+      "@types/react-dom": "*"
+   }
 }

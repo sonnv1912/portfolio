@@ -1,20 +1,21 @@
 {
    "name": "hooks",
    "version": "1.0.0",
+   "type": "module",
    "exports": {
-      "./query/*": {
-         "types": "./src/query/*",
-         "import": "./src/query/*",
-         "require": "./dist/query/*"
+      "./query": {
+         "types": "./src/query/index.ts",
+         "import": "./src/query/index.ts",
+         "require": "./dist/query/index.js"
       },
-      "./*": {
-         "types": "./src/*",
-         "import": "./src/*",
-         "require": "./dist/*"
+      "./shared": {
+         "types": "./src/shared/index.ts",
+         "import": "./src/shared/index.ts",
+         "require": "./dist/shared/index.js"
       }
    },
    "scripts": {
-      "watch_package": "tsup --watch"
+      "dev": "tsup --watch"
    },
    "dependencies": {
       "configs": "*",

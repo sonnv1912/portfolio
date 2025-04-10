@@ -1,5 +1,5 @@
 import { RepoDownloadInfo } from '@components/ui/repo-download-info';
-import { useGetLatestRelease } from 'hooks/query/use-get-latest-release.js';
+import { useGetLatestRelease } from 'hooks/query';
 import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { useEffect } from 'react';

@@ -26,4 +26,7 @@ declare module '*.png' {
     const value: string;
     export = value;
  }
- 
+ declare module '*.module.css' {
+   const value: { [key: string]: string };
+   export = value;
+ }

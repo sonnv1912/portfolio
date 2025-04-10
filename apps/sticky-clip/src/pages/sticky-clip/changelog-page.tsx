@@ -1,6 +1,6 @@
 import 'github-markdown-css/github-markdown.css';
 
-import { useGetRelease } from 'hooks/query/use-get-release.js';
+import { useGetRelease } from 'hooks/query';
 import clsx from 'clsx';
 import Markdown from 'react-markdown';
 import moment from 'moment';

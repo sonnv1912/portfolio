@@ -1,15 +1,8 @@
 import { StickyClipLayoutHeader } from '@components/layouts/sticky-clip-layout/header';
 import clsx from 'clsx';
-import { useEffect, type PropsWithChildren } from 'react';
-import { useTranslation } from 'react-i18next';
+import type { PropsWithChildren } from 'react';
 
 export const StickyClipLayout = ({ children }: PropsWithChildren) => {
-   const { t } = useTranslation();
-
-   useEffect(() => {
-      document.title = t('page:sticky_clip.title');
-   }, [t]);
-
    return (
       <div className='relative bg-black'>
          <StickyClipLayoutHeader />

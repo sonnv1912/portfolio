@@ -1,8 +1,9 @@
 {
    "compilerOptions": {
       "moduleResolution": "nodenext",
-      "module": "NodeNext"
+      "module": "NodeNext",
+      "jsx": "react-jsx"
    },
-   "include": ["src"],
+   "include": ["src", "assets.d.ts"],
    "exclude": ["node_module", "dist"]
 }

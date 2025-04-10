@@ -3,20 +3,23 @@
    "version": "1.0.0",
    "exports": {
       "./i18n": {
+         "types": "./src/locales/i18n.ts",
          "import": "./src/locales/i18n.ts",
          "require": "./dist/locales/i18n.js"
       },
       "./octokit": {
+         "types": "./src/octokit.ts",
          "import": "./src/octokit.ts",
          "require": "./dist/octokit.js"
       },
       "./query": {
+         "types": "./src/query.ts",
          "import": "./src/query.ts",
          "require": "./dist/query.js"
       }
    },
    "scripts": {
-      "watch_package": "tsup --watch"
+      "dev": "tsup --watch"
    },
    "dependencies": {
       "assets": "*"

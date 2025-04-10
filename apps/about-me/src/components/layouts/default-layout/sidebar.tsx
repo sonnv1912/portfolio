@@ -10,7 +10,7 @@ import { IoMenu } from 'react-icons/io5';
 import { MdFolder } from 'react-icons/md';
 import { DefaultLayoutSidebarItem } from './sidebar-item';
 import { useTranslation } from 'react-i18next';
-import { useMyProfile } from 'hooks/use-my-profile.js';
+import { useMyProfile } from 'hooks/shared';
 
 const DefaultLayoutSidebar = () => {
    const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);

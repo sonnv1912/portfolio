@@ -19,7 +19,7 @@
       }
    },
    "scripts": {
-      "watch_package": "tsup --watch"
+      "dev": "tsup --watch"
    },
    "dependencies": {
       "assets": "*"

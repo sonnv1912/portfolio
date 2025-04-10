@@ -3,16 +3,18 @@
    "version": "1.0.0",
    "exports": {
       "./data/*": {
+         "types": "./src/data/*",
          "import": "./src/data/*",
          "require": "./dist/data/*"
       },
       "./shared/*": {
+         "types": "./src/shared/*",
          "import": "./src/shared/*",
          "require": "./dist/shared/*"
       }
    },
    "scripts": {
-      "watch_package": "tsup --watch"
+      "dev": "tsup --watch"
    },
    "dependencies": {},
    "devDependencies": {

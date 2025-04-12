@@ -9,7 +9,7 @@ export const ProjectsPage = () => {
 
    return (
       <Page>
-         <p className='text-center font-eb-raleway text-4xl'>
+         <p className='text-center font-bold text-4xl'>
             {t('page:portfolio.projects.title').toUpperCase()}
          </p>
 

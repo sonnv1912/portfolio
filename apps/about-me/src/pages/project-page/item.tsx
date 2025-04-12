@@ -66,7 +66,7 @@ const ProjectItem = ({ data }: Props) => {
 
          <div className={clsx('relative flex w-full flex-col gap-8')}>
             <div className='flex flex-wrap'>
-               <p className='w-56 font-semibold text-woodsmoke-400'>
+               <p className='w-56 font-bold text-woodsmoke-400'>
                   {t('page:portfolio.projects.company')}:
                </p>
 
@@ -74,7 +74,7 @@ const ProjectItem = ({ data }: Props) => {
             </div>
 
             <div className='flex flex-wrap'>
-               <p className='w-56 font-semibold text-woodsmoke-400'>
+               <p className='w-56 font-bold text-woodsmoke-400'>
                   {t('page:portfolio.projects.team_size')}:
                </p>
 
@@ -82,7 +82,7 @@ const ProjectItem = ({ data }: Props) => {
             </div>
 
             <div className='flex flex-wrap'>
-               <p className='w-56 font-semibold text-woodsmoke-400'>
+               <p className='w-56 font-bold text-woodsmoke-400'>
                   {t('common:description')}:
                </p>
 
@@ -113,7 +113,7 @@ const ProjectItem = ({ data }: Props) => {
                }}
             >
                <div className='flex flex-wrap'>
-                  <p className='w-56 font-semibold text-woodsmoke-400'>
+                  <p className='w-56 font-bold text-woodsmoke-400'>
                      {t('page:portfolio.projects.responsibility')}:
                   </p>
 
@@ -136,7 +136,7 @@ const ProjectItem = ({ data }: Props) => {
                </div>
 
                <div className='flex flex-wrap'>
-                  <p className='w-56 font-semibold text-woodsmoke-400'>
+                  <p className='w-56 font-bold text-woodsmoke-400'>
                      {t('page:portfolio.projects.technologies')}:
                   </p>
 

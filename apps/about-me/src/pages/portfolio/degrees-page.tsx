@@ -13,7 +13,7 @@ export const DegreesPage = () => {
 
    return (
       <Page>
-         <p className='text-center font-eb-raleway text-4xl'>
+         <p className='text-center font-bold text-4xl'>
             {t('page:portfolio.degrees.title').toUpperCase()}
          </p>
 
@@ -60,7 +60,7 @@ export const DegreesPage = () => {
                         </div>
                      </div>
 
-                     <div className='grid grid-cols-3 gap-8'>
+                     <div className={clsx('grid grid-cols-2 gap-8', 'md:grid-cols-3')}>
                         {item.images.map((image) => (
                            <div
                               key={image}

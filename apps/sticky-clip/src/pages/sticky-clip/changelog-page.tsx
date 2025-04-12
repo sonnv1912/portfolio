@@ -18,7 +18,7 @@ export const StickyClipChangelogPage = () => {
             <div className='flex gap-10'>
                <div className='w-28' />
 
-               <p className='font-semibold text-5xl'>
+               <p className='font-bold text-5xl'>
                   {t('page:sticky_clip:home.changelog')}
                </p>
             </div>

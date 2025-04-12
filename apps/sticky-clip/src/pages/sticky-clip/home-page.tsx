@@ -56,7 +56,7 @@ export const StickyClipHomePage = () => {
             <div className={clsx('hidden', 'lg:flex')} />
 
             <div className='flex flex-col items-center justify-center gap-5'>
-               <p className='text-center font-semibold text-5xl'>
+               <p className='text-center font-bold text-5xl'>
                   {t('page:sticky_clip.home.product_short_description')}
                </p>
 

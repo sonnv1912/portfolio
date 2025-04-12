@@ -9,7 +9,7 @@ export const ContactPage = () => {
 
    return (
       <Page>
-         <p className='text-center font-eb-raleway text-4xl'>
+         <p className='text-center font-bold text-4xl'>
             {t('page:portfolio.contact.title').toUpperCase()}
          </p>
 
@@ -32,7 +32,7 @@ export const ContactPage = () => {
 
                   <div className='flex flex-1 flex-col gap-1'>
                      <p className='text-slate-500'>{item.label}</p>
-                     <p className='break-all font-semibold hover:underline'>
+                     <p className='break-all font-bold hover:underline'>
                         {item.content}
                      </p>
                   </div>

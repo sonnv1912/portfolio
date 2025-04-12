@@ -10,7 +10,7 @@ export const SkillsPage = () => {
 
    return (
       <Page className='lg:items-center'>
-         <p className='text-center font-eb-raleway text-4xl'>
+         <p className='text-center font-bold text-4xl'>
             {t('page:portfolio.skills.title').toUpperCase()}
          </p>
 
@@ -35,7 +35,7 @@ export const SkillsPage = () => {
 
                      <p
                         className={clsx(
-                           'text-md flex-1 font-semibold',
+                           'text-md flex-1 font-bold',
                            'md:text-lg',
                         )}
                      >

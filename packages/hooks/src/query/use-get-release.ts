@@ -1,7 +1,7 @@
 import { queryKey } from '@packages/configs/query-key';
 import { useQueries, useQuery } from '@tanstack/react-query';
 import { octokitRequest } from '@packages/utils/octokit';
-import type { Release } from 'types/data';
+import type { Release } from '@packages/types/data';
 import { useMyProfile } from '../shared/use-my-profile';
 
 const getRelease = (repo: string) => {

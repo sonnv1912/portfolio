@@ -1,5 +1,5 @@
 import type { env } from '@packages/configs/env';
-import type { Release } from 'types/data';
+import type { Release } from '@packages/types/data';
 import { create } from 'zustand';
 
 type State = Partial<{

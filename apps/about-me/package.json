@@ -36,7 +36,8 @@
       "@packages/configs": "*",
       "@packages/utils": "*",
       "@packages/types": "*",
-      "@packages/hooks": "*"
+      "@packages/hooks": "*",
+      "@packages/components": "*"
    },
    "devDependencies": {
       "@types/node": "^22.9.0",

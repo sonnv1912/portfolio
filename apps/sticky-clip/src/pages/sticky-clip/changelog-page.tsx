@@ -6,7 +6,7 @@ import Markdown from 'react-markdown';
 import moment from 'moment';
 import { useTranslation } from 'react-i18next';
 import { env } from '@packages/configs/env';
-import { Loading } from '@components/ui/loading';
+import { Loading } from '@packages/components/ui';
 
 export const StickyClipChangelogPage = () => {
    const releasesQuery = useGetRelease(env.repo.stickyClip);

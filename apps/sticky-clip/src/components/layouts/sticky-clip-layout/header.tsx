@@ -1,4 +1,4 @@
-import { LanguageSwitcher } from '@components/ui/language-switcher';
+import { LanguageSwitcher } from '@packages/components/ui';
 import { useNavigator } from '@hooks/use-navigator';
 import { useLatestRelease } from '@stores/use-latest-release';
 import { images } from '@packages/assets/images';

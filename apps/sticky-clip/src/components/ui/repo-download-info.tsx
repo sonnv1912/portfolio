@@ -3,7 +3,7 @@ import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { t } from 'i18next';
 import { FaApple, FaWindows } from 'react-icons/fa';
-import { Divider } from './divider';
+import { Divider } from '@packages/components/ui';
 
 type Props = {
    repo: keyof typeof env.repo;

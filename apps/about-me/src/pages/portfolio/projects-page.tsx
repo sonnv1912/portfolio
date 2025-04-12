@@ -1,7 +1,7 @@
 import { Page } from '@components/layouts/page';
 import { useTranslation } from 'react-i18next';
 import { ProjectItem } from '../project-page/item';
-import { useMyProfile } from 'hooks/shared';
+import { useMyProfile } from '@packages/hooks/shared';
 
 export const ProjectsPage = () => {
    const me = useMyProfile();

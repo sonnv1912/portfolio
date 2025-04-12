@@ -2,7 +2,7 @@ import { Page } from '@components/layouts/page';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 import { LuCode } from 'react-icons/lu';
-import { useMyProfile } from 'hooks/shared';
+import { useMyProfile } from '@packages/hooks/shared';
 
 export const SkillsPage = () => {
    const me = useMyProfile();

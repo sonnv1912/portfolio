@@ -1,6 +1,7 @@
 {
-   "name": "utils",
+   "name": "@packages/utils",
    "version": "1.0.0",
+   "license": "MIT",
    "exports": {
       "./i18n": {
          "types": "./src/locales/i18n.ts",
@@ -23,7 +24,7 @@
       "build_package": "tsup"
    },
    "dependencies": {
-      "assets": "*"
+      "@packages/assets": "*"
    },
    "devDependencies": {
       "tsup": "^8.4.0"

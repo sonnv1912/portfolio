@@ -1,5 +1,6 @@
 {
-   "name": "components",
+   "name": "@packages/components",
+   "license": "MIT",
    "version": "1.0.0",
    "exports": {
       "./ui": {
@@ -13,10 +14,10 @@
       "build_package": "tsup"
    },
    "dependencies": {
-      "configs": "*",
-      "utils": "*",
-      "assets": "*",
-      "types": "*"
+      "@packages/assets": "*",
+      "@packages/configs": "*",
+      "@packages/utils": "*",
+      "@packages/types": "*"
    },
    "devDependencies": {
       "tsup": "^8.4.0"

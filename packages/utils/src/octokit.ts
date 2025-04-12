@@ -1,4 +1,4 @@
-import { env } from 'configs/env';
+import { env } from '@packages/configs/env';
 import { Octokit } from 'octokit';
 import type { OctokitRequestProps, OctokitRequestResponse } from 'types/shared';
 

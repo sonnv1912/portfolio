@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { env } from 'configs/env';
-import { images } from 'assets/images';
+import { env } from '@packages/configs/env';
+import { images } from '@packages/assets/images';
 
 export const useMyProfile = () => {
    const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import { languages } from 'configs/constants';
+import { languages } from '@packages/configs/constants';
 
 import usCommon from './us/common.json';
 import usMe from './us/me.json';

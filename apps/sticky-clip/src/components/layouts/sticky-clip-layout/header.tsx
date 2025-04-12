@@ -1,7 +1,7 @@
 import { LanguageSwitcher } from '@components/ui/language-switcher';
 import { useNavigator } from '@hooks/use-navigator';
 import { useLatestRelease } from '@stores/use-latest-release';
-import { images } from 'assets/images';
+import { images } from '@packages/assets/images';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';

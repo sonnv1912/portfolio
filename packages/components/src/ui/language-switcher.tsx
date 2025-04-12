@@ -1,4 +1,4 @@
-import { languages } from 'configs/constants';
+import { languages } from '@packages/configs/constants';
 import clsx from 'clsx';
 import { useTranslation } from 'react-i18next';
 
@@ -7,7 +7,7 @@ type Props = {
    imgClassName?: string;
 };
 
-const LanguageSwitcher = ({ className, imgClassName }: Props) => {
+export const LanguageSwitcher = ({ className, imgClassName }: Props) => {
    const { i18n } = useTranslation();
 
    return (
@@ -37,10 +37,9 @@ const LanguageSwitcher = ({ className, imgClassName }: Props) => {
          <img
             alt=''
             src={languages[i18n.language].image}
-            className={clsx('w-6', imgClassName)}
+            className={clsx(imgClassName)}
          />
       </div>
    );
 };
 
-export { LanguageSwitcher };

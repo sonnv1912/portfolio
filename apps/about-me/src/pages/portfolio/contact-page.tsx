@@ -1,6 +1,6 @@
 import { Page } from '@components/layouts/page';
 import clsx from 'clsx';
-import { useMyProfile } from 'hooks/shared';
+import { useMyProfile } from '@packages/hooks/shared';
 import { useTranslation } from 'react-i18next';
 
 export const ContactPage = () => {

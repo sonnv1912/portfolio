@@ -1,4 +1,4 @@
-import type { env } from 'configs/env';
+import type { env } from '@packages/configs/env';
 import type { Release } from 'types/data';
 import { create } from 'zustand';
 

@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { useMyProfile } from 'hooks/shared';
+import { useMyProfile } from '@packages/hooks/shared';
 import { useEffect, useState } from 'react';
 
 const BlinkBrand = () => {

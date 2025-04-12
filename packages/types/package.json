@@ -1,5 +1,6 @@
 {
-   "name": "types",
+   "name": "@packages/types",
+   "license": "MIT",
    "version": "1.0.0",
    "exports": {
       "./data": {

@@ -32,11 +32,11 @@
       "react-tooltip": "^5.28.0",
       "yarn": "^1.22.22",
       "zustand": "^5.0.3",
-      "assets": "*",
-      "configs": "*",
-      "utils": "*",
-      "types": "*",
-      "hooks": "*"
+      "@packages/assets": "*",
+      "@packages/configs": "*",
+      "@packages/utils": "*",
+      "@packages/types": "*",
+      "@packages/hooks": "*"
    },
    "devDependencies": {
       "@types/node": "^22.9.0",

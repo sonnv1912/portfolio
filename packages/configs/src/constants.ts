@@ -1,4 +1,4 @@
-import { images } from 'assets/images';
+import { images } from '@packages/assets/images';
 
 export const languages: Record<
    string,

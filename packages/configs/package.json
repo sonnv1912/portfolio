@@ -1,5 +1,6 @@
 {
-   "name": "configs",
+   "name": "@packages/configs",
+   "license": "MIT",
    "version": "1.0.0",
    "exports": {
       "./constants": {
@@ -23,7 +24,7 @@
       "build_package": "tsup"
    },
    "dependencies": {
-      "assets": "*"
+      "@packages/assets": "*"
    },
    "devDependencies": {
       "tsup": "^8.4.0"

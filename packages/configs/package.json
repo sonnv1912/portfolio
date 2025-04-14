@@ -17,6 +17,11 @@
          "types": "./src/query-key.ts",
          "import": "./src/query-key.ts",
          "require": "./dist/query-key.js"
+      },
+      "./theme": {
+         "types": "./src/theme.ts",
+         "import": "./src/theme.ts",
+         "require": "./dist/theme.js"
       }
    },
    "scripts": {
@@ -28,5 +33,9 @@
    },
    "devDependencies": {
       "tsup": "^8.4.0"
+   },
+   "peerDependencies": {
+      "tailwindcss": "*",
+      "user-agent-data-types": "*"
    }
 }

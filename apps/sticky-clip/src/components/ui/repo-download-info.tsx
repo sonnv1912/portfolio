@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import { t } from 'i18next';
 import { FaApple, FaWindows } from 'react-icons/fa';
 import { Divider } from '@packages/components/ui';
+import { isMac, isWin } from '@packages/configs/constants';
 
 type Props = {
    repo: keyof typeof env.repo;
@@ -11,15 +12,9 @@ type Props = {
 
 export const RepoDownloadInfo = ({ repo }: Props) => {
    const { getMacDownload, getWinDownload, ...rest } = useLatestRelease();
-   const isMac = window.navigator.userAgentData?.platform
-      .toLowerCase()
-      .includes('mac');
-   const isWin = window.navigator.userAgentData?.platform
-      .toLowerCase()
-      .includes('win');
 
    return (
-      <div className={clsx('hidden', 'lg:block')}>
+      <div>
          <div
             className={clsx('text-black', 'lg:flex lg:items-center lg:gap-4')}
          >

@@ -8,20 +8,16 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CgMenuGridO } from 'react-icons/cg';
 import { FaApple, FaWindows } from 'react-icons/fa';
+import { isMac, isWin } from '@packages/configs/constants';
+import { useMyProfile } from '@packages/hooks/shared';
+import { env } from '@packages/configs/env';
 
 export const StickyClipLayoutHeader = () => {
-   const isMac = window.navigator.userAgentData?.platform
-      .toLowerCase()
-      .includes('mac');
-
-   const isWin = window.navigator.userAgentData?.platform
-      .toLowerCase()
-      .includes('win');
-
    const { t } = useTranslation();
    const { setQuery } = useNavigator();
    const [showMenu, setShowMenu] = useState(false);
    const { getWinDownload, getMacDownload } = useLatestRelease();
+   const me = useMyProfile();
 
    const tabs = [
       {
@@ -59,23 +55,6 @@ export const StickyClipLayoutHeader = () => {
                )}
             >
                <div className='flex items-center gap-4'>
-                  {/* <img
-                     src={me.image}
-                     alt=''
-                     className='size-9 cursor-pointer rounded-full'
-                     data-tooltip-id='tooltip'
-                     data-tooltip-content={t(
-                        'page:sticky_clip.home.back_to_product',
-                     )}
-                     onClick={() => {
-                        if(env.isDev){
-                           window.location.href = ""
-                        }
-                     }}
-                  />
-
-                  <Divider /> */}
-
                   <div
                      className='flex cursor-pointer items-center gap-2 text-white'
                      onClick={() => {
@@ -119,6 +98,18 @@ export const StickyClipLayoutHeader = () => {
                      className='grayscale-[30%] hover:grayscale-0'
                      imgClassName='w-8'
                   />
+
+                  <a
+                     href={env.repo.stickyClip.url}
+                     target='_blank'
+                     rel='noreferrer'
+                  >
+                     <img
+                        src={images.Github}
+                        className='size-7 rounded-full'
+                        alt=''
+                     />
+                  </a>
 
                   {isMac && (
                      <a

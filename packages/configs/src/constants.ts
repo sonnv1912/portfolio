@@ -19,3 +19,11 @@ export const languages: Record<
       code: 'vn',
    },
 };
+
+export const isMac = window.navigator.userAgentData?.platform
+   .toLowerCase()
+   .includes('mac');
+
+export const isWin = window.navigator.userAgentData?.platform
+   .toLowerCase()
+   .includes('win');

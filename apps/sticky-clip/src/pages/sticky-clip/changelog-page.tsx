@@ -9,7 +9,7 @@ import { env } from '@packages/configs/env';
 import { Loading } from '@packages/components/ui';
 
 export const StickyClipChangelogPage = () => {
-   const releasesQuery = useGetRelease(env.repo.stickyClip);
+   const releasesQuery = useGetRelease(env.repo.stickyClip.name);
    const { t } = useTranslation();
 
    return (

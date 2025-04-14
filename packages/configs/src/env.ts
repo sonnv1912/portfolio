@@ -4,6 +4,9 @@ export const env = {
    githubToken: i18n.t('me:github_token_1') + i18n.t('me:github_token_2'),
    owner: 'sonnv1912',
    repo: {
-      stickyClip: 'sticky-clip',
+      stickyClip: {
+         name: 'sticky-clip',
+         url: 'https://github.com/sonnv1912/sticky-clip',
+      },
    },
 };

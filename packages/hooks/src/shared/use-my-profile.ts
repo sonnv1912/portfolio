@@ -347,7 +347,7 @@ export const useMyProfile = () => {
             url: import.meta.env.DEV
                ? 'http://localhost:3333/sticky-clip'
                : 'https://sonnv1912.github.io/sticky-clip/',
-            repo: env.repo.stickyClip,
+            repo: env.repo.stickyClip.name,
          },
       ],
    };

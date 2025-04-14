@@ -23,7 +23,7 @@ declare const VANTA: {
 
 export const StickyClipHomePage = () => {
    const { t } = useTranslation();
-   const latestReleaseQuery = useGetLatestRelease(env.repo.stickyClip);
+   const latestReleaseQuery = useGetLatestRelease(env.repo.stickyClip.name);
    const { setRelease } = useLatestRelease();
 
    useEffect(() => {
@@ -53,7 +53,7 @@ export const StickyClipHomePage = () => {
                'z-50 lg:justify-between',
             )}
          >
-            <div className={clsx('hidden', 'lg:flex')} />
+            <div className={clsx('hidden', 'lg:block')} />
 
             <div className='flex flex-col items-center justify-center gap-5'>
                <p className='text-center font-bold text-5xl'>
@@ -65,9 +65,11 @@ export const StickyClipHomePage = () => {
                </p>
             </div>
 
-            {!latestReleaseQuery.isLoading && (
-               <RepoDownloadInfo repo='stickyClip' />
-            )}
+            <div className={clsx('hidden', 'lg:block')}>
+               {!latestReleaseQuery.isLoading && (
+                  <RepoDownloadInfo repo='stickyClip' />
+               )}
+            </div>
          </div>
 
          <div id='background' className='fixed bottom-0 left-0 right-0 top-0' />

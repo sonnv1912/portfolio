@@ -9,8 +9,7 @@ export const StickyClipLayout = ({ children }: PropsWithChildren) => {
 
          <div
             className={clsx(
-               'h-screen overflow-auto scroll-smooth px-5 pb-10 pt-24 text-white',
-               'lg:px-20',
+               'h-screen overflow-auto scroll-smooth pb-10 pt-24 text-white',
             )}
             style={{
                scrollbarGutter: 'stable',

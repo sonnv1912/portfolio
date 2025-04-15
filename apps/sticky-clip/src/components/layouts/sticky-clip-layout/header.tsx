@@ -37,16 +37,15 @@ export const StickyClipLayoutHeader = () => {
    return (
       <div
          className={clsx(
-            'fixed left-0 right-0 top-5 z-10',
-            'flex justify-center',
+            'fixed left-0 right-0 top-5 z-10 px-5',
+            'md:px-12',
+            'lg:px-24',
          )}
       >
          <div
             className={clsx(
-               'bg-white-950/50 rounded-lg border border-woodsmoke-600 backdrop-blur-sm',
-               'overflow-hidden transition-all',
-               'mx-5 w-full',
-               'lg:mx-0 lg:w-[80vw]',
+               'bg-white-950/50 rounded-lg border border-woodsmoke-600',
+               'overflow-hidden transition-all backdrop-blur-sm',
             )}
          >
             <div

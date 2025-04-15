@@ -13,7 +13,9 @@ export const StickyClipChangelogPage = () => {
    const { t } = useTranslation();
 
    return (
-      <div className={clsx('relative mx-auto mt-10', 'lg:max-w-[80vw]')}>
+      <div
+         className={clsx('relative mx-auto mt-10 px-5', 'md:px-12', 'lg:px-24')}
+      >
          <div>
             <div className='flex gap-10'>
                <div className='w-28' />

@@ -34,13 +34,13 @@ const ProjectItem = ({ data }: Props) => {
             'pb-20': showMore,
          })}
       >
-         <div className='absolute bottom-0 left-[-29px] top-0 w-[1px] bg-woodsmoke-900' />
+         <div className='absolute bottom-0 left-[-29px] top-1.5 w-[1px] bg-woodsmoke-900' />
 
-         <div className='absolute -left-8 size-2 rounded-full bg-white' />
+         <div className='absolute -left-8 top-1.5 size-2 rounded-full bg-white' />
 
          <div className='flex flex-col gap-5'>
-            <div className='flex items-center'>
-               <p className='w-56'>{data.time}</p>
+            <div className='flex items-center gap-5'>
+               <p>{data.time}</p>
 
                <div className='flex items-center gap-1'>
                   <MdLocationPin />

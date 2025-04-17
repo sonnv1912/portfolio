@@ -10,6 +10,7 @@ export default defineConfig((options) => {
          '.webp': 'copy',
          '.jpg': 'copy',
          '.woff2': 'copy',
+         '.heic': 'copy',
       },
    };
 });

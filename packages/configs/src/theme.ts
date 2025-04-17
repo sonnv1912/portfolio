@@ -5,6 +5,8 @@ export const theme = {
       sans: ['writer', ...defaultTheme.fontFamily.sans],
    },
    colors: {
+      black: '#0b0c0d',
+
       woodsmoke: {
          50: '#f6f6f6',
          100: '#e7e7e7',
@@ -18,6 +20,7 @@ export const theme = {
          900: '#3d3d3d',
          950: '#1b1b1b',
       },
+
       stickyclip: {
          '50': '#f1f9fe',
          '100': '#e1f3fd',
@@ -31,7 +34,5 @@ export const theme = {
          '900': '#104b6a',
          '950': '#0b2f46',
       },
-      black: '#0b0c0d',
-      paragraph: '#4c5461',
    },
 };

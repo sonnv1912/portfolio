@@ -1,23 +1,21 @@
-import { LanguageSwitcher } from '@packages/components/ui';
 import { useNavigator } from '@hooks/use-navigator';
-import { useLatestRelease } from '@stores/use-latest-release';
 import { images } from '@packages/assets/images';
+import { LanguageSwitcher } from '@packages/components/ui';
+import { isMac, isWin } from '@packages/configs/constants';
+import { env } from '@packages/configs/env';
+import { useLatestRelease } from '@stores/use-latest-release';
 import clsx from 'clsx';
 import { AnimatePresence, motion } from 'motion/react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CgMenuGridO } from 'react-icons/cg';
 import { FaApple, FaWindows } from 'react-icons/fa';
-import { isMac, isWin } from '@packages/configs/constants';
-import { useMyProfile } from '@packages/hooks/shared';
-import { env } from '@packages/configs/env';
 
 export const StickyClipLayoutHeader = () => {
    const { t } = useTranslation();
    const { setQuery } = useNavigator();
    const [showMenu, setShowMenu] = useState(false);
    const { getWinDownload, getMacDownload } = useLatestRelease();
-   const me = useMyProfile();
 
    const tabs = [
       {
@@ -37,7 +35,7 @@ export const StickyClipLayoutHeader = () => {
    return (
       <div
          className={clsx(
-            'fixed left-0 right-0 top-5 z-10 px-5',
+            'fixed left-0 right-0 top-5 z-50 px-5',
             'md:px-12',
             'lg:px-24',
          )}
@@ -50,7 +48,7 @@ export const StickyClipLayoutHeader = () => {
          >
             <div
                className={clsx(
-                  'flex w-full items-center justify-between gap-5 px-5 py-4',
+                  'flex w-full items-center justify-between gap-5 px-5 py-4 flex-wrap',
                )}
             >
                <div className='flex items-center gap-4'>
@@ -115,7 +113,9 @@ export const StickyClipLayoutHeader = () => {
                         href={getMacDownload('stickyClip')}
                         target='_blank'
                         className={clsx(
-                           'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+                           'cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+                           'hidden',
+                           'lg:flex',
                            {
                               'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
                                  !isMac,
@@ -136,6 +136,8 @@ export const StickyClipLayoutHeader = () => {
                         target='_blank'
                         className={clsx(
                            'flex cursor-pointer items-center gap-2 rounded-md p-2 px-3 text-sm transition-all duration-500',
+                           'hidden',
+                           'lg:flex',
                            {
                               'border border-woodsmoke-300 text-woodsmoke-300 hover:border-white hover:text-white':
                                  !isWin,

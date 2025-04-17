@@ -17,6 +17,10 @@
       "./styles/*": {
          "import": "./src/styles/*",
          "require": "./dist/styles/*"
+      },
+      "./videos": {
+         "import": "./src/videos/index.ts",
+         "require": "./dist/videos/index.js"
       }
    },
    "scripts": {

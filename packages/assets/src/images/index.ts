@@ -19,6 +19,9 @@ import UnitedState from './img-united-states.png';
 import VietNam from './img-viet-nam.png';
 import Kolel from './img-kolel.webp';
 import Clipboard from './img-clipboard.png';
+import Overview from './img-overview.png';
+import Finder from './img-finder.png';
+import SequoiaSunrise from './sequoia-sunrise.jpg';
 
 export const images = {
    Apple,
@@ -42,4 +45,7 @@ export const images = {
    VietNam,
    Kolel,
    Clipboard,
+   Overview,
+   Finder,
+   SequoiaSunrise,
 };

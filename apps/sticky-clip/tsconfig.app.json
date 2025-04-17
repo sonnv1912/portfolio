@@ -30,5 +30,5 @@
       },
       "types": ["../../node_modules/user-agent-data-types"]
    },
-   "include": ["src", "html-tag.d.ts"]
+   "include": ["src", "html-tag.d.ts", "index.d.ts"]
 }

@@ -54,7 +54,8 @@
             "noReactSpecificProps": "off"
          },
          "a11y": {
-            "useKeyWithClickEvents": "off"
+            "useKeyWithClickEvents": "off",
+            "useMediaCaption": "off"
          }
       }
    },

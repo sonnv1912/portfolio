@@ -1,5 +1,16 @@
-@import url(@packages/assets/styles/main.css);
+@import url("@packages/assets/styles/main.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: white;
+  background: #25b0e9;
+}
+
+::selection {
+  color: white;
+  background: #25b0e9;
+}

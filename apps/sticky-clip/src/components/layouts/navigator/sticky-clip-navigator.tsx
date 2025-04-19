@@ -3,6 +3,7 @@ import { StickyClipHomePage } from '@/pages/sticky-clip/home-page';
 import { StickyClipTeamsPage } from '@/pages/sticky-clip/teams-page';
 import { useNavigator } from '@hooks/use-navigator';
 import { StickyClipLayout } from '@layouts/sticky-clip-layout';
+import { AnimatedPage } from '@packages/components/ui';
 import { type ReactElement, useMemo } from 'react';
 
 export const StickyClipNavigator = () => {
@@ -27,5 +28,9 @@ export const StickyClipNavigator = () => {
       return null;
    }
 
-   return <StickyClipLayout>{tabs[tab]}</StickyClipLayout>;
+   return (
+      <StickyClipLayout>
+         <AnimatedPage key={tab}>{tabs[tab]}</AnimatedPage>
+      </StickyClipLayout>
+   );
 };

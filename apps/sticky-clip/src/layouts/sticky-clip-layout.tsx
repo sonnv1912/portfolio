@@ -4,12 +4,12 @@ import type { PropsWithChildren } from 'react';
 
 export const StickyClipLayout = ({ children }: PropsWithChildren) => {
    return (
-      <div className='relative bg-black'>
+      <div className='relative bg-black min-h-screen'>
          <StickyClipLayoutHeader />
 
          <div
             className={clsx(
-               'h-screen overflow-auto scroll-smooth pb-10 pt-24 text-white px-5',
+               'pb-10 pt-24 text-white px-5',
                'md:px-12',
                'lg:px-24',
             )}

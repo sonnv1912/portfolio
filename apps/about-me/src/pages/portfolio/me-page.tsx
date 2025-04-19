@@ -41,7 +41,6 @@ export const MePage = () => {
 
                <p
                   className='text-justify leading-8'
-                  // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
                   dangerouslySetInnerHTML={{ __html: me.shortDesc }}
                />
             </div>

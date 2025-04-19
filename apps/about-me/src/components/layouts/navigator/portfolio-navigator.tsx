@@ -6,6 +6,7 @@ import { ProjectsPage } from '@/pages/portfolio/projects-page';
 import { SkillsPage } from '@/pages/portfolio/skills-page';
 import { useNavigator } from '@hooks/use-navigator';
 import { DefaultLayout } from '@layouts/default-layout';
+import { AnimatedPage } from '@packages/components/ui';
 import { type ReactElement, useMemo } from 'react';
 
 export const PortfolioNavigator = () => {
@@ -33,5 +34,9 @@ export const PortfolioNavigator = () => {
       return null;
    }
 
-   return <DefaultLayout>{tabs[tab]}</DefaultLayout>;
+   return (
+      <DefaultLayout>
+         <AnimatedPage key={tab}>{tabs[tab]}</AnimatedPage>
+      </DefaultLayout>
+   );
 };

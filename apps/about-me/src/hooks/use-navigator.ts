@@ -5,6 +5,7 @@ export const useNavigator = () => {
       tab: parseAsString.withDefault('me').withOptions({
          clearOnDefault: true,
          history: 'push',
+         scroll: true,
       }),
    });
 

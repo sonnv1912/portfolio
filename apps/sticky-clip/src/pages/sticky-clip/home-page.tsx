@@ -34,7 +34,11 @@ export const StickyClipHomePage = () => {
    return (
       <>
          <div
-            className={clsx('h-full relative -mx-5', 'md:-mx-12', 'lg:-mx-24')}
+            className={clsx(
+               'h-screen relative pb-10 -mt-24 -mx-5',
+               'md:-mx-12',
+               'lg:-mx-24',
+            )}
          >
             <div
                className={clsx(

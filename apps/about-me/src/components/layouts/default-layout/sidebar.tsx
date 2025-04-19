@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 import { useMyProfile } from '@packages/hooks/shared';
 
 const DefaultLayoutSidebar = () => {
-   const [showMenuBtnClicked, setShowMenuBtnClicked] = useState(true);
+   const [showMenuBtn, setShowMenuBtn] = useState(true);
    const { setQuery } = useNavigator();
    const me = useMyProfile();
    const { t } = useTranslation();
@@ -56,14 +56,14 @@ const DefaultLayoutSidebar = () => {
    ];
 
    return (
-      <div>
+      <>
          <div
             className={clsx(
-               'absolute bottom-0 left-0 top-0 z-20 flex transition-all duration-300',
-               'lg:relative lg:translate-x-0',
+               'sticky bottom-0 left-0 top-0 z-30 flex transition-all duration-300',
+               'lg:translate-x-0 lg:h-screen',
                {
-                  '-translate-x-full': showMenuBtnClicked,
-                  'translate-x-0': !showMenuBtnClicked,
+                  '-translate-x-full': showMenuBtn,
+                  'translate-x-0': !showMenuBtn,
                },
             )}
          >
@@ -79,7 +79,7 @@ const DefaultLayoutSidebar = () => {
                      data={tab}
                      index={index}
                      onPress={() => {
-                        setShowMenuBtnClicked(true);
+                        setShowMenuBtn(true);
 
                         setQuery({
                            tab: tab.tab,
@@ -103,10 +103,10 @@ const DefaultLayoutSidebar = () => {
                   'absolute left-full top-0 cursor-pointer hover:bg-slate-500',
                   'lg:hidden',
                   {
-                     absolute: showMenuBtnClicked,
+                     absolute: showMenuBtn,
                   },
                )}
-               onClick={() => setShowMenuBtnClicked((prev) => !prev)}
+               onClick={() => setShowMenuBtn((prev) => !prev)}
             >
                <IoMenu className='size-6 text-white' />
             </div>
@@ -117,15 +117,15 @@ const DefaultLayoutSidebar = () => {
                'absolute bottom-0 left-0 right-0 top-0 transition-all duration-300',
                'lg:hidden',
                {
-                  '-z-10 bg-transparent opacity-0': showMenuBtnClicked,
-                  'z-10 bg-black/50 opacity-100': !showMenuBtnClicked,
+                  '-z-20 bg-transparent opacity-0': showMenuBtn,
+                  'z-20 bg-black/50 opacity-100': !showMenuBtn,
                },
             )}
             onClick={() => {
-               setShowMenuBtnClicked(true);
+               setShowMenuBtn(true);
             }}
          />
-      </div>
+      </>
    );
 };
 

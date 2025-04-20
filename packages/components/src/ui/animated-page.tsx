@@ -11,11 +11,11 @@ export const AnimatedPage = ({ children, tab, className }: Props) => {
       <motion.div
          key={tab}
          transition={{
-            duration: 0.5,
+            duration: 2,
          }}
-         exit={{ opacity: 0, y: '10%' }}
-         initial={{ opacity: 0, y: '10%' }}
-         animate={{ opacity: 1, y: 0 }}
+         exit={{ opacity: 0 }}
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
          className={className}
       >
          {children}

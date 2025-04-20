@@ -5,18 +5,18 @@ import { useEffect } from 'react';
 
 export const Overview = () => {
    useEffect(() => {
-      VANTA.NET({
-         el: '#overview',
-         mouseControls: false,
-         touchControls: false,
-         gyroControls: false,
-         minHeight: 200.0,
-         minWidth: 200.0,
-         scale: 1,
-         scaleMobile: 1,
-         color: '#27b5e9',
-         backgroundColor: '#0b0c0d',
-      });
+      // VANTA.NET({
+      //    el: '#overview',
+      //    mouseControls: false,
+      //    touchControls: false,
+      //    gyroControls: false,
+      //    minHeight: 200.0,
+      //    minWidth: 200.0,
+      //    scale: 1,
+      //    scaleMobile: 1,
+      //    color: '#27b5e9',
+      //    backgroundColor: '#0b0c0d',
+      // });
    }, []);
 
    return (

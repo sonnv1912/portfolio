@@ -60,7 +60,7 @@ const DefaultLayoutSidebar = () => {
          <div
             className={clsx(
                'sticky bottom-0 left-0 top-0 z-30 flex transition-all duration-300',
-               'lg:translate-x-0 lg:h-screen',
+               'lg:translate-x-0 h-screen',
                {
                   '-translate-x-full': showMenuBtn,
                   'translate-x-0': !showMenuBtn,

@@ -1,4 +1,5 @@
 import { DefaultLayoutSidebar } from '@components/layouts/default-layout/sidebar';
+import clsx from 'clsx';
 import type { PropsWithChildren } from 'react';
 
 export const DefaultLayout = ({ children }: PropsWithChildren) => {
@@ -7,7 +8,7 @@ export const DefaultLayout = ({ children }: PropsWithChildren) => {
          <DefaultLayoutSidebar />
 
          <div
-            className='flex-1 text-white'
+            className={clsx('flex-1 text-white -ml-16', 'lg:ml-0')}
             style={{
                scrollbarGutter: 'stable',
             }}

@@ -15,10 +15,15 @@ export const StickyClipChangelogPage = () => {
    return (
       <div className={clsx('relative mx-auto mt-10')}>
          <div>
-            <div className='flex gap-10'>
-               <div className='w-28' />
+            <div
+               className={clsx(
+                  'flex gap-10 justify-center',
+                  'md:justify-normal',
+               )}
+            >
+               <div className={clsx('w-28 hidden', 'md:block')} />
 
-               <p className='font-bold text-5xl'>
+               <p className={clsx('font-bold text-5xl')}>
                   {t('page:sticky_clip:home.changelog')}
                </p>
             </div>
@@ -27,7 +32,10 @@ export const StickyClipChangelogPage = () => {
 
             <div className='mt-20 flex flex-col gap-40'>
                {releasesQuery.data?.data?.map((release) => (
-                  <div key={release.id} className='flex gap-8'>
+                  <div
+                     key={release.id}
+                     className={clsx('flex gap-8 flex-col', 'md:flex-row')}
+                  >
                      <div className='flex w-28 flex-col gap-4 text-sm'>
                         <p className='w-fit rounded-md bg-stickyclip-500/50 px-4 py-1 text-center text-stickyclip-300'>
                            {release.tag_name}
@@ -46,6 +54,9 @@ export const StickyClipChangelogPage = () => {
                            components={{
                               a: (props) => {
                                  return <a {...props} target='_blank' />;
+                              },
+                              ul: (props) => {
+                                 return <ul {...props} className='list-disc' />;
                               },
                            }}
                         >

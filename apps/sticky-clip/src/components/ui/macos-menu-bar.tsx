@@ -6,7 +6,7 @@ export const MacosMenuBar = () => {
    return (
       <div
          className={clsx(
-            'flex justify-between bg-black/40 backdrop-blur-sm text-woodsmoke-300 text-sm',
+            'flex justify-between bg-black/40 backdrop-blur-xs text-woodsmoke-300 text-sm',
             'p-4',
          )}
       >

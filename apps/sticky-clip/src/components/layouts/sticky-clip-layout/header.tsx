@@ -43,7 +43,7 @@ export const StickyClipLayoutHeader = () => {
          <div
             className={clsx(
                'bg-white-950/50 rounded-lg border border-woodsmoke-600',
-               'overflow-hidden transition-all backdrop-blur-sm',
+               'overflow-hidden transition-all backdrop-blur-xs',
             )}
          >
             <div

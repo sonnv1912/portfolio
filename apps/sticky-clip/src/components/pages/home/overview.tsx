@@ -42,7 +42,7 @@ export const Overview = () => {
                <div
                   className={clsx(
                      'flex items-center w-fit mx-auto rounded-2xl p-2 bg-woodsmoke-950/50',
-                     'border border-woodsmoke-600 mt-7 gap-3 backdrop-blur-sm',
+                     'border border-woodsmoke-600 mt-7 gap-3 backdrop-blur-xs',
                   )}
                >
                   <img src={images.Finder} alt='' className='size-10' />

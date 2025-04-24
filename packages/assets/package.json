@@ -18,6 +18,10 @@
          "import": "./src/styles/*",
          "require": "./dist/styles/*"
       },
+      "./fonts/*": {
+         "import": "./src/fonts/*",
+         "require": "./dist/fonts/*"
+      },
       "./videos": {
          "import": "./src/videos/index.ts",
          "require": "./dist/videos/index.js"

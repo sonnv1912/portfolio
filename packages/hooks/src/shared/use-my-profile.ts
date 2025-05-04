@@ -58,8 +58,13 @@ export const useMyProfile = () => {
                },
                {
                   label: 'TypeScript',
-                  link: 'https://www.typescriptlang.org/',
+                  link: 'https://www.typescriptlang.org',
                   desc: 'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale',
+               },
+               {
+                  label: 'PHP',
+                  link: 'https://www.php.net/',
+                  desc: 'A popular general-purpose scripting language that is especially suited to web development.',
                },
             ],
          },
@@ -114,6 +119,16 @@ export const useMyProfile = () => {
             ],
          },
          {
+            label: 'Backend Frameworks',
+            items: [
+               {
+                  label: 'Laravel',
+                  link: 'https://laravel.com',
+                  desc: 'Laravel provides a complete ecosystem for web artisans.',
+               },
+            ],
+         },
+         {
             label: 'State Management',
             items: [
                {
@@ -138,7 +153,6 @@ export const useMyProfile = () => {
                },
             ],
          },
-
          {
             label: 'Source Control',
             items: [

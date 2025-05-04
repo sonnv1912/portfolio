@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-import { useQueryState } from 'nuqs';
 import type { IconType } from 'react-icons';
 
 type Props = {
@@ -12,17 +11,12 @@ type Props = {
    onPress: () => void;
 };
 
-export const DefaultLayoutSidebarItem = ({ data, index, onPress }: Props) => {
-   const [tab] = useQueryState('tab');
-
+export const DefaultLayoutSidebarItem = ({ data, onPress }: Props) => {
    return (
       <div
          className={clsx(
-            'flex size-12 flex-col items-center justify-center hover:bg-woodsmoke-950',
+            'flex size-12 flex-col items-center justify-center hover:bg-woodsmoke-950 z-10',
             'sidebar-item cursor-pointer select-none gap-1 rounded-md transition-all duration-500',
-            {
-               'bg-woodsmoke-950': tab === data.tab || (!tab && index === 0),
-            },
          )}
          data-tooltip-id='tooltip'
          data-tooltip-content={data.label}

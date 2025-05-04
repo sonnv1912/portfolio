@@ -15,7 +15,7 @@ export const App = () => {
                backgroundColor: '#454545',
                color: 'white',
                zIndex: 9999,
-               maxWidth: 300,
+               maxWidth: 500,
                wordBreak: 'break-all',
                boxShadow: '1px 1px 10px rgba(255,255,255,0.2)',
             }}

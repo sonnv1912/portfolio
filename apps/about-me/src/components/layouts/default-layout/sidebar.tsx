@@ -11,16 +11,18 @@ import { MdFolder } from 'react-icons/md';
 import { DefaultLayoutSidebarItem } from './sidebar-item';
 import { useTranslation } from 'react-i18next';
 import { useMyProfile } from '@packages/hooks/shared';
+import { motion, useAnimate } from 'motion/react';
 
 const DefaultLayoutSidebar = () => {
    const [showMenuBtn, setShowMenuBtn] = useState(true);
    const { setQuery } = useNavigator();
    const me = useMyProfile();
    const { t } = useTranslation();
+   const [ref, animate] = useAnimate();
 
    const tabs = [
       {
-         label: 'SON',
+         label: t('me:name'),
          icon: () => {
             return (
                <img src={me.image} alt='' className='size-8' rel='preload' />
@@ -70,7 +72,7 @@ const DefaultLayoutSidebar = () => {
             <div
                className={clsx(
                   'flex h-screen flex-col gap-2 overflow-y-auto',
-                  'bg-woodsmoke-900 p-2 text-woodsmoke-200',
+                  'bg-woodsmoke-900 p-2 text-woodsmoke-200 relative',
                )}
             >
                {tabs.map((tab, index) => (
@@ -79,6 +81,16 @@ const DefaultLayoutSidebar = () => {
                      data={tab}
                      index={index}
                      onPress={() => {
+                        animate(
+                           ref.current,
+                           {
+                              top: 48 * index + 8 * (index + 1),
+                           },
+                           {
+                              duration: 0.4,
+                           },
+                        );
+
                         setShowMenuBtn(true);
 
                         setQuery({
@@ -87,6 +99,12 @@ const DefaultLayoutSidebar = () => {
                      }}
                   />
                ))}
+
+               <motion.div
+                  ref={ref}
+                  initial={{ top: 9 }}
+                  className='size-12 bg-woodsmoke-950 rounded-md absolute'
+               />
 
                <LanguageSwitcher
                   className={clsx(

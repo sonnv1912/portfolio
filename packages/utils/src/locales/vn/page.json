@@ -41,7 +41,9 @@
          "product_description": "Một công cụ giúp quản lý lịch sử clipboard của bạn. Nhanh chóng, thân thiện.",
          "teams": "Đội ngũ",
          "changelog": "Nhật ký thay đổi",
-         "back_to_product": "Về trang sản phẩm"
+         "back_to_product": "Về trang sản phẩm",
+         "take_shortcut": "Dùng phím tắt, đừng đi đường vòng.",
+         "one_interface": "Một giao diện, mọi thao tác bạn cần."
       }
    }
 }

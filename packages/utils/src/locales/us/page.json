@@ -41,7 +41,9 @@
          "product_description": "A tool for manage your clipboard history. Fast, friendly.",
          "teams": "Teams",
          "changelog": "Changelog",
-         "back_to_product": "Back to products"
+         "back_to_product": "Back to products",
+         "take_shortcut": "Take shortcuts, not detours.",
+         "one_interface": "One interface, everything you need."
       }
    }
 }

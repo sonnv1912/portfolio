@@ -71,10 +71,10 @@ export const StickyClipHomePage = () => {
 
          <div className='mt-60'>
             <div className='text-center mb-8 text-xl'>
-               <p>Take shortcuts, not detours.</p>
+               <p>{t('page:sticky_clip.home.take_shortcut')}</p>
 
-               <p className='text-woodsmoke-300'>
-                  One interface, everything you need.
+               <p className='text-woodsmoke-300 mt-2'>
+                  {t('page:sticky_clip.home.one_interface')}
                </p>
             </div>
 

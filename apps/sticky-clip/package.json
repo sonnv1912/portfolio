@@ -49,7 +49,7 @@
       "globals": "^16.1.0",
       "husky": "^9.1.7",
       "pinst": "^3.0.0",
-      "postcss": "^8.4.48",
+      "postcss": "^8.5.4",
       "typescript": "~5.8.3",
       "user-agent-data-types": "^0.4.2",
       "vite": "^6.3.5"

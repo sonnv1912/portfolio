@@ -138,12 +138,10 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.25.9"
 
-"@babel/runtime@^7.25.0", "@babel/runtime@^7.26.10":
-  version "7.27.0"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.27.0.tgz#fbee7cf97c709518ecc1f590984481d5460d4762"
-  integrity sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==
-  dependencies:
-    regenerator-runtime "^0.14.0"
+"@babel/runtime@^7.25.0", "@babel/runtime@^7.27.1":
+  version "7.27.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.27.6.tgz#ec4070a04d76bae8ddbb10770ba55714a417b7c6"
+  integrity sha512-vbavdySgbTTrmFE+EsiqUTzlOr5bzlnJtUv9PynGCAKvfQqjIXbvFdumPM/GxMDfyuGMJaJAU6TO4zc1Jf1i8Q==
 
 "@babel/template@^7.26.9", "@babel/template@^7.27.0":
   version "7.27.0"
@@ -1697,12 +1695,12 @@ husky@^9.1.7:
   resolved "https://registry.yarnpkg.com/husky/-/husky-9.1.7.tgz#d46a38035d101b46a70456a850ff4201344c0b2d"
   integrity sha512-5gs5ytaNjBrh5Ow3zrvdUUY+0VxIuWVL4i9irt6friV+BqdCfmV11CQTWMiBYWHbXhco+J1kHfTOUkePhCDvMA==
 
-i18next@^25.1.2:
-  version "25.1.2"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-25.1.2.tgz#c667b814ed1b4dbea76976a4c746a87922ac6ceb"
-  integrity sha512-SP63m8LzdjkrAjruH7SCI3ndPSgjt4/wX7ouUUOzCW/eY+HzlIo19IQSfYA9X3qRiRP1SYtaTsg/Oz/PGsfD8w==
+i18next@^25.2.1:
+  version "25.2.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-25.2.1.tgz#23cf8794904f551f577558d93c84b0fb6cd489a2"
+  integrity sha512-+UoXK5wh+VlE1Zy5p6MjcvctHXAhRwQKCxiJD8noKZzIXmnAX8gdHX5fLPA3MEVxEN4vbZkQFy8N0LyD9tUqPw==
   dependencies:
-    "@babel/runtime" "^7.26.10"
+    "@babel/runtime" "^7.27.1"
 
 ignore@^5.2.0:
   version "5.3.2"
@@ -2572,11 +2570,6 @@ readdirp@^4.0.1:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/readdirp/-/readdirp-4.1.2.tgz#eb85801435fbf2a7ee58f19e0921b068fc69948d"
   integrity sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==
-
-regenerator-runtime@^0.14.0:
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.14.1.tgz#356ade10263f685dda125100cd862c1db895327f"
-  integrity sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==
 
 remark-parse@^11.0.0:
   version "11.0.0"

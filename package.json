@@ -12,7 +12,7 @@
    },
    "devDependencies": {
       "@biomejs/biome": "2.0.6",
-      "turbo": "^2.5.4",
+      "turbo": "^2.5.5",
       "typescript": "5.8.3",
       "gh-pages": "^6.2.0"
    },

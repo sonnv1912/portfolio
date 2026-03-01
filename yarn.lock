@@ -801,6 +801,11 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.40.0.tgz#fd92d31a2931483c25677b9c6698106490cbbc76"
   integrity sha512-lpPE1cLfP5oPzVjKMx10pgBmKELQnFJXHgvtHCtuJWOv8MxqdEIMNtgHgBFf7Ea2/7EuVwa9fodWUfXAlXZLZQ==
 
+"@standard-schema/spec@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@standard-schema/spec/-/spec-1.0.0.tgz#f193b73dc316c4170f2e82a881da0f550d551b9c"
+  integrity sha512-m2bOd0f2RT9k8QJx1JN85cZYyH1RqFBdlwtkSlf4tBDYLCiiZnv1fIIwacK6cqwXavOydf0NPToMQgpKq+dVlA==
+
 "@tailwindcss/node@4.1.11":
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/@tailwindcss/node/-/node-4.1.11.tgz#d626af65fc9872e5e9d8884791d7e3856e945359"
@@ -2218,11 +2223,6 @@ minizlib@^3.0.1:
   dependencies:
     minipass "^7.1.2"
 
-mitt@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/mitt/-/mitt-3.0.1.tgz#ea36cf0cc30403601ae074c8f77b7092cdab36d1"
-  integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
-
 mkdirp@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-3.0.1.tgz#e44e4c5607fb279c168241713cc6e0fea9adcb50"
@@ -2292,12 +2292,12 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-nuqs@^2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/nuqs/-/nuqs-2.4.3.tgz#4d0713f44822ae64145740d013c074e1d1523b6d"
-  integrity sha512-BgtlYpvRwLYiJuWzxt34q2bXu/AIS66sLU1QePIMr2LWkb+XH0vKXdbLSgn9t6p7QKzwI7f38rX3Wl9llTXQ8Q==
+nuqs@^2.8.9:
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/nuqs/-/nuqs-2.8.9.tgz#e2c27d87c0dd0e3b4412fe867bcd0947cc4c998f"
+  integrity sha512-8ou6AEwsxMWSYo2qkfZtYFVzngwbKmg4c00HVxC1fF6CEJv3Fwm6eoZmfVPALB+vw8Udo7KL5uy96PFcYe1BIQ==
   dependencies:
-    mitt "^3.0.1"
+    "@standard-schema/spec" "1.0.0"
 
 object-assign@^4.0.1:
   version "4.1.1"
